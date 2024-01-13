@@ -34,11 +34,20 @@
 <script>
     function goToWeek(weekFileName) {
         if(weekFileName) {
-            window.location.href = weekFileName;
+            window.location.href = weekFileName+ "?week=" + encodeURIComponent(weekFileName);
         }
     }
 </script>
+<script>
+  window.onload = function() {
+      // 解析 URL 中的 GET 參數
+      var params = new URLSearchParams(window.location.search);
+      var week = params.get('week'); // 獲取 'week' 參數
 
+      if (week) {var weekSelector = document.getElementById('week-selector');
+      weekSelector.value = week;
+  }};
+</script>
 <div class="shell">
   <div class="container">
     <div class="row">
