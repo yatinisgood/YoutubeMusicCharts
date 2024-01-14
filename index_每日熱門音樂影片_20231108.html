@@ -1,0 +1,1702 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW" >
+<head>
+  <meta charset="UTF-8">
+  <title>全球每日熱門音樂影片</title>
+  <meta property="og:image" content="https://raw.githubusercontent.com/yatinisgood/YoutubeMusicCharts/main/A_creative_and_eye-catching_image_featuring_a_musi_converted.png" />
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://yatinisgood.github.io/YoutubeMusicCharts/index_全球入榜播放次數最多.html"/>
+  <meta name="og:description" content="發現 YouTube Music的最新熱門歌曲與影片。每週更新的全球點播排行、熱門歌手和音樂影片，以及 SHORTS 上的流行曲目，我們為您提供最深入的音樂趨勢分析。跟踪 YouTube 的音樂脈動：從發燒影片到每週熱播歌曲，再到全球點播進榜最多的曲目，我們提供全面的數據和洞察，讓您始終走在音樂潮流的最前沿。您的音樂趨勢導航：每週為您帶來 YouTube 上最受歡迎的歌曲、藝人和音樂影片。從主流到小眾，從長視頻到 Shorts，一站式探索音樂世界的每個角落。"/>
+<meta name="og:keywords" content="YouTube Music每週熱門,發燒影片分析,音樂流行趨勢,熱門歌手與歌曲,YouTuber愛用的 Shorts 音樂">
+<meta property="og:title" itemprop="name" content="音樂潮流前線：追踪 YouTube 上的每週熱門歌曲與影片" />
+  
+
+  <meta property="og:locale" content="zh_TW" />
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css'><link rel="stylesheet" href="./style_type1.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container text-center">
+<h1>全球每日熱門音樂影片 (更新於20231108)</h1>
+  <span>Create With <i class="zmdi zmdi-favorite red"></i>  By: <strong>Sherlock Tsai</strong> </span>
+</div>
+<div class="container text-center dropdown-menu-spacing">
+    <!-- 下拉選單 -->
+    <select class="form-control" id="week-selector" onchange="goToWeek(this.value)">
+        <option value="">選擇一週</option>
+        <option value="index_每日熱門音樂影片_20240109.html">20240109</option><option value="index_每日熱門音樂影片_20240108.html">20240108</option><option value="index_每日熱門音樂影片_20240107.html">20240107</option><option value="index_每日熱門音樂影片_20240106.html">20240106</option><option value="index_每日熱門音樂影片_20240105.html">20240105</option><option value="index_每日熱門音樂影片_20240104.html">20240104</option><option value="index_每日熱門音樂影片_20240103.html">20240103</option><option value="index_每日熱門音樂影片_20240102.html">20240102</option><option value="index_每日熱門音樂影片_20240101.html">20240101</option><option value="index_每日熱門音樂影片_20231231.html">20231231</option><option value="index_每日熱門音樂影片_20231230.html">20231230</option><option value="index_每日熱門音樂影片_20231229.html">20231229</option><option value="index_每日熱門音樂影片_20231228.html">20231228</option><option value="index_每日熱門音樂影片_20231227.html">20231227</option><option value="index_每日熱門音樂影片_20231226.html">20231226</option><option value="index_每日熱門音樂影片_20231225.html">20231225</option><option value="index_每日熱門音樂影片_20231224.html">20231224</option><option value="index_每日熱門音樂影片_20231223.html">20231223</option><option value="index_每日熱門音樂影片_20231222.html">20231222</option><option value="index_每日熱門音樂影片_20231221.html">20231221</option><option value="index_每日熱門音樂影片_20231220.html">20231220</option><option value="index_每日熱門音樂影片_20231219.html">20231219</option><option value="index_每日熱門音樂影片_20231218.html">20231218</option><option value="index_每日熱門音樂影片_20231217.html">20231217</option><option value="index_每日熱門音樂影片_20231216.html">20231216</option><option value="index_每日熱門音樂影片_20231215.html">20231215</option><option value="index_每日熱門音樂影片_20231214.html">20231214</option><option value="index_每日熱門音樂影片_20231213.html">20231213</option><option value="index_每日熱門音樂影片_20231212.html">20231212</option><option value="index_每日熱門音樂影片_20231211.html">20231211</option><option value="index_每日熱門音樂影片_20231210.html">20231210</option><option value="index_每日熱門音樂影片_20231209.html">20231209</option><option value="index_每日熱門音樂影片_20231208.html">20231208</option><option value="index_每日熱門音樂影片_20231207.html">20231207</option><option value="index_每日熱門音樂影片_20231206.html">20231206</option><option value="index_每日熱門音樂影片_20231205.html">20231205</option><option value="index_每日熱門音樂影片_20231204.html">20231204</option><option value="index_每日熱門音樂影片_20231203.html">20231203</option><option value="index_每日熱門音樂影片_20231202.html">20231202</option><option value="index_每日熱門音樂影片_20231201.html">20231201</option><option value="index_每日熱門音樂影片_20231130.html">20231130</option><option value="index_每日熱門音樂影片_20231129.html">20231129</option><option value="index_每日熱門音樂影片_20231128.html">20231128</option><option value="index_每日熱門音樂影片_20231127.html">20231127</option><option value="index_每日熱門音樂影片_20231126.html">20231126</option><option value="index_每日熱門音樂影片_20231125.html">20231125</option><option value="index_每日熱門音樂影片_20231124.html">20231124</option><option value="index_每日熱門音樂影片_20231123.html">20231123</option><option value="index_每日熱門音樂影片_20231122.html">20231122</option><option value="index_每日熱門音樂影片_20231121.html">20231121</option><option value="index_每日熱門音樂影片_20231120.html">20231120</option><option value="index_每日熱門音樂影片_20231119.html">20231119</option><option value="index_每日熱門音樂影片_20231118.html">20231118</option><option value="index_每日熱門音樂影片_20231117.html">20231117</option><option value="index_每日熱門音樂影片_20231116.html">20231116</option><option value="index_每日熱門音樂影片_20231115.html">20231115</option><option value="index_每日熱門音樂影片_20231114.html">20231114</option><option value="index_每日熱門音樂影片_20231113.html">20231113</option><option value="index_每日熱門音樂影片_20231112.html">20231112</option><option value="index_每日熱門音樂影片_20231111.html">20231111</option><option value="index_每日熱門音樂影片_20231110.html">20231110</option><option value="index_每日熱門音樂影片_20231109.html">20231109</option><option value="index_每日熱門音樂影片_20231108.html">20231108</option><option value="index_每日熱門音樂影片_20231107.html">20231107</option><option value="index_每日熱門音樂影片_20231106.html">20231106</option>
+        
+        
+    </select>
+</div>
+<script>
+    function goToWeek(weekFileName) {
+        if(weekFileName) {
+            window.location.href = weekFileName+ "?week=" + encodeURIComponent(weekFileName);
+        }
+    }
+</script>
+<script>
+  window.onload = function() {
+      // 解析 URL 中的 GET 參數
+      var params = new URLSearchParams(window.location.search);
+      var week = params.get('week'); // 獲取 'week' 參數
+
+      if (week) {var weekSelector = document.getElementById('week-selector');
+      weekSelector.value = week;
+  }};
+</script>
+<div class="shell">
+  <div class="container">
+    <div class="row">
+      
+      
+<div class="col-md-6">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=Opxhh9Oh3rg">
+            <img src="https://i.ytimg.com/vi/Opxhh9Oh3rg/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>最多國家第一</span>
+            </div>
+            <div class="title-product">
+              <h3>Now And Then</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20231103，歌手：披頭四樂團，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：6,126</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=Opxhh9Oh3rg" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=S8NzpB-1bP8">
+            <img src="https://i.ytimg.com/vi/S8NzpB-1bP8/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>塞爾維亞</span>
+            </div>
+            <div class="title-product">
+              <h3>BRESKVICA - DO GOLE KOZE (OFFICIAL VIDEO)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20231101，歌手：Generacija Zed，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：148,933</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=S8NzpB-1bP8" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=d8-3ffuTTZ8">
+            <img src="https://i.ytimg.com/vi/d8-3ffuTTZ8/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>俄羅斯</span>
+            </div>
+            <div class="title-product">
+              <h3>Царица</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20230722，歌手：ANNA ASTI，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：476,561</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=d8-3ffuTTZ8" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=UrQlK82qSFE">
+            <img src="https://i.ytimg.com/vi/UrQlK82qSFE/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>沙烏地阿拉伯</span>
+            </div>
+            <div class="title-product">
+              <h3>وسام المهندس  - مثل الوردة (حصرياً) | 2023 | Wesam Almuhandes - Methl Alwarda</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20230916，歌手：Ali Saber，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：193,791</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=UrQlK82qSFE" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=Opxhh9Oh3rg">
+            <img src="https://i.ytimg.com/vi/Opxhh9Oh3rg/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>瑞典</span>
+            </div>
+            <div class="title-product">
+              <h3>Now And Then</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20231103，歌手：披頭四樂團，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：10,615</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=Opxhh9Oh3rg" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=69lO08ar-mI">
+            <img src="https://i.ytimg.com/vi/69lO08ar-mI/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>薩爾瓦多</span>
+            </div>
+            <div class="title-product">
+              <h3>Según Quién</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20230817，歌手：馬盧瑪, Carin Leon，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：36,109</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=69lO08ar-mI" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=fQBqaga9ElU">
+            <img src="https://i.ytimg.com/vi/fQBqaga9ElU/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>土耳其</span>
+            </div>
+            <div class="title-product">
+              <h3>Enercii</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20230723，歌手：Dilan Polat，上週名次：2</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：829,988</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=fQBqaga9ElU" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=zzk-ydtCMuQ">
+            <img src="https://i.ytimg.com/vi/zzk-ydtCMuQ/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>坦尚尼亞</span>
+            </div>
+            <div class="title-product">
+              <h3>Siku 462</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20231106，歌手：傑教授，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：34,687</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=zzk-ydtCMuQ" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=82YXySmzq9k">
+            <img src="https://i.ytimg.com/vi/82YXySmzq9k/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>烏克蘭</span>
+            </div>
+            <div class="title-product">
+              <h3>Знайди мене</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20230922，歌手：Klavdia Petrivna，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：102,797</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=82YXySmzq9k" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=KrcwksKZy4c">
+            <img src="https://i.ytimg.com/vi/KrcwksKZy4c/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>烏干達</span>
+            </div>
+            <div class="title-product">
+              <h3>Pretty Pretty (remix) -   King Saha & Feffe  Bussi  (Official Video)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20231013，歌手：Feffe Bussi，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：17,239</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=KrcwksKZy4c" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=b_rpj_nMWBI">
+            <img src="https://i.ytimg.com/vi/b_rpj_nMWBI/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>美國</span>
+            </div>
+            <div class="title-product">
+              <h3>MR. TAKE YA B*TCH</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20231016，歌手：Lil Mabu，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：389,870</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=b_rpj_nMWBI" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=mo7MpQZRd5Q">
+            <img src="https://i.ytimg.com/vi/mo7MpQZRd5Q/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>烏拉圭</span>
+            </div>
+            <div class="title-product">
+              <h3>La Morocha</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20230706，歌手：Luck Ra, BM，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：71,917</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=mo7MpQZRd5Q" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=O5Bw1dzf3sE">
+            <img src="https://i.ytimg.com/vi/O5Bw1dzf3sE/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>南非</span>
+            </div>
+            <div class="title-product">
+              <h3>Dalie (Mixed)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20231011，歌手：Kamo Mphela, Khalil Harrison, Tyler ICU，上週名次：2</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：67,918</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=O5Bw1dzf3sE" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=nOjbJdw2dPs">
+            <img src="https://i.ytimg.com/vi/nOjbJdw2dPs/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>辛巴威</span>
+            </div>
+            <div class="title-product">
+              <h3>Man To Man (Official Visualizer)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20231101，歌手：Freeman HKD，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：12,889</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=nOjbJdw2dPs" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=VAdGW7QDJiU">
+            <img src="https://i.ytimg.com/vi/VAdGW7QDJiU/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>阿拉伯聯合大公國</span>
+            </div>
+            <div class="title-product">
+              <h3>Chaleya</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20230813，歌手：Arijit Singh, Shilpa Rao，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：29,408</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=VAdGW7QDJiU" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=mo7MpQZRd5Q">
+            <img src="https://i.ytimg.com/vi/mo7MpQZRd5Q/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>阿根廷</span>
+            </div>
+            <div class="title-product">
+              <h3>La Morocha</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20230706，歌手：Luck Ra, BM，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：971,079</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=mo7MpQZRd5Q" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=3xY7IAZwWGY">
+            <img src="https://i.ytimg.com/vi/3xY7IAZwWGY/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>奧地利</span>
+            </div>
+            <div class="title-product">
+              <h3>I hab an Almenrausch vom Enzian</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20231106，歌手：Die Gasteiner，上週名次：24</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：15,196</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=3xY7IAZwWGY" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=Opxhh9Oh3rg">
+            <img src="https://i.ytimg.com/vi/Opxhh9Oh3rg/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>澳洲</span>
+            </div>
+            <div class="title-product">
+              <h3>Now And Then</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20231103，歌手：披頭四樂團，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：48,010</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=Opxhh9Oh3rg" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=6WrVXWgn094">
+            <img src="https://i.ytimg.com/vi/6WrVXWgn094/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>比利時</span>
+            </div>
+            <div class="title-product">
+              <h3>Casanova</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20230706，歌手：Soolking，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：27,692</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=6WrVXWgn094" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=69lO08ar-mI">
+            <img src="https://i.ytimg.com/vi/69lO08ar-mI/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>玻利維亞</span>
+            </div>
+            <div class="title-product">
+              <h3>Según Quién</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20230817，歌手：馬盧瑪, Carin Leon，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：99,291</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=69lO08ar-mI" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=2FNiAPNK4Ig">
+            <img src="https://i.ytimg.com/vi/2FNiAPNK4Ig/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>巴西</span>
+            </div>
+            <div class="title-product">
+              <h3>Daqui pra Sempre</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20230922，歌手：Simone Mendes, Manu，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：1,412,309</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=2FNiAPNK4Ig" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=jADTdg-o8i0">
+            <img src="https://i.ytimg.com/vi/jADTdg-o8i0/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>加拿大</span>
+            </div>
+            <div class="title-product">
+              <h3>Hass Hass</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20231026，歌手：Sia, 格萊格·科爾斯汀, 迪爾吉特・杜新志，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：56,763</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=jADTdg-o8i0" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=OqIIy2FfZh0">
+            <img src="https://i.ytimg.com/vi/OqIIy2FfZh0/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>瑞士</span>
+            </div>
+            <div class="title-product">
+              <h3>Drama</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20231012，歌手：Dafina Zeqiri, Mozzik，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：15,903</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=OqIIy2FfZh0" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=LfwVGlW237o">
+            <img src="https://i.ytimg.com/vi/LfwVGlW237o/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>智利</span>
+            </div>
+            <div class="title-product">
+              <h3>ANDO</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20230927，歌手：Jere Klein，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：389,888</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=LfwVGlW237o" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=69lO08ar-mI">
+            <img src="https://i.ytimg.com/vi/69lO08ar-mI/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>哥倫比亞</span>
+            </div>
+            <div class="title-product">
+              <h3>Según Quién</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20230817，歌手：馬盧瑪, Carin Leon，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：246,073</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=69lO08ar-mI" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=69lO08ar-mI">
+            <img src="https://i.ytimg.com/vi/69lO08ar-mI/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>哥斯大黎加</span>
+            </div>
+            <div class="title-product">
+              <h3>Según Quién</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20230817，歌手：馬盧瑪, Carin Leon，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：39,192</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=69lO08ar-mI" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=TO1BHE8gFTE">
+            <img src="https://i.ytimg.com/vi/TO1BHE8gFTE/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>捷克</span>
+            </div>
+            <div class="title-product">
+              <h3>Upír Dex</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20231023，歌手：法蘭克·威德, Kafuu，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：29,527</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=TO1BHE8gFTE" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=8VeS7tmteNQ">
+            <img src="https://i.ytimg.com/vi/8VeS7tmteNQ/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>德國</span>
+            </div>
+            <div class="title-product">
+              <h3>ARKHAM ASYLUM</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20231102，歌手：Capital Bra, Joker Bra，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：110,119</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=8VeS7tmteNQ" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=Opxhh9Oh3rg">
+            <img src="https://i.ytimg.com/vi/Opxhh9Oh3rg/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>丹麥</span>
+            </div>
+            <div class="title-product">
+              <h3>Now And Then</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20231103，歌手：披頭四樂團，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：6,640</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=Opxhh9Oh3rg" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=5QPP2orqjJE">
+            <img src="https://i.ytimg.com/vi/5QPP2orqjJE/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>多明尼加共和國</span>
+            </div>
+            <div class="title-product">
+              <h3>Que La Choque</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20231001，歌手：Rochy RD，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：139,474</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=5QPP2orqjJE" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=69lO08ar-mI">
+            <img src="https://i.ytimg.com/vi/69lO08ar-mI/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>厄瓜多</span>
+            </div>
+            <div class="title-product">
+              <h3>Según Quién</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20230817，歌手：馬盧瑪, Carin Leon，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：117,315</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=69lO08ar-mI" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=GPN8XTwBzyw">
+            <img src="https://i.ytimg.com/vi/GPN8XTwBzyw/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>愛沙尼亞</span>
+            </div>
+            <div class="title-product">
+              <h3>võluväel</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20231012，歌手：Grete Paia，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：3,527</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=GPN8XTwBzyw" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=D9JxlYg1XVI">
+            <img src="https://i.ytimg.com/vi/D9JxlYg1XVI/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>埃及</span>
+            </div>
+            <div class="title-product">
+              <h3>Ahmed Saad - Ekhtayaraty | Official Music Video - 2023 | احمد سعد - اختياراتي</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20230622，歌手：艾哈邁德沙·薩阿德，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：221,605</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=D9JxlYg1XVI" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=0vRVHGzYJ_Q">
+            <img src="https://i.ytimg.com/vi/0vRVHGzYJ_Q/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>西班牙</span>
+            </div>
+            <div class="title-product">
+              <h3>CHULA</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20231107，歌手：JC Reyes，上週名次：0</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：193,546</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=0vRVHGzYJ_Q" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=n2XY9X9zOeA">
+            <img src="https://i.ytimg.com/vi/n2XY9X9zOeA/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>芬蘭</span>
+            </div>
+            <div class="title-product">
+              <h3>Taulut</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20230907，歌手：HUGO，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：14,927</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=n2XY9X9zOeA" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=6WrVXWgn094">
+            <img src="https://i.ytimg.com/vi/6WrVXWgn094/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>法國</span>
+            </div>
+            <div class="title-product">
+              <h3>Casanova</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20230706，歌手：Soolking，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：318,928</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=6WrVXWgn094" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=Opxhh9Oh3rg">
+            <img src="https://i.ytimg.com/vi/Opxhh9Oh3rg/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>英國</span>
+            </div>
+            <div class="title-product">
+              <h3>Now And Then</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20231103，歌手：披頭四樂團，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：117,984</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=Opxhh9Oh3rg" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=6q0JnftlH-I">
+            <img src="https://i.ytimg.com/vi/6q0JnftlH-I/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>全球</span>
+            </div>
+            <div class="title-product">
+              <h3>Standing Next to You (Choreography ver.)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20231107，歌手：亞瑟小子, 田柾國，上週名次：0</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：3,247,131</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=6q0JnftlH-I" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=Vr1M_l-1wjc">
+            <img src="https://i.ytimg.com/vi/Vr1M_l-1wjc/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>瓜地馬拉</span>
+            </div>
+            <div class="title-product">
+              <h3>EL AMOR DE SU VIDA</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20230803，歌手：Grupo Firme, Grupo Frontera，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：103,676</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=Vr1M_l-1wjc" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=Vr1M_l-1wjc">
+            <img src="https://i.ytimg.com/vi/Vr1M_l-1wjc/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>宏都拉斯</span>
+            </div>
+            <div class="title-product">
+              <h3>EL AMOR DE SU VIDA</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20230803，歌手：Grupo Firme, Grupo Frontera，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：60,598</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=Vr1M_l-1wjc" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=OuMq5pSVVwU">
+            <img src="https://i.ytimg.com/vi/OuMq5pSVVwU/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>匈牙利</span>
+            </div>
+            <div class="title-product">
+              <h3>3korty</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20230430，歌手：Azahriah，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：107,081</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=OuMq5pSVVwU" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=jia3fhBQ8qI">
+            <img src="https://i.ytimg.com/vi/jia3fhBQ8qI/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>印尼</span>
+            </div>
+            <div class="title-product">
+              <h3>penjaga hati</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20230811，歌手：Nadhif Basalamah，上週名次：2</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：703,859</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=jia3fhBQ8qI" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=pY6rJQqUG8A">
+            <img src="https://i.ytimg.com/vi/pY6rJQqUG8A/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>愛爾蘭</span>
+            </div>
+            <div class="title-product">
+              <h3>Street Festival performance - Journey Don't Stop Believing - Allie Sherlock cover</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20231106，歌手：Allie Sherlock，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：10,969</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=pY6rJQqUG8A" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=1HgKB4-kQdA">
+            <img src="https://i.ytimg.com/vi/1HgKB4-kQdA/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>以色列</span>
+            </div>
+            <div class="title-product">
+              <h3>עם ישראל חי</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20231019，歌手：艾歐·高蘭，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：226,599</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=1HgKB4-kQdA" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=2TYIa09PXyo">
+            <img src="https://i.ytimg.com/vi/2TYIa09PXyo/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>印度</span>
+            </div>
+            <div class="title-product">
+              <h3>BAARISH KE AANE SE</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20231107，歌手：Shreya Ghoshal, Tony Kakkar，上週名次：0</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：2,372,429</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=2TYIa09PXyo" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=Opxhh9Oh3rg">
+            <img src="https://i.ytimg.com/vi/Opxhh9Oh3rg/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>冰島</span>
+            </div>
+            <div class="title-product">
+              <h3>Now And Then</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20231103，歌手：披頭四樂團，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：535</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=Opxhh9Oh3rg" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=cHqS0XR8pns">
+            <img src="https://i.ytimg.com/vi/cHqS0XR8pns/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>義大利</span>
+            </div>
+            <div class="title-product">
+              <h3>Che t'o dico a fa'</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20231009，歌手：Angelina Mango，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：301,224</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=cHqS0XR8pns" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=pgXpM4l_MwI">
+            <img src="https://i.ytimg.com/vi/pgXpM4l_MwI/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>日本</span>
+            </div>
+            <div class="title-product">
+              <h3>Show</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20230906，歌手：Ado，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：1,230,274</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=pgXpM4l_MwI" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=yVlUVsMUxPk">
+            <img src="https://i.ytimg.com/vi/yVlUVsMUxPk/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>肯亞</span>
+            </div>
+            <div class="title-product">
+              <h3>ENJOY</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20230807，歌手：Jux，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：140,013</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=yVlUVsMUxPk" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=6q0JnftlH-I">
+            <img src="https://i.ytimg.com/vi/6q0JnftlH-I/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>南韓</span>
+            </div>
+            <div class="title-product">
+              <h3>Standing Next to You (Choreography ver.)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20231107，歌手：亞瑟小子, 田柾國，上週名次：0</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：481,271</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=6q0JnftlH-I" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=6WrVXWgn094">
+            <img src="https://i.ytimg.com/vi/6WrVXWgn094/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>盧森堡</span>
+            </div>
+            <div class="title-product">
+              <h3>Casanova</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20230706，歌手：Soolking，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：1,295</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=6WrVXWgn094" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=Vr1M_l-1wjc">
+            <img src="https://i.ytimg.com/vi/Vr1M_l-1wjc/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>墨西哥</span>
+            </div>
+            <div class="title-product">
+              <h3>EL AMOR DE SU VIDA</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20230803，歌手：Grupo Firme, Grupo Frontera，上週名次：2</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：1,102,776</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=Vr1M_l-1wjc" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=CqjdMdNWJ4Q">
+            <img src="https://i.ytimg.com/vi/CqjdMdNWJ4Q/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>奈及利亞</span>
+            </div>
+            <div class="title-product">
+              <h3>JESUS IYE</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20231103，歌手：Nathaniel Bassey，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：72,030</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=CqjdMdNWJ4Q" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=69lO08ar-mI">
+            <img src="https://i.ytimg.com/vi/69lO08ar-mI/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>尼加拉瓜</span>
+            </div>
+            <div class="title-product">
+              <h3>Según Quién</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20230817，歌手：馬盧瑪, Carin Leon，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：26,117</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=69lO08ar-mI" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=Opxhh9Oh3rg">
+            <img src="https://i.ytimg.com/vi/Opxhh9Oh3rg/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>荷蘭</span>
+            </div>
+            <div class="title-product">
+              <h3>Now And Then</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20231103，歌手：披頭四樂團，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：16,626</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=Opxhh9Oh3rg" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=Opxhh9Oh3rg">
+            <img src="https://i.ytimg.com/vi/Opxhh9Oh3rg/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>挪威</span>
+            </div>
+            <div class="title-product">
+              <h3>Now And Then</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20231103，歌手：披頭四樂團，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：6,126</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=Opxhh9Oh3rg" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=g-Ij0idc_dk">
+            <img src="https://i.ytimg.com/vi/g-Ij0idc_dk/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>紐西蘭</span>
+            </div>
+            <div class="title-product">
+              <h3>CASE</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20231004，歌手：Intense, 迪爾吉特・杜新志，上週名次：2</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：10,487</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=g-Ij0idc_dk" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=_SCdD7r9JZ4">
+            <img src="https://i.ytimg.com/vi/_SCdD7r9JZ4/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>巴拿馬</span>
+            </div>
+            <div class="title-product">
+              <h3>Abracadabra</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20230814，歌手：Barbel，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：24,839</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=_SCdD7r9JZ4" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=Rmj-q6SfKaE">
+            <img src="https://i.ytimg.com/vi/Rmj-q6SfKaE/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>祕魯</span>
+            </div>
+            <div class="title-product">
+              <h3>Grupo 5, Eddy Herrera - Amor Vuelve (En Vivo - Noche de Oro)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20230519，歌手：Grupo 5，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：197,179</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=Rmj-q6SfKaE" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=uNVBBXa6CB8">
+            <img src="https://i.ytimg.com/vi/uNVBBXa6CB8/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>波蘭</span>
+            </div>
+            <div class="title-product">
+              <h3>Nim Zajdzie Słońce</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20230810，歌手：多羅塔·拉布切夫斯卡, Smolasty，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：253,891</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=uNVBBXa6CB8" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=FcAcK6E2drU">
+            <img src="https://i.ytimg.com/vi/FcAcK6E2drU/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>葡萄牙</span>
+            </div>
+            <div class="title-product">
+              <h3>Carro</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20231022，歌手：芭芭拉·班德拉，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：47,430</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=FcAcK6E2drU" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=LTE9ktAcSQg">
+            <img src="https://i.ytimg.com/vi/LTE9ktAcSQg/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>巴拉圭</span>
+            </div>
+            <div class="title-product">
+              <h3>OJITOS ROJOS</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20230720，歌手：Ke Personajes, Grupo Frontera，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：40,490</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=LTE9ktAcSQg" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=_PNSUP65yu4">
+            <img src="https://i.ytimg.com/vi/_PNSUP65yu4/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>羅馬尼亞</span>
+            </div>
+            <div class="title-product">
+              <h3>Fato</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20231104，歌手：Bogdan DLP，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：228,022</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=_PNSUP65yu4" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+    </div>
+  </div>
+</div>
+<!-- partial -->
+  
+</body>
+</html>
