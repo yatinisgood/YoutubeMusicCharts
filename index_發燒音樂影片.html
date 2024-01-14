@@ -2,32 +2,1675 @@
 <html lang="zh-Hant-TW" >
 <head>
   <meta charset="UTF-8">
-  <title>Youtube Music 數據</title>
+  <title>全球發燒音樂影片</title>
   <meta property="og:image" content="https://raw.githubusercontent.com/yatinisgood/YoutubeMusicCharts/main/A_creative_and_eye-catching_image_featuring_a_musi_converted.png" />
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="https://yatinisgood.github.io/YoutubeMusicCharts/index_全球入榜播放次數最多.html"/>
   <meta name="og:description" content="發現 YouTube Music的最新熱門歌曲與影片。每週更新的全球點播排行、熱門歌手和音樂影片，以及 SHORTS 上的流行曲目，我們為您提供最深入的音樂趨勢分析。跟踪 YouTube 的音樂脈動：從發燒影片到每週熱播歌曲，再到全球點播進榜最多的曲目，我們提供全面的數據和洞察，讓您始終走在音樂潮流的最前沿。您的音樂趨勢導航：每週為您帶來 YouTube 上最受歡迎的歌曲、藝人和音樂影片。從主流到小眾，從長視頻到 Shorts，一站式探索音樂世界的每個角落。"/>
 <meta name="og:keywords" content="YouTube Music每週熱門,發燒影片分析,音樂流行趨勢,熱門歌手與歌曲,YouTuber愛用的 Shorts 音樂">
-<meta property="og:title" itemprop="name" content="Youtube Music 數據" />
+<meta property="og:title" itemprop="name" content="音樂潮流前線：追踪 YouTube 上的每週熱門歌曲與影片" />
   
 
   <meta property="og:locale" content="zh_TW" />
 <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
-<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css'><link rel="stylesheet" href="./style_type2.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css'><link rel="stylesheet" href="./style_type1.css">
 
 </head>
 <body>
+<!-- partial:index.partial.html -->
+<div class="container text-center">
+<h1>全球發燒音樂影片 (更新於20240114)</h1>
+  <span>Create With <i class="zmdi zmdi-favorite red"></i>  By: <strong>Sherlock Tsai</strong> </span>
+</div>
+<div class="container text-center dropdown-menu-spacing">
+    <!-- 下拉選單 -->
+    <select class="form-control" id="week-selector" onchange="goToWeek(this.value)">
+        <option value="">選擇一週</option>
+        <!--WEEKINFO_CONTENT-->
+        
+        
+    </select>
+</div>
+<script>
+    function goToWeek(weekFileName) {
+        if(weekFileName) {
+            window.location.href = weekFileName+ "?week=" + encodeURIComponent(weekFileName);
+        }
+    }
+</script>
+<script>
+  window.onload = function() {
+      // 解析 URL 中的 GET 參數
+      var params = new URLSearchParams(window.location.search);
+      var week = params.get('week'); // 獲取 'week' 參數
 
-<h2>提供幾個網頁</h2>
-<ul>
-  <li><a href="https://yatinisgood.github.io/YoutubeMusicCharts/index_%E7%99%BC%E7%87%92%E9%9F%B3%E6%A8%82%E5%BD%B1%E7%89%87.html">Youtube發燒影片: 持續更新</a></li>
-  <li><a href="https://yatinisgood.github.io/YoutubeMusicCharts/index_%E6%AF%8F%E9%80%B1%E7%86%B1%E6%92%AD%E6%AD%8C%E6%9B%B2.html">YoutubeMusic 每週熱播歌曲</a></li>
-  <li><a href="https://yatinisgood.github.io/YoutubeMusicCharts/index_%E6%AF%8F%E9%80%B1%E7%86%B1%E9%96%80%E9%9F%B3%E6%A8%82%E5%BD%B1%E7%89%87.html">YoutubeMusic 每週熱門音樂影片</a></li>
-  <li><a href="https://yatinisgood.github.io/YoutubeMusicCharts/index_%E6%AF%8F%E6%97%A5%E7%86%B1%E9%96%80%E9%9F%B3%E6%A8%82%E5%BD%B1%E7%89%87.html">YoutubeMusic 每日熱門音樂影片</a></li>
-  <li><a href="https://yatinisgood.github.io/YoutubeMusicCharts/index_%E6%AF%8F%E9%80%B1SHORTS%E7%86%B1%E9%96%80%E6%AD%8C%E6%9B%B2.html">YoutubeMusic 每週SHORTS熱門歌曲</a></li>
-  <li><a href="https://yatinisgood.github.io/YoutubeMusicCharts/index_%E6%AF%8F%E6%97%A5SHORTS%E7%86%B1%E9%96%80%E6%AD%8C%E6%9B%B2.html">YoutubeMusic 每日SHORTS熱門歌曲</a></li>
-  <li><a href="https://yatinisgood.github.io/YoutubeMusicCharts/index_%E6%AF%8F%E9%80%B1%E7%86%B1%E9%96%80%E6%AD%8C%E6%89%8B.html">YoutubeMusic 每週熱門歌手</a></li>               
-  <li><a href="https://yatinisgood.github.io/YoutubeMusicCharts/index_%E5%85%A8%E7%90%83%E5%85%A5%E6%A6%9C%E6%92%AD%E6%94%BE%E6%AC%A1%E6%95%B8%E6%9C%80%E5%A4%9A.html">YoutubeMusic: 全球點播進榜最多</a></li>
-</ul>
+      if (week) {var weekSelector = document.getElementById('week-selector');
+      weekSelector.value = week;
+  }};
+</script>
+<div class="shell">
+  <div class="container">
+    <div class="row">
+      
+      
+<div class="col-md-6">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=NaoNcERVF78">
+            <img src="https://i.ytimg.com/vi/NaoNcERVF78/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>最多國家第一</span>
+            </div>
+            <div class="title-product">
+              <h3>Young Miko: Bzrp Music Sessions, Vol. 58</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20240110，<p>歌手：Young Miko, Bizarrap</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">秒數：189</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=NaoNcERVF78" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
 
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=qrTC_pBFt3o">
+            <img src="https://i.ytimg.com/vi/qrTC_pBFt3o/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>南非</span>
+            </div>
+            <div class="title-product">
+              <h3>Imithandazo</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20231221，<p>歌手：Kabza De Small, Mthunzi</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">秒數：242</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=qrTC_pBFt3o" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=d2ofxg8pHfQ">
+            <img src="https://i.ytimg.com/vi/d2ofxg8pHfQ/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>阿拉伯聯合大公國</span>
+            </div>
+            <div class="title-product">
+              <h3>King Shit</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20240105，<p>歌手：Shubh</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">秒數：228</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=d2ofxg8pHfQ" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=d2ofxg8pHfQ">
+            <img src="https://i.ytimg.com/vi/d2ofxg8pHfQ/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>紐西蘭</span>
+            </div>
+            <div class="title-product">
+              <h3>King Shit</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20240105，<p>歌手：Shubh</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">秒數：228</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=d2ofxg8pHfQ" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=Ldn11dMHTJ8">
+            <img src="https://i.ytimg.com/vi/Ldn11dMHTJ8/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>印度</span>
+            </div>
+            <div class="title-product">
+              <h3>Kurchi Madathapetti</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20231230，<p>歌手：Thaman S, Sri Krishna, Sahithi Chaganti, Mahesh Babu, Saraswati Putra</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">秒數：224</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=Ldn11dMHTJ8" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=NaoNcERVF78">
+            <img src="https://i.ytimg.com/vi/NaoNcERVF78/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>阿根廷</span>
+            </div>
+            <div class="title-product">
+              <h3>Young Miko: Bzrp Music Sessions, Vol. 58</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20240110，<p>歌手：Young Miko, Bizarrap</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">秒數：189</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=NaoNcERVF78" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=NaoNcERVF78">
+            <img src="https://i.ytimg.com/vi/NaoNcERVF78/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>玻利維亞</span>
+            </div>
+            <div class="title-product">
+              <h3>Young Miko: Bzrp Music Sessions, Vol. 58</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20240110，<p>歌手：Young Miko, Bizarrap</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">秒數：189</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=NaoNcERVF78" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=NaoNcERVF78">
+            <img src="https://i.ytimg.com/vi/NaoNcERVF78/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>智利</span>
+            </div>
+            <div class="title-product">
+              <h3>Young Miko: Bzrp Music Sessions, Vol. 58</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20240110，<p>歌手：Young Miko, Bizarrap</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">秒數：189</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=NaoNcERVF78" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=NaoNcERVF78">
+            <img src="https://i.ytimg.com/vi/NaoNcERVF78/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>哥倫比亞</span>
+            </div>
+            <div class="title-product">
+              <h3>Young Miko: Bzrp Music Sessions, Vol. 58</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20240110，<p>歌手：Young Miko, Bizarrap</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">秒數：189</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=NaoNcERVF78" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=NaoNcERVF78">
+            <img src="https://i.ytimg.com/vi/NaoNcERVF78/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>哥斯大黎加</span>
+            </div>
+            <div class="title-product">
+              <h3>Young Miko: Bzrp Music Sessions, Vol. 58</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20240110，<p>歌手：Young Miko, Bizarrap</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">秒數：189</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=NaoNcERVF78" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=NaoNcERVF78">
+            <img src="https://i.ytimg.com/vi/NaoNcERVF78/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>厄瓜多</span>
+            </div>
+            <div class="title-product">
+              <h3>Young Miko: Bzrp Music Sessions, Vol. 58</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20240110，<p>歌手：Young Miko, Bizarrap</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">秒數：189</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=NaoNcERVF78" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=NaoNcERVF78">
+            <img src="https://i.ytimg.com/vi/NaoNcERVF78/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>西班牙</span>
+            </div>
+            <div class="title-product">
+              <h3>Young Miko: Bzrp Music Sessions, Vol. 58</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20240110，<p>歌手：Young Miko, Bizarrap</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">秒數：189</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=NaoNcERVF78" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=NaoNcERVF78">
+            <img src="https://i.ytimg.com/vi/NaoNcERVF78/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>瓜地馬拉</span>
+            </div>
+            <div class="title-product">
+              <h3>Young Miko: Bzrp Music Sessions, Vol. 58</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20240110，<p>歌手：Young Miko, Bizarrap</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">秒數：189</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=NaoNcERVF78" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=NaoNcERVF78">
+            <img src="https://i.ytimg.com/vi/NaoNcERVF78/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>宏都拉斯</span>
+            </div>
+            <div class="title-product">
+              <h3>Young Miko: Bzrp Music Sessions, Vol. 58</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20240110，<p>歌手：Young Miko, Bizarrap</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">秒數：189</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=NaoNcERVF78" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=NaoNcERVF78">
+            <img src="https://i.ytimg.com/vi/NaoNcERVF78/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>墨西哥</span>
+            </div>
+            <div class="title-product">
+              <h3>Young Miko: Bzrp Music Sessions, Vol. 58</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20240110，<p>歌手：Young Miko, Bizarrap</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">秒數：189</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=NaoNcERVF78" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=NaoNcERVF78">
+            <img src="https://i.ytimg.com/vi/NaoNcERVF78/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>尼加拉瓜</span>
+            </div>
+            <div class="title-product">
+              <h3>Young Miko: Bzrp Music Sessions, Vol. 58</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20240110，<p>歌手：Young Miko, Bizarrap</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">秒數：189</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=NaoNcERVF78" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=NaoNcERVF78">
+            <img src="https://i.ytimg.com/vi/NaoNcERVF78/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>巴拿馬</span>
+            </div>
+            <div class="title-product">
+              <h3>Young Miko: Bzrp Music Sessions, Vol. 58</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20240110，<p>歌手：Young Miko, Bizarrap</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">秒數：189</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=NaoNcERVF78" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=NaoNcERVF78">
+            <img src="https://i.ytimg.com/vi/NaoNcERVF78/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>祕魯</span>
+            </div>
+            <div class="title-product">
+              <h3>Young Miko: Bzrp Music Sessions, Vol. 58</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20240110，<p>歌手：Young Miko, Bizarrap</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">秒數：189</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=NaoNcERVF78" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=NaoNcERVF78">
+            <img src="https://i.ytimg.com/vi/NaoNcERVF78/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>巴拉圭</span>
+            </div>
+            <div class="title-product">
+              <h3>Young Miko: Bzrp Music Sessions, Vol. 58</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20240110，<p>歌手：Young Miko, Bizarrap</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">秒數：189</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=NaoNcERVF78" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=NaoNcERVF78">
+            <img src="https://i.ytimg.com/vi/NaoNcERVF78/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>薩爾瓦多</span>
+            </div>
+            <div class="title-product">
+              <h3>Young Miko: Bzrp Music Sessions, Vol. 58</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20240110，<p>歌手：Young Miko, Bizarrap</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">秒數：189</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=NaoNcERVF78" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=NaoNcERVF78">
+            <img src="https://i.ytimg.com/vi/NaoNcERVF78/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>烏拉圭</span>
+            </div>
+            <div class="title-product">
+              <h3>Young Miko: Bzrp Music Sessions, Vol. 58</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20240110，<p>歌手：Young Miko, Bizarrap</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">秒數：189</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=NaoNcERVF78" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=Y-gJhIl4pdc">
+            <img src="https://i.ytimg.com/vi/Y-gJhIl4pdc/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>瑞士</span>
+            </div>
+            <div class="title-product">
+              <h3>Lej</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20231226，<p>歌手：Don Xhoni, Dhurata Dora</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">秒數：148</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=Y-gJhIl4pdc" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=Y-gJhIl4pdc">
+            <img src="https://i.ytimg.com/vi/Y-gJhIl4pdc/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>瑞典</span>
+            </div>
+            <div class="title-product">
+              <h3>Lej</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20231226，<p>歌手：Don Xhoni, Dhurata Dora</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">秒數：148</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=Y-gJhIl4pdc" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=XBv6Bu-S14k">
+            <img src="https://i.ytimg.com/vi/XBv6Bu-S14k/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>荷蘭</span>
+            </div>
+            <div class="title-product">
+              <h3>Bankzitters - Slaaptekort</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20240106，<p>歌手：Bankzitters, Bankzitters</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">秒數：159</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=XBv6Bu-S14k" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=RKb9WiYcfLM">
+            <img src="https://i.ytimg.com/vi/RKb9WiYcfLM/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>葡萄牙</span>
+            </div>
+            <div class="title-product">
+              <h3>Maria Mariah</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20240101，<p>歌手：Mc Meno Dani, JC NO BEAT, DJ F7</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">秒數：130</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=RKb9WiYcfLM" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=OsZBAnmUR6Q">
+            <img src="https://i.ytimg.com/vi/OsZBAnmUR6Q/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>捷克</span>
+            </div>
+            <div class="title-product">
+              <h3>Jan Bendig ft. Vanesa Horáková - MATANI</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20240101，<p>歌手：Jan Bendig</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">秒數：269</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=OsZBAnmUR6Q" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=BgxjoVKNzPQ">
+            <img src="https://i.ytimg.com/vi/BgxjoVKNzPQ/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>多明尼加共和國</span>
+            </div>
+            <div class="title-product">
+              <h3>Yailin  La Mas Viral ❌ @MestizoIsBack  - TROLA REMIX (Video Oficial)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20240110，<p>歌手：Yailin la Mas Viral</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">秒數：147</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=BgxjoVKNzPQ" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=ui_u0M7_hjs">
+            <img src="https://i.ytimg.com/vi/ui_u0M7_hjs/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>愛沙尼亞</span>
+            </div>
+            <div class="title-product">
+              <h3>(nendest) narkootikumidest ei tea me (küll) midagi</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20231208，<p>歌手：5MIINUST, Puuluup</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">秒數：170</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=ui_u0M7_hjs" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=6hXcBy7EE3I">
+            <img src="https://i.ytimg.com/vi/6hXcBy7EE3I/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>芬蘭</span>
+            </div>
+            <div class="title-product">
+              <h3>Hautajaiset</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20240104，<p>歌手：Gettomasa, Sexmane</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">秒數：204</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=6hXcBy7EE3I" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=U4XlChpKckg">
+            <img src="https://i.ytimg.com/vi/U4XlChpKckg/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>匈牙利</span>
+            </div>
+            <div class="title-product">
+              <h3>No Woman No Cry</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20231221，<p>歌手：T. Danny</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">秒數：159</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=U4XlChpKckg" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=r-fBq_z-G58">
+            <img src="https://i.ytimg.com/vi/r-fBq_z-G58/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>印尼</span>
+            </div>
+            <div class="title-product">
+              <h3>Angin</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20240111，<p>歌手：Lesti</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">秒數：352</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=r-fBq_z-G58" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=nzzpX9BtFf4">
+            <img src="https://i.ytimg.com/vi/nzzpX9BtFf4/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>以色列</span>
+            </div>
+            <div class="title-product">
+              <h3>גן עדן של משוגעים</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20231221，<p>歌手：ששון איפרם שאולוב</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">秒數：172</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=nzzpX9BtFf4" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=1jqkDDh0v6o">
+            <img src="https://i.ytimg.com/vi/1jqkDDh0v6o/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>波蘭</span>
+            </div>
+            <div class="title-product">
+              <h3>Plaster</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20240106，<p>歌手：Deemz, Szpaku</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">秒數：158</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=1jqkDDh0v6o" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=eybKo4WgvgU">
+            <img src="https://i.ytimg.com/vi/eybKo4WgvgU/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>日本</span>
+            </div>
+            <div class="title-product">
+              <h3>LOVE TRIGGER</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20240104，<p>歌手：Snow Man</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">秒數：235</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=eybKo4WgvgU" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=lN2V93xElwY">
+            <img src="https://i.ytimg.com/vi/lN2V93xElwY/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>肯亞</span>
+            </div>
+            <div class="title-product">
+              <h3>Phina - Sisi ni Wale (Official Music Video)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20231228，<p>歌手：Phina</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">秒數：229</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=lN2V93xElwY" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=KIT59aHfNlA">
+            <img src="https://i.ytimg.com/vi/KIT59aHfNlA/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>坦尚尼亞</span>
+            </div>
+            <div class="title-product">
+              <h3>Nasikia Harufu</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20240103，<p>歌手：Roma Mkatoliki</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">秒數：224</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=KIT59aHfNlA" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=eITglqJqhHQ">
+            <img src="https://i.ytimg.com/vi/eITglqJqhHQ/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>羅馬尼亞</span>
+            </div>
+            <div class="title-product">
+              <h3>Da-i Drumul La Balans</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20231226，<p>歌手：Willy DLO, Bogdan DLP</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">秒數：165</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=eITglqJqhHQ" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=rhPpQWGm7Tk">
+            <img src="https://i.ytimg.com/vi/rhPpQWGm7Tk/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>烏克蘭</span>
+            </div>
+            <div class="title-product">
+              <h3>Холодно</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20240105，<p>歌手：Anastasia Prikhodko, SUROV</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">秒數：184</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=rhPpQWGm7Tk" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=PDhexY8OZcY">
+            <img src="https://i.ytimg.com/vi/PDhexY8OZcY/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>烏干達</span>
+            </div>
+            <div class="title-product">
+              <h3>Babongoote</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20231221，<p>歌手：大衛·盧塔洛</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">秒數：240</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=PDhexY8OZcY" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=4p_lxxWIx1A">
+            <img src="https://i.ytimg.com/vi/4p_lxxWIx1A/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>辛巴威</span>
+            </div>
+            <div class="title-product">
+              <h3>Dhanzi</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20240106，<p>歌手：Master H</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">秒數：178</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=4p_lxxWIx1A" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=0a3oQGKhp24">
+            <img src="https://i.ytimg.com/vi/0a3oQGKhp24/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>埃及</span>
+            </div>
+            <div class="title-product">
+              <h3>Tamer Ashour - Haygely Mawgow3 | تامر عاشور - هيجيلي موجوع</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20240111，<p>歌手：Tamer Ashour</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">秒數：210</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=0a3oQGKhp24" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=0a3oQGKhp24">
+            <img src="https://i.ytimg.com/vi/0a3oQGKhp24/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>沙烏地阿拉伯</span>
+            </div>
+            <div class="title-product">
+              <h3>Tamer Ashour - Haygely Mawgow3 | تامر عاشور - هيجيلي موجوع</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20240111，<p>歌手：Tamer Ashour</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">秒數：210</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=0a3oQGKhp24" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=eB6txyhHFG4">
+            <img src="https://i.ytimg.com/vi/eB6txyhHFG4/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>奧地利</span>
+            </div>
+            <div class="title-product">
+              <h3>yes, and? (official music video)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20240112，<p>歌手：Ariana Grande</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">秒數：275</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=eB6txyhHFG4" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=eB6txyhHFG4">
+            <img src="https://i.ytimg.com/vi/eB6txyhHFG4/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>澳洲</span>
+            </div>
+            <div class="title-product">
+              <h3>yes, and? (official music video)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20240112，<p>歌手：Ariana Grande</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">秒數：275</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=eB6txyhHFG4" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=eB6txyhHFG4">
+            <img src="https://i.ytimg.com/vi/eB6txyhHFG4/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>比利時</span>
+            </div>
+            <div class="title-product">
+              <h3>yes, and? (official music video)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20240112，<p>歌手：Ariana Grande</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">秒數：275</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=eB6txyhHFG4" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=eB6txyhHFG4">
+            <img src="https://i.ytimg.com/vi/eB6txyhHFG4/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>巴西</span>
+            </div>
+            <div class="title-product">
+              <h3>yes, and? (official music video)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20240112，<p>歌手：Ariana Grande</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">秒數：275</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=eB6txyhHFG4" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=eB6txyhHFG4">
+            <img src="https://i.ytimg.com/vi/eB6txyhHFG4/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>加拿大</span>
+            </div>
+            <div class="title-product">
+              <h3>yes, and? (official music video)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20240112，<p>歌手：Ariana Grande</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">秒數：275</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=eB6txyhHFG4" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=eB6txyhHFG4">
+            <img src="https://i.ytimg.com/vi/eB6txyhHFG4/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>丹麥</span>
+            </div>
+            <div class="title-product">
+              <h3>yes, and? (official music video)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20240112，<p>歌手：Ariana Grande</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">秒數：275</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=eB6txyhHFG4" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=eB6txyhHFG4">
+            <img src="https://i.ytimg.com/vi/eB6txyhHFG4/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>法國</span>
+            </div>
+            <div class="title-product">
+              <h3>yes, and? (official music video)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20240112，<p>歌手：Ariana Grande</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">秒數：275</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=eB6txyhHFG4" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=eB6txyhHFG4">
+            <img src="https://i.ytimg.com/vi/eB6txyhHFG4/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>英國</span>
+            </div>
+            <div class="title-product">
+              <h3>yes, and? (official music video)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20240112，<p>歌手：Ariana Grande</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">秒數：275</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=eB6txyhHFG4" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=eB6txyhHFG4">
+            <img src="https://i.ytimg.com/vi/eB6txyhHFG4/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>愛爾蘭</span>
+            </div>
+            <div class="title-product">
+              <h3>yes, and? (official music video)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20240112，<p>歌手：Ariana Grande</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">秒數：275</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=eB6txyhHFG4" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=eB6txyhHFG4">
+            <img src="https://i.ytimg.com/vi/eB6txyhHFG4/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>冰島</span>
+            </div>
+            <div class="title-product">
+              <h3>yes, and? (official music video)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20240112，<p>歌手：Ariana Grande</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">秒數：275</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=eB6txyhHFG4" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=eB6txyhHFG4">
+            <img src="https://i.ytimg.com/vi/eB6txyhHFG4/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>盧森堡</span>
+            </div>
+            <div class="title-product">
+              <h3>yes, and? (official music video)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20240112，<p>歌手：Ariana Grande</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">秒數：275</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=eB6txyhHFG4" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=eB6txyhHFG4">
+            <img src="https://i.ytimg.com/vi/eB6txyhHFG4/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>挪威</span>
+            </div>
+            <div class="title-product">
+              <h3>yes, and? (official music video)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20240112，<p>歌手：Ariana Grande</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">秒數：275</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=eB6txyhHFG4" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=eB6txyhHFG4">
+            <img src="https://i.ytimg.com/vi/eB6txyhHFG4/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>美國</span>
+            </div>
+            <div class="title-product">
+              <h3>yes, and? (official music video)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20240112，<p>歌手：Ariana Grande</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">秒數：275</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=eB6txyhHFG4" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=LwO5GU_yxfY">
+            <img src="https://i.ytimg.com/vi/LwO5GU_yxfY/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>塞爾維亞</span>
+            </div>
+            <div class="title-product">
+              <h3>CECA - ZA KRAJ (FILM NEDELJA)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20240111，<p>歌手：Ceca</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">秒數：276</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=LwO5GU_yxfY" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=lnsf4b69JbI">
+            <img src="https://i.ytimg.com/vi/lnsf4b69JbI/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>德國</span>
+            </div>
+            <div class="title-product">
+              <h3>K.I.Z - Frieden (Official Video) (prod. by Drunken Masters)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20240111，<p>歌手：K.I.Z</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">秒數：305</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=lnsf4b69JbI" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=oK19Qt-p_G8">
+            <img src="https://i.ytimg.com/vi/oK19Qt-p_G8/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>義大利</span>
+            </div>
+            <div class="title-product">
+              <h3>Milano Shotta Freestyle</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20240109，<p>歌手：Shiva, SHIVA</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">秒數：179</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=oK19Qt-p_G8" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=G9l5u9uR2Kg">
+            <img src="https://i.ytimg.com/vi/G9l5u9uR2Kg/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>俄羅斯</span>
+            </div>
+            <div class="title-product">
+              <h3>Qizil ko'ylak (remix by Dj Bobojon)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20240112，<p>歌手：Rayhon, Xamdam Sobirov</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">秒數：238</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=G9l5u9uR2Kg" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=sK66yT3lOoU">
+            <img src="https://i.ytimg.com/vi/sK66yT3lOoU/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>土耳其</span>
+            </div>
+            <div class="title-product">
+              <h3>DOĞUŞTAN BERİ HAKLIYIM (tmm)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20240111，<p>歌手：Lvbel C5</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">秒數：134</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=sK66yT3lOoU" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=XI4r_lw9gPk">
+            <img src="https://i.ytimg.com/vi/XI4r_lw9gPk/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>南韓</span>
+            </div>
+            <div class="title-product">
+              <h3>Love 119</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20240105，<p>歌手：RIIZE</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">秒數：174</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=XI4r_lw9gPk" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=D2NkA-7WILc">
+            <img src="https://i.ytimg.com/vi/D2NkA-7WILc/maxresdefault.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>奈及利亞</span>
+            </div>
+            <div class="title-product">
+              <h3>IDK</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20240112，<p>歌手：Wizkid</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">秒數：183</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=D2NkA-7WILc" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+    </div>
+  </div>
+</div>
+<!-- partial -->
+  
 </body>
+</html>
