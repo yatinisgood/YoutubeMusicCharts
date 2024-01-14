@@ -22,22 +22,6 @@
 <h1>全球發燒音樂影片 (更新於20240114)</h1>
   <span>Create With <i class="zmdi zmdi-favorite red"></i>  By: <strong>Sherlock Tsai</strong> </span>
 </div>
-<div class="container text-center dropdown-menu-spacing">
-    <!-- 下拉選單 -->
-    <select class="form-control" id="week-selector" onchange="goToWeek(this.value)">
-        <option value="">選擇一週</option>
-        <!--WEEKINFO_CONTENT-->
-        
-        
-    </select>
-</div>
-<script>
-    function goToWeek(weekFileName) {
-        if(weekFileName) {
-            window.location.href = weekFileName+ "?week=" + encodeURIComponent(weekFileName);
-        }
-    }
-</script>
 <script>
   window.onload = function() {
       // 解析 URL 中的 GET 參數
