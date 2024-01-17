@@ -1,0 +1,1390 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW" >
+<head>
+  <meta charset="UTF-8">
+  <title>巴西_熱播歌曲排行(依據國家)</title>
+  <meta property="og:image" content="https://raw.githubusercontent.com/yatinisgood/YoutubeMusicCharts/main/A_creative_and_eye-catching_image_featuring_a_musi_converted.png" />
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://yatinisgood.github.io/YoutubeMusicCharts/index_全球入榜播放次數最多.html"/>
+  <meta name="og:description" content="發現 YouTube Music的最新熱門歌曲與影片。每週更新的全球點播排行、熱門歌手和音樂影片，以及 SHORTS 上的流行曲目，我們為您提供最深入的音樂趨勢分析。跟踪 YouTube 的音樂脈動：從發燒影片到每週熱播歌曲，再到全球點播進榜最多的曲目，我們提供全面的數據和洞察，讓您始終走在音樂潮流的最前沿。您的音樂趨勢導航：每週為您帶來 YouTube 上最受歡迎的歌曲、藝人和音樂影片。從主流到小眾，從長視頻到 Shorts，一站式探索音樂世界的每個角落。"/>
+<meta name="og:keywords" content="YouTube Music每週熱門,發燒影片分析,音樂流行趨勢,熱門歌手與歌曲,YouTuber愛用的 Shorts 音樂">
+<meta property="og:title" itemprop="name" content="音樂潮流前線：追踪 YouTube 上的每週熱門歌曲與影片" />
+  
+
+  <meta property="og:locale" content="zh_TW" />
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css'><link rel="stylesheet" href="./style_type2.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container text-center">
+<h1>巴西_熱播歌曲排行(依據國家) (更新於20240117)</h1>
+  <span>Create With <i class="zmdi zmdi-favorite red"></i>  By: <strong>Sherlock Tsai</strong> </span>
+</div>
+<div class="container text-center dropdown-menu-spacing">
+    <!-- 下拉選單 -->
+    <select class="form-control" id="week-selector" onchange="goToWeek(this.value)">
+        <option value="">選擇國家</option>
+        <option value="index__熱播歌曲排行(依據國家)_全球.html">全球</option><option value="index__熱播歌曲排行(依據國家)_土耳其.html">土耳其</option><option value="index__熱播歌曲排行(依據國家)_丹麥.html">丹麥</option><option value="index__熱播歌曲排行(依據國家)_厄瓜多.html">厄瓜多</option><option value="index__熱播歌曲排行(依據國家)_巴西.html">巴西</option><option value="index__熱播歌曲排行(依據國家)_巴拉圭.html">巴拉圭</option><option value="index__熱播歌曲排行(依據國家)_巴拿馬.html">巴拿馬</option><option value="index__熱播歌曲排行(依據國家)_日本.html">日本</option><option value="index__熱播歌曲排行(依據國家)_比利時.html">比利時</option><option value="index__熱播歌曲排行(依據國家)_以色列.html">以色列</option><option value="index__熱播歌曲排行(依據國家)_加拿大.html">加拿大</option><option value="index__熱播歌曲排行(依據國家)_尼加拉瓜.html">尼加拉瓜</option><option value="index__熱播歌曲排行(依據國家)_瓜地馬拉.html">瓜地馬拉</option><option value="index__熱播歌曲排行(依據國家)_冰島.html">冰島</option><option value="index__熱播歌曲排行(依據國家)_匈牙利.html">匈牙利</option><option value="index__熱播歌曲排行(依據國家)_印尼.html">印尼</option><option value="index__熱播歌曲排行(依據國家)_印度.html">印度</option><option value="index__熱播歌曲排行(依據國家)_多明尼加共和國.html">多明尼加共和國</option><option value="index__熱播歌曲排行(依據國家)_西班牙.html">西班牙</option><option value="index__熱播歌曲排行(依據國家)_宏都拉斯.html">宏都拉斯</option><option value="index__熱播歌曲排行(依據國家)_沙烏地阿拉伯.html">沙烏地阿拉伯</option><option value="index__熱播歌曲排行(依據國家)_辛巴威.html">辛巴威</option><option value="index__熱播歌曲排行(依據國家)_坦尚尼亞.html">坦尚尼亞</option><option value="index__熱播歌曲排行(依據國家)_奈及利亞.html">奈及利亞</option><option value="index__熱播歌曲排行(依據國家)_法國.html">法國</option><option value="index__熱播歌曲排行(依據國家)_波蘭.html">波蘭</option><option value="index__熱播歌曲排行(依據國家)_肯亞.html">肯亞</option><option value="index__熱播歌曲排行(依據國家)_芬蘭.html">芬蘭</option><option value="index__熱播歌曲排行(依據國家)_阿拉伯聯合大公國.html">阿拉伯聯合大公國</option><option value="index__熱播歌曲排行(依據國家)_阿根廷.html">阿根廷</option><option value="index__熱播歌曲排行(依據國家)_俄羅斯.html">俄羅斯</option><option value="index__熱播歌曲排行(依據國家)_南非.html">南非</option><option value="index__熱播歌曲排行(依據國家)_南韓.html">南韓</option><option value="index__熱播歌曲排行(依據國家)_玻利維亞.html">玻利維亞</option><option value="index__熱播歌曲排行(依據國家)_美國.html">美國</option><option value="index__熱播歌曲排行(依據國家)_英國.html">英國</option><option value="index__熱播歌曲排行(依據國家)_哥倫比亞.html">哥倫比亞</option><option value="index__熱播歌曲排行(依據國家)_哥斯大黎加.html">哥斯大黎加</option><option value="index__熱播歌曲排行(依據國家)_埃及.html">埃及</option><option value="index__熱播歌曲排行(依據國家)_挪威.html">挪威</option><option value="index__熱播歌曲排行(依據國家)_烏干達.html">烏干達</option><option value="index__熱播歌曲排行(依據國家)_烏克蘭.html">烏克蘭</option><option value="index__熱播歌曲排行(依據國家)_烏拉圭.html">烏拉圭</option><option value="index__熱播歌曲排行(依據國家)_祕魯.html">祕魯</option><option value="index__熱播歌曲排行(依據國家)_紐西蘭.html">紐西蘭</option><option value="index__熱播歌曲排行(依據國家)_捷克.html">捷克</option><option value="index__熱播歌曲排行(依據國家)_荷蘭.html">荷蘭</option><option value="index__熱播歌曲排行(依據國家)_智利.html">智利</option><option value="index__熱播歌曲排行(依據國家)_塞爾維亞.html">塞爾維亞</option><option value="index__熱播歌曲排行(依據國家)_奧地利.html">奧地利</option><option value="index__熱播歌曲排行(依據國家)_愛沙尼亞.html">愛沙尼亞</option><option value="index__熱播歌曲排行(依據國家)_愛爾蘭.html">愛爾蘭</option><option value="index__熱播歌曲排行(依據國家)_瑞士.html">瑞士</option><option value="index__熱播歌曲排行(依據國家)_瑞典.html">瑞典</option><option value="index__熱播歌曲排行(依據國家)_義大利.html">義大利</option><option value="index__熱播歌曲排行(依據國家)_葡萄牙.html">葡萄牙</option><option value="index__熱播歌曲排行(依據國家)_德國.html">德國</option><option value="index__熱播歌曲排行(依據國家)_墨西哥.html">墨西哥</option><option value="index__熱播歌曲排行(依據國家)_澳洲.html">澳洲</option><option value="index__熱播歌曲排行(依據國家)_盧森堡.html">盧森堡</option><option value="index__熱播歌曲排行(依據國家)_薩爾瓦多.html">薩爾瓦多</option><option value="index__熱播歌曲排行(依據國家)_羅馬尼亞.html">羅馬尼亞</option>
+        
+        
+    </select>
+</div>
+<script>
+    function goToWeek(weekFileName) {
+        if(weekFileName) {
+            window.location.href = weekFileName+ "?week=" + encodeURIComponent(weekFileName);
+        }
+    }
+</script>
+<script>
+  window.onload = function() {
+      // 解析 URL 中的 GET 參數
+      var params = new URLSearchParams(window.location.search);
+      var week = params.get('week'); // 獲取 'week' 參數
+
+      if (week) {var weekSelector = document.getElementById('week-selector');
+      weekSelector.value = week;
+  }};
+</script>
+<div class="shell">
+  <div class="container">
+    <div class="row">
+      
+      
+<div class="col-md-6">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=rYKOuKaWEjg">
+            <img src="https://lh3.googleusercontent.com/MyD-WT8YLcAbCWGvYMWjA2RdVFYayP9BsOLK6LCX7m87sKrPEBQDI4IPHCsJbJbmrUTvLhaV1oesJDhg=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>進榜累計最多</span>
+            </div>
+            <div class="title-product">
+              <h3>Notificação Preferida (Ao Vivo)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20180518，歌手：Zé Neto & Cristiano，最後上榜日20231228</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：488,199,480</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=rYKOuKaWEjg" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=rYKOuKaWEjg">
+            <img src="https://lh3.googleusercontent.com/MyD-WT8YLcAbCWGvYMWjA2RdVFYayP9BsOLK6LCX7m87sKrPEBQDI4IPHCsJbJbmrUTvLhaV1oesJDhg=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>4億↑</span>
+            </div>
+            <div class="title-product">
+              <h3>Notificação Preferida (Ao Vivo)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20180518，歌手：Zé Neto & Cristiano，最後上榜日20231228</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：488,199,480</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=rYKOuKaWEjg" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=x0EPgyNd9o0">
+            <img src="https://lh3.googleusercontent.com/RT3r1z3b0gQ7I0UBU4AKYNDNQ1X9k_ZsMxc5W_SiSO7ew-G67yO0AudQZXdzDm1QWMJN7_5-GRDCAHH7=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>4億↑</span>
+            </div>
+            <div class="title-product">
+              <h3>Volta Bebê, Volta Neném</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20210326，歌手：Dj Guuga, DJ Ivis，最後上榜日20220303</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：440,064,199</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=x0EPgyNd9o0" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=tI55Zu9uZEM">
+            <img src="https://lh3.googleusercontent.com/80COn7asvrLP8YeEVydNZe-mNC7iGgaqXnD8nWN7jmUft4pgbYXDtvMOXwmWp8ypDArj3ESBrHY-VvRxQA=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>4億↑</span>
+            </div>
+            <div class="title-product">
+              <h3>Leão</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20221208，歌手：馬莉利亞·孟東嘉，最後上榜日20240104</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：416,966,348</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=tI55Zu9uZEM" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=qMEsx__88Gk">
+            <img src="https://lh3.googleusercontent.com/Z77L5iuRh-8j6CP3eSJPBgsTBbzzZqbtLRapUR3-lIOVtmuST8hpkxi3VR6tPMvECjyfhVS5WHv07msjKw=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>4億↑</span>
+            </div>
+            <div class="title-product">
+              <h3>Baby Me Atende</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20210225，歌手：Dilsinho, 馬瑟烏斯·費南德斯，最後上榜日20221229</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：413,680,711</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=qMEsx__88Gk" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=WcTRQXtXJPs">
+            <img src="https://lh3.googleusercontent.com/87c8YOJ_IXdo-Imn49f8NYAXApSLnBecrRDDrnkRp1iQom9IH9WGs5S1FCiSk23isxbwh-uQG3K4pHk=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>4億↑</span>
+            </div>
+            <div class="title-product">
+              <h3>Largado Às Traças (Acústico)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20180130，歌手：Zé Neto & Cristiano，最後上榜日20230907</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：411,449,467</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=WcTRQXtXJPs" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=X7TKxphukD0">
+            <img src="https://lh3.googleusercontent.com/dFYqsC2vFdV7Rng0yW2ORz2KfR48iAs9JANStWX6uapBuuLMTRgHJOxGy789Hd5WkYLbXaEwetHEUr6pXw=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>4億↑</span>
+            </div>
+            <div class="title-product">
+              <h3>Cobaia (Ao Vivo)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20181109，歌手：Lauana Prado, Maiara & Maraisa，最後上榜日20191010</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：401,473,429</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=X7TKxphukD0" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=fOrPSLkuI54">
+            <img src="https://lh3.googleusercontent.com/A6CaqII4wz2qCxHuW3YFUKcvuzj-2XQjKJMCUL46RLsHgryKSNyKJzdW-wi0MDgDOofUepE-hOXsOxbf=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>4億↑</span>
+            </div>
+            <div class="title-product">
+              <h3>Amor Falso (feat. 凱文賀)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20180530，歌手：Aldair Playboy, Wesley Safadão, Wesley Safadão, Aldair Playboy，最後上榜日20190124</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：400,042,537</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=fOrPSLkuI54" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=IJmxyfbRg0A">
+            <img src="https://lh3.googleusercontent.com/HI4Ta8ohV2X8Sdw_UymGvKWSHaQgWRhzGfdAmd7PPZ7QUorf_R8eT0mwCn2UWqWgwL7J2Wh9P1Uha3gL=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>億級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>Vou Ter Que Superar (Ao Vivo) (feat. 馬莉利亞·孟東嘉)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20190322，歌手：Matheus & Kauan，最後上榜日20231228</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：385,553,439</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=IJmxyfbRg0A" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=ff3r10rCKFs">
+            <img src="https://lh3.googleusercontent.com/OO_2rTC5BjyKhCCFnE1aYJ2zlmaJVVNrNMyNhS_ZrlgvuOetw2ZpZhhAiM0hB16-9EcgyZ1WGwtV4iLc=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>億級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>Liberdade Provisória (Ao Vivo)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20191206，歌手：Title Henrique & Juliano，最後上榜日20231228</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：382,614,121</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=ff3r10rCKFs" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=BRw8e5OGnrI">
+            <img src="https://lh3.googleusercontent.com/zKsXgQvkf8AHzAWkTUVJWO5kx6TkOExkDYv9fyt5VCWYo7HqbcA5lYra0-UMSjQCAmlviMoWHnoq3iWj=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>億級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>Quem Me Dera</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20181015，歌手：Márcia Fellipe, 傑里·史密斯，最後上榜日20191010</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：380,908,683</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=BRw8e5OGnrI" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=r9GrcxTGNWg">
+            <img src="https://lh3.googleusercontent.com/1ojEL3VnRmWV5qKZnpywFVM9rMhtASfIOExIlv-CY8VcqR3OCLmyodiYJi7_zIpOLcvUnnWM8hzSK_jA=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>億級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>Nosso Quadro</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20230201，歌手：Ana Castela，最後上榜日20240111</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：378,314,876</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=r9GrcxTGNWg" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=zKAAFsovtM4">
+            <img src="https://lh3.googleusercontent.com/4DMzPTJf3_BBq7V6R_Lo6NXweQv7HRf5ltyWz0vB0jrzvaHa0_LYHUy9Tj4BTbVaioe6qSMdhlOqx31y=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>億級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>Melhor eu ir/Ligando os Fatos/Sonho de Amor/Deixa eu te querer (Ao Vivo) (feat. Di Propósito & Vou Zuar)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20191213，歌手：Grupo Menos é Mais，最後上榜日20240104</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：363,355,083</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=zKAAFsovtM4" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=3vYeQLJ2as4">
+            <img src="https://lh3.googleusercontent.com/0X5X32x20vbT5fu436ejCis0HH7jHtzocbBzO_jdJv4n35r9K96ZEkfEwFameqhY70b183sf5AEPDCk_=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>億級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>Batom de Cereja</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20210128，歌手：Israel & Rodolffo，最後上榜日20220217</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：363,305,900</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=3vYeQLJ2as4" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=mr09lDl_Tfk">
+            <img src="https://lh3.googleusercontent.com/lmkCL7I9gYNlt48uEBmmhfYgRB4HTWGsLEhUN3GltW_b7RXHxMt80Nkbi32v8p-0M26FoY8NkY2P27KX=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>億級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>Erro Gostoso (Ao Vivo)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20230127，歌手：Simone Mendes，最後上榜日20240111</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：362,675,919</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=mr09lDl_Tfk" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=2nH7xAMqD2g">
+            <img src="https://lh3.googleusercontent.com/2ETGyr9jTu_VeMRhkW4d0eA431JjSDRjJA52KoMk-6y4oaxBXyuF3fTJ4pYJTktX3WYARFPO72370jQf=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>億級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>BEBI LIGUEI</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20181215，歌手：馬莉利亞·孟東嘉，最後上榜日20220414</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：360,128,000</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=2nH7xAMqD2g" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=Tun92VU2OkU">
+            <img src="https://lh3.googleusercontent.com/7FRne81IOBhUDnRbvz4XwduXcj9-Q_ZS-UF1T2KL_HFML2bpCwMUOI-odJYcMmPBvUiLyUFkpIXVRnYt=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>億級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>Oh Juliana</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20200517，歌手：Niack，最後上榜日20210506</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：358,337,724</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=Tun92VU2OkU" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=ebG36xtK87A">
+            <img src="https://lh3.googleusercontent.com/rbW2j4pcLCKo0pYRsZDOmJ5A-Uwnehp8sh9DgGwkedLPO9Sw9-MW3SLqyIcZE4o7MYIw6j8KA4C1muFv=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>億級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>BEM PIOR QUE EU</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20180907，歌手：馬莉利亞·孟東嘉，最後上榜日20211111</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：352,017,946</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=ebG36xtK87A" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=kpEQ3ReRQfg">
+            <img src="https://lh3.googleusercontent.com/ch8NeTsy60eO6slls_Sdn6R5IYBwDbvHTf4mdDJxaxMOaBsw6Brut5GeaYo6zWBP6k13WlNTrZMjhOgeAw=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>億級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>Não Fala Não Pra Mim (feat. 傑里·史密斯)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20180615，歌手：Humberto & Ronaldo，最後上榜日20190613</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：348,338,085</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=kpEQ3ReRQfg" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=7fMttPxpcmg">
+            <img src="https://lh3.googleusercontent.com/LFELkrgpF616dDo4BrqOPsqs2avX9fc1iHvk26Vb84VtbK_NOdaOADEIKHcZ_AH0C5x_a5Wk23SdT08A=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>億級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>Supera (Ao Vivo)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20190815，歌手：馬莉利亞·孟東嘉，最後上榜日20211111</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：338,146,730</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=7fMttPxpcmg" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=2PRAiVs3MVc">
+            <img src="https://lh3.googleusercontent.com/EBgS6g0duH8tPb1dm2zPKXp5Q4VIS11eXZNV3wj5NeVe3JlxakJ3BN2Y9Qrwr5iIriSq6gIvidKtvgkY=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>億級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>A Cara do Crime (Nós Incomoda)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20210526，歌手：Mainstreet, Neo Beats, Mc Poze do Rodo, PL Quest, Bielzin, MC Cabelinho，最後上榜日20220526</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：335,858,484</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=2PRAiVs3MVc" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=VntVkQRaAS8">
+            <img src="https://lh3.googleusercontent.com/j0IklDSnOXDJifu2nEquZtmSx7xtpbV6zFrHf2fOekXyb4dkmRZ0Lvmb7s0lW6cpl3ng2vGMR0VEz80=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>億級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>Facas (Ao Vivo)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20201015，歌手：Bruno & Marrone, Diego & Victor Hugo，最後上榜日20210930</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：334,875,610</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=VntVkQRaAS8" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=M76qUQTt_Sw">
+            <img src="https://lh3.googleusercontent.com/2wEnjzOj0LKTSNuT27gPYXCpismEo3j-IJBA-V2QomEvBZ3aIqVW9CnvVFu8QFVlSfszW4YlPhKsdzE=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>億級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>Atrasadinha</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20180913，歌手：Ferrugem, Felipe Araújo，最後上榜日20190718</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：333,695,096</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=M76qUQTt_Sw" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=k4xGU8xoA6w">
+            <img src="https://lh3.googleusercontent.com/xE0RLlvfHNbqA_kjOvmg6Sxooj1ED2I4nGkc4xkyTIqWFmtBmyQuX9AyaHIvatYFSpH1NDrEXsJpoBhbfA=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>億級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>Basta Você Me Ligar (Ao Vivo)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20200528，歌手：Os Barões Da Pisadinha，最後上榜日20210422</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：332,767,163</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=k4xGU8xoA6w" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=12-3ZAsO_xA">
+            <img src="https://lh3.googleusercontent.com/NTB54NlUVZs99cJdwH4L1FcLJ9_oAZRwh-XdUhJzVjm2t_Gq6Avh2zjA_ZWhcsqvxs-uN3ci86ixzbev=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>億級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>Bipolar</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20210405，歌手：MC Pedrinho, Mc Davi, MC Don Juan，最後上榜日20220317</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：332,646,702</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=12-3ZAsO_xA" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=ILADw1aretk">
+            <img src="https://lh3.googleusercontent.com/oOleWDQxPlCIAcsWivAgn9F5tA4vpHMEuNCG7T9ZU-lhLFpNqoEmA-kwMnkf8-GSIOgpwtArYEUriruiNg=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>億級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>TODO MUNDO VAI SOFRER</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20190516，歌手：馬莉利亞·孟東嘉，最後上榜日20211111</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：331,692,239</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=ILADw1aretk" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=TNIbXs_iNq8">
+            <img src="https://lh3.googleusercontent.com/PZwuS2aD2Cnxl8rSl8YB3eSsJOG1aE2-BprIl4Z5RY2FNB1VK2pXDmfHETkDiF0UMsXUU-iEK_ZYH5EU=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>億級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>Ameaça</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20211008，歌手：Paulo Pires, MC Danny, Marcynho Sensação，最後上榜日20221013</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：327,448,159</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=TNIbXs_iNq8" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=KbRtA_brCQ0">
+            <img src="https://lh3.googleusercontent.com/yd4gklevU9Ww_7oIemknX-uxmd_BTJc1uYzN9nOLv1FzqmVmV8yRRymV_4iWIdj11SCubXAKluOrjqDq=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>億級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>Ciumeira</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20180824，歌手：馬莉利亞·孟東嘉，最後上榜日20211111</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：325,124,980</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=KbRtA_brCQ0" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=bKnB-0fSwDA">
+            <img src="https://lh3.googleusercontent.com/SJBEPXPrywEAF8RrJxL1-0EASur1Yx9-Z9W-Zxk6rpSRir5uR7DVGfOtsfI0ZN4rtr5vHucciQewTpYF=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>億級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>Recairei (Ao Vivo)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20200416，歌手：Os Barões Da Pisadinha，最後上榜日20210422</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：321,822,955</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=bKnB-0fSwDA" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=8_oE-iQeFeE">
+            <img src="https://lh3.googleusercontent.com/rfWzU03MouUJHIUe2udj5Z0Cwt6qTC3Um5rdpn2DGOhTgUvF49EIl47RsYVQWnda_pZtg7f3hRkAolr2hw=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>億級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>Amor de Verdade</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20180330，歌手：MC Rita, MC Kekel，最後上榜日20190103</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：321,491,577</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=8_oE-iQeFeE" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=FnjexNf7Pdo">
+            <img src="https://lh3.googleusercontent.com/wLAIyAp3KcPtVqhJvq0IVhccqVMPIfkYYfvvC9YeEoL5EhEGuyIcCAxhnIoXC3eDWJAWcrnuL1rL--VG=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>億級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>Tapão Na Raba</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20210121，歌手：Raí Saia Rodada，最後上榜日20211230</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：320,235,127</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=FnjexNf7Pdo" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=TCLGN6m6AMI">
+            <img src="https://lh3.googleusercontent.com/V-ttdZUPqTqvgPsLlvh4HPzMXrEVMR_etDheJsH7GnXHvw1Zwujv-wmcfvBVhl-kR8RAZc3toOq_isvN=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>億級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>Esquema Preferido (Ao Vivo)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20210121，歌手：Os Barões Da Pisadinha，最後上榜日20221229</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：312,345,688</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=TCLGN6m6AMI" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=-6J3HfX4sbg">
+            <img src="https://i.ytimg.com/vi/-6J3HfX4sbg/default.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>億級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>Se For Amor (Ao Vivo)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20210528，歌手：Vitor Fernandes, João Gomes，最後上榜日20220303</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：306,160,147</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=-6J3HfX4sbg" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=rTJSWmgbVwA">
+            <img src="https://lh3.googleusercontent.com/oYzeKV_v8p5KRIZoHNLVZIqR1GiJBODd_Rlql7wgGbVVPT6gnpOm5GbalU-LKahS5G_g7es1ZY0afjGNGA=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>億級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>Termina Comigo Antes (Ao Vivo)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20220331，歌手：古斯塔沃利馬，最後上榜日20231228</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：305,767,113</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=rTJSWmgbVwA" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=kyfXEMqvLgU">
+            <img src="https://lh3.googleusercontent.com/MrMJywBduaH15WwEM77PAaq2NduED0kfqZW0VCQ6aVPA1ipNj0ZyxXrWTTGSNOuWz6z8AcsSvPmf9gvE=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>億級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>Mal Feito (Ao Vivo)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20220113，歌手：馬莉利亞·孟東嘉, Hugo & Guilherme，最後上榜日20231228</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：302,541,727</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=kyfXEMqvLgU" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=VfjFppJSvD4">
+            <img src="https://lh3.googleusercontent.com/MyD-WT8YLcAbCWGvYMWjA2RdVFYayP9BsOLK6LCX7m87sKrPEBQDI4IPHCsJbJbmrUTvLhaV1oesJDhg=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>億級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>STATUS QUE EU NÃO QUERIA</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20180518，歌手：Zé Neto & Cristiano，最後上榜日20190307</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：302,333,838</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=VfjFppJSvD4" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=iZq0u3quAqo">
+            <img src="https://lh3.googleusercontent.com/YgYzykQasGFZqtK57rJu3fHoZHtZuywzHkADyVVRnJ2WYRPdvCko3nModQFa0MhyiExd63dfYXB9Bkr4=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>億級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>Amor e Fé</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20200821，歌手：Hungria Hip-Hop，最後上榜日20220224</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：295,798,478</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=iZq0u3quAqo" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=2WsIm6pNlI4">
+            <img src="https://lh3.googleusercontent.com/c2FeSqUoLP-dQdyp4iHerCpsAZiKdx-kebkQe6JHxfKZlS4eb3flh00neLAOAcO7VioBr82rbX2ZuzqK=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>億級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>Estranho</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20180223，歌手：馬莉利亞·孟東嘉，最後上榜日20190321</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：292,171,690</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=2WsIm6pNlI4" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=mQr7XemLs8s">
+            <img src="https://lh3.googleusercontent.com/lJBBQ0uvMOsGHF4mDYq0VPssvnfNpeEhZiZltlcE5x9EZbwXJkntHrTj67b2HuhGBHmxDrGZo25FUlM=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>億級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>Propaganda (Ao Vivo)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20180223，歌手：Jorge & Mateus，最後上榜日20190307</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：291,318,577</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=mQr7XemLs8s" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=Btyfrd-UtSw">
+            <img src="https://lh3.googleusercontent.com/0EaST9iIDaptSxa_BvlZu29ebWaE3u4mKPGIDEuMy5L-2u7ogNZvjs0MZqw71lfIxw0C70DWTomqnhp1yA=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>億級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>O Bebê</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20180911，歌手：凱文賀, MC Kekel，最後上榜日20190321</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：286,763,751</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=Btyfrd-UtSw" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=69JAoslGYI8">
+            <img src="https://lh3.googleusercontent.com/jPON_YSmJh0hcCMFUf86GfRHTaCsNsb2fKidUbKF-jXtDHzxBdoF7fhBBrWBgYVf_o_3U74bMrd3lasF=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>億級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>Pipoco (feat. Melody, Dj Chris No Beat & Dj Chris No Beat)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20220520，歌手：Ana Castela，最後上榜日20230928</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：283,598,632</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=69JAoslGYI8" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=r0mNwyywHIY">
+            <img src="https://lh3.googleusercontent.com/iPmWv6FqJX19xuyeV4Efdk1jR4LUuBBi7fvS81kZYAUIm3tv28pDoc9IwRJMeEsuRJzKiL-bAkmd4yQG2w=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>億級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>Malvada</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20220121，歌手：Zé Felipe，最後上榜日20230119</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：283,308,652</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=r0mNwyywHIY" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=4N2iMmHcHys">
+            <img src="https://lh3.googleusercontent.com/u3ZYHijLOOU6agocXq78c9VdeAXfwPxq-8Iw2GQ5JiNQmx7nXt8hfsTwunHQyrBfguNfoJVCTwnWn3w=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>億級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>Fuleragem</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20180221，歌手：MC WM，最後上榜日20190214</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：280,910,210</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=4N2iMmHcHys" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=sjH-s6lozFk">
+            <img src="https://lh3.googleusercontent.com/BZFcwHCh6hzSie5M43bJBHPeAEtOvgUEn_4PyHBDXuM1RNrTXJzgGesFmvkSW2xud2hMBuEpUAzpCWCX=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>億級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>S de Saudade (Acústico)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20191024，歌手：Zé Neto & Cristiano, Luiza e Maurílio，最後上榜日20211230</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：280,654,380</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=sjH-s6lozFk" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=fdhzJPLkybM">
+            <img src="https://lh3.googleusercontent.com/puX-6TcxUerJYA5nixxzRmUFWlvhYMIjv9d3NZnqasTgpg07GgPPNhCWtlp_mjPfhSGZ1M0HsJTPD6E=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>億級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>Amor ou Litrão (feat. Petter Ferraz & Menor Nico)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20201015，歌手：Petter Ferraz，最後上榜日20210114</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：277,598,646</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=fdhzJPLkybM" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=vhPhZbO7OXE">
+            <img src="https://lh3.googleusercontent.com/ZBHKwcIU0maqI6SSWhPj_WQVlGLaYBvv53hq2FDvrd_OT-KN7-wnXAKS8oEQBJMF3NyeyxP0hRXTBE80=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>億級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>Surtada (Remix) (feat. OIK)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20190217，歌手：Tati Zaqui, Dadá Boladão，最後上榜日20200709</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：277,079,801</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=vhPhZbO7OXE" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=bN5xWBjYvQ0">
+            <img src="https://lh3.googleusercontent.com/jLQ2MDglD4buaDy_43q5j0TeFLlQVc0nIJIjextqanzjtkWN3yfYGzmYNGYQORSz9r28-R5Tv7fqJs-ePA=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>億級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>Milu</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20190626，歌手：古斯塔沃利馬，最後上榜日20200611</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：275,525,063</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=bN5xWBjYvQ0" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=HK7bSTeQw6U">
+            <img src="https://lh3.googleusercontent.com/jFZeTV1YkQ-zD7yXMkLRlZmyykUV9St8C3_I27-ZNqOfiKOEompRDURWC6AeVbM_MuWR-24FPCTxarE=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>億級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>Oi Balde (Ao Vivo)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20230216，歌手：Zé Neto & Cristiano，最後上榜日20240111</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：275,246,858</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=HK7bSTeQw6U" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=MsL7_oRXFOw">
+            <img src="https://lh3.googleusercontent.com/jGI47cDXEcS39ySLaLph1waRbnFZToZkBpWS2Rh8KpxwzUqZM27yumllSBjTHmNnTUu3BxhuJzlXt2iDAQ=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>億級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>Romance Desapegado</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20200811，歌手： Japinha Conde，最後上榜日20210318</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：269,415,375</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=MsL7_oRXFOw" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=4uQi5XvGI1M">
+            <img src="https://lh3.googleusercontent.com/uG7ZTl9jQBsbs1uHwCq1BGoACjq3G98g-rYtYX7kPH48e-NIXAFxTjUgFZmYYqEimn72c5Xbx5AWqug5=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>億級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>Péssimo Negócio (Ao Vivo)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20181029，歌手：Dilsinho，最後上榜日20191031</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：268,275,041</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=4uQi5XvGI1M" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=UybGw37WbuY">
+            <img src="https://lh3.googleusercontent.com/Cf-t2GHXTGhKM3KYTrIH6GbSb04asktTEZLS460WynAOdhHFakwYMjUWjjJAVo431YTYTexzYSS-5AK8=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>億級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>Tijolinho Por Tijolinho (feat. Zé Felipe)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20180810，歌手：Enzo Rabelo，最後上榜日20190613</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：267,529,564</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=UybGw37WbuY" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+    </div>
+  </div>
+</div>
+<!-- partial -->
+  
+</body>
+</html>
