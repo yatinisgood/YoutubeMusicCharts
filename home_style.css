@@ -1,0 +1,159 @@
+* {
+  font-family: 'Archivo Narrow', sans-serif;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  margin: 10px;
+  color: lightgray;
+}
+
+a:hover {
+/*  border-bottom: 2.4px solid green;*/
+/*  color: white;*/
+
+
+}
+.hover-underline:hover {
+  border-bottom: 2.4px solid green; /* 懸停時顯示的底線 */
+  color: white;
+}
+nav li {
+  display: inline-block;
+  margin-right: 35px;
+}
+
+h1 {
+  color: white;
+}
+
+i {
+  text:align;
+  margin: 0 auto;
+  position: absolute;
+  top: 60px;
+  right: 65px;
+}
+
+body {
+  background-color: #030507;
+  background: linear-gradient(42deg, #000000, #313030);
+  background-size: 220% 240%;
+}
+
+main {
+  width: 1440px;
+}
+
+.music {
+  width: 200px;
+  height: 200px;
+  border: 1px solid #333333;
+  display: inline-block;
+  margin-top: 50px;
+  margin-right: 20px;
+  vertical-align: top;
+  position: relative;
+}
+
+.music::before {
+  content: "";
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.christian {
+  background-image: url("https://images.pexels.com/photos/217041/pexels-photo-217041.jpeg?w=200&h=200&auto=compress&cs=tinysrgb");
+  background-size: cover;
+  background-position: center;
+}
+
+p {
+  position: absolute;
+  bottom: -50px;
+  width: 100%;
+}
+.shorts{
+
+  background-image: url("https://images.unsplash.com/photo-1513118172236-00b7cc57e1fa?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-position: center;
+}
+.earth {
+  background-image: url("https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-position: center;
+}
+.pop {
+  background-image: url("https://static.pexels.com/photos/134/light-creative-abstract-colorful.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.mood {
+  background-image: url("https://plus.unsplash.com/premium_photo-1675435645225-793f8ef9f707?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-position: center;
+}
+
+.hiphop {
+  background-image: url("https://static.pexels.com/photos/111295/pexels-photo-111295.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.chill {
+  background-image: url("https://static.pexels.com/photos/91224/pexels-photo-91224.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.latino {
+/*  background-image: url("https://static.pexels.com/photos/58737/pexels-photo-58737.jpeg");*/
+  background-image:url("https://images.unsplash.com/photo-1603126004372-e63e3b53934b?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-position: center;
+}
+
+.electronic {
+  background-image: url("https://static.pexels.com/photos/132836/pexels-photo-132836.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.country {
+  background-image: url("https://static.pexels.com/photos/467/nature-sky-clouds-field.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.rock {
+  background-image: url("https://static.pexels.com/photos/144428/pexels-photo-144428.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.focus {
+  background-image: url("https://static.pexels.com/photos/205317/pexels-photo-205317.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.randb {
+  background-image: url("https://static.pexels.com/photos/220211/pexels-photo-220211.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.party {
+  background-image: url("https://static.pexels.com/photos/248427/pexels-photo-248427.jpeg");
+  background-size: cover;
+  background-position: center;
+}
