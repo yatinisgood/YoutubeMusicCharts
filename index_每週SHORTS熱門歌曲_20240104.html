@@ -14,7 +14,7 @@
   <meta property="og:locale" content="zh_TW" />
 <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css'><link rel="stylesheet" href="./style_type2.css">
-
+<script src="dropdownlist_每週SHORTS熱門歌曲.js"></script>
 </head>
 <body>
 <!-- partial:index.partial.html -->
@@ -24,12 +24,7 @@
 </div>
 <div class="container text-center dropdown-menu-spacing">
     <!-- 下拉選單 -->
-    <select class="form-control" id="week-selector" onchange="goToWeek(this.value)">
-        <option value="">選擇一週</option>
-        <option value="index_每週SHORTS熱門歌曲_20240118.html">20240118</option><option value="index_每週SHORTS熱門歌曲_20240111.html">20240111</option><option value="index_每週SHORTS熱門歌曲_20240104.html">20240104</option><option value="index_每週SHORTS熱門歌曲_20231228.html">20231228</option><option value="index_每週SHORTS熱門歌曲_20231221.html">20231221</option><option value="index_每週SHORTS熱門歌曲_20231214.html">20231214</option><option value="index_每週SHORTS熱門歌曲_20231207.html">20231207</option><option value="index_每週SHORTS熱門歌曲_20231130.html">20231130</option><option value="index_每週SHORTS熱門歌曲_20231123.html">20231123</option><option value="index_每週SHORTS熱門歌曲_20231116.html">20231116</option><option value="index_每週SHORTS熱門歌曲_20231109.html">20231109</option><option value="index_每週SHORTS熱門歌曲_20231102.html">20231102</option>
-        
-        
-    </select>
+    <div id="dropdown-container"></div>    
 </div>
 <script>
     function goToWeek(weekFileName) {
@@ -71,8 +66,60 @@
               <p>發行日：20231229，歌手：Khatereh Group，上週名次：0</p>
             </div>
             <div class="card-footer">
-              <div class="wcf-left"><span class="price">觀賞次數：470,450</span></div>
+              <div class="wcf-left"><span class="price">觀賞次數：3,484</span></div>
               <div class="wcf-right"><a href="https://www.youtube.com/watch?v=D0IWjSoe8LY" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=zt6Qp7TjoGg">
+            <img src="https://lh3.googleusercontent.com/q7nb51ICn7xA08VdkFfrQoF2nq4nsqsFqKcFnmL80SI5UwU2PnlahzMANlvnKNmKhu8Je06kT4-sn6gH=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>德國</span>
+            </div>
+            <div class="title-product">
+              <h3>Blonde Chaya (Sped Up)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20220812，歌手：Amaru, Gringo Bamba，上週名次：3</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：4,768</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=zt6Qp7TjoGg" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=HTxwOxFt5d4">
+            <img src="https://lh3.googleusercontent.com/ETPhqVjlpLLikiynXmWM1MOXvsnzl-EwvzxBqKiG7jeibmpwaQ0TqayEPH-Qje9RDH-PpFQXu1eLwbkl=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>日本</span>
+            </div>
+            <div class="title-product">
+              <h3>人マニア</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20230812，歌手：Sasuke Haraguchi，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：4,949</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=HTxwOxFt5d4" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
             </div>
           </div>
         </div>
@@ -88,7 +135,7 @@
           </div>
           <div class="wsk-cp-text">
             <div class="category">
-              <span>阿拉伯聯合大公國</span>
+              <span>全球</span>
             </div>
             <div class="title-product">
               <h3>جمال قدو</h3>
@@ -97,7 +144,7 @@
               <p>發行日：20231229，歌手：Khatereh Group，上週名次：0</p>
             </div>
             <div class="card-footer">
-              <div class="wcf-left"><span class="price">觀賞次數：3,484</span></div>
+              <div class="wcf-left"><span class="price">觀賞次數：546,353</span></div>
               <div class="wcf-right"><a href="https://www.youtube.com/watch?v=D0IWjSoe8LY" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
             </div>
           </div>
@@ -108,23 +155,23 @@
 <div class="col-md-3">
         <div class="wsk-cp-product">
           <div class="wsk-cp-img">
-            <a href="https://www.youtube.com/watch?v=6mS0D085qx0">
-            <img src="https://lh3.googleusercontent.com/3Z3v-mLTZ99X48pJbEqZg0njWCqtM3jLyAZsmfGaZLo6NHNf0JCNHnpJ4srXFYN-080rriauclckziI=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            <a href="https://www.youtube.com/watch?v=b3rFbkFjRrA">
+            <img src="https://i.ytimg.com/vi/b3rFbkFjRrA/default.jpg" alt="Product" class="img-responsive" />
             </a>
           </div>
           <div class="wsk-cp-text">
             <div class="category">
-              <span>巴西</span>
+              <span>南韓</span>
             </div>
             <div class="title-product">
-              <h3>Cheiro de Mato (feat. Love Funk & DJ Neeh)</h3>
+              <h3>一笑江湖</h3>
             </div>
             <div class="description-prod">
-              <p>發行日：20231005，歌手：Gabi Saiury, Kotim, Mc Paiva ZS，上週名次：1</p>
+              <p>發行日：20230625，歌手：聞人聽書_，上週名次：1</p>
             </div>
             <div class="card-footer">
-              <div class="wcf-left"><span class="price">觀賞次數：30,761</span></div>
-              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=6mS0D085qx0" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+              <div class="wcf-left"><span class="price">觀賞次數：18,081</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=b3rFbkFjRrA" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
             </div>
           </div>
         </div>
@@ -134,23 +181,23 @@
 <div class="col-md-3">
         <div class="wsk-cp-product">
           <div class="wsk-cp-img">
-            <a href="https://www.youtube.com/watch?v=Iq8h3GEe22o">
-            <img src="https://lh3.googleusercontent.com/daZp320DKYD_PI1kT69uqlaQuhF2rfV8r_tE15GBE_mwMxZpOz6ejYXwaZB37_dM3Fk3JP51jNXP4qxt=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            <a href="https://www.youtube.com/watch?v=D0IWjSoe8LY">
+            <img src="https://i.ytimg.com/vi/D0IWjSoe8LY/default.jpg" alt="Product" class="img-responsive" />
             </a>
           </div>
           <div class="wsk-cp-text">
             <div class="category">
-              <span>英國</span>
+              <span>印度</span>
             </div>
             <div class="title-product">
-              <h3>Lovin On Me</h3>
+              <h3>جمال قدو</h3>
             </div>
             <div class="description-prod">
-              <p>發行日：20231101，歌手：Jack Harlow，上週名次：5</p>
+              <p>發行日：20231229，歌手：Khatereh Group，上週名次：0</p>
             </div>
             <div class="card-footer">
-              <div class="wcf-left"><span class="price">觀賞次數：9,815</span></div>
-              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=Iq8h3GEe22o" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+              <div class="wcf-left"><span class="price">觀賞次數：470,450</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=D0IWjSoe8LY" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
             </div>
           </div>
         </div>
@@ -212,6 +259,58 @@
 <div class="col-md-3">
         <div class="wsk-cp-product">
           <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=D0IWjSoe8LY">
+            <img src="https://i.ytimg.com/vi/D0IWjSoe8LY/default.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>阿拉伯聯合大公國</span>
+            </div>
+            <div class="title-product">
+              <h3>جمال قدو</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20231229，歌手：Khatereh Group，上週名次：0</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：3,484</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=D0IWjSoe8LY" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=6mS0D085qx0">
+            <img src="https://lh3.googleusercontent.com/3Z3v-mLTZ99X48pJbEqZg0njWCqtM3jLyAZsmfGaZLo6NHNf0JCNHnpJ4srXFYN-080rriauclckziI=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>巴西</span>
+            </div>
+            <div class="title-product">
+              <h3>Cheiro de Mato (feat. Love Funk & DJ Neeh)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20231005，歌手：Gabi Saiury, Kotim, Mc Paiva ZS，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：30,761</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=6mS0D085qx0" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
             <a href="https://www.youtube.com/watch?v=zJPEOhz5zZ4">
             <img src="https://lh3.googleusercontent.com/tq2985ChWYE_Okz5MeJmzPPSSi1vlzzhgKbAsXRIxtYJzig5mF5ZFv0FRWmeWC3jJ1FqlhtLi73OHLU4=w180-h180-l90-rj" alt="Product" class="img-responsive" />
             </a>
@@ -264,6 +363,32 @@
 <div class="col-md-3">
         <div class="wsk-cp-product">
           <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=Iq8h3GEe22o">
+            <img src="https://lh3.googleusercontent.com/daZp320DKYD_PI1kT69uqlaQuhF2rfV8r_tE15GBE_mwMxZpOz6ejYXwaZB37_dM3Fk3JP51jNXP4qxt=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>英國</span>
+            </div>
+            <div class="title-product">
+              <h3>Lovin On Me</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20231101，歌手：Jack Harlow，上週名次：5</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：9,815</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=Iq8h3GEe22o" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
             <a href="https://www.youtube.com/watch?v=dvgZkm1xWPE">
             <img src="https://lh3.googleusercontent.com/bxZTBpY7erVQlnSEarqeZlaDtIecqXKG2SUfatYuEdtiay85xd0N6AyFSaBBPIs7H_i0chNZGYPkbmc=w180-h180-l90-rj" alt="Product" class="img-responsive" />
             </a>
@@ -281,136 +406,6 @@
             <div class="card-footer">
               <div class="wcf-left"><span class="price">觀賞次數：4,026</span></div>
               <div class="wcf-right"><a href="https://www.youtube.com/watch?v=dvgZkm1xWPE" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-<div class="col-md-3">
-        <div class="wsk-cp-product">
-          <div class="wsk-cp-img">
-            <a href="https://www.youtube.com/watch?v=zt6Qp7TjoGg">
-            <img src="https://lh3.googleusercontent.com/q7nb51ICn7xA08VdkFfrQoF2nq4nsqsFqKcFnmL80SI5UwU2PnlahzMANlvnKNmKhu8Je06kT4-sn6gH=w180-h180-l90-rj" alt="Product" class="img-responsive" />
-            </a>
-          </div>
-          <div class="wsk-cp-text">
-            <div class="category">
-              <span>德國</span>
-            </div>
-            <div class="title-product">
-              <h3>Blonde Chaya (Sped Up)</h3>
-            </div>
-            <div class="description-prod">
-              <p>發行日：20220812，歌手：Amaru, Gringo Bamba，上週名次：3</p>
-            </div>
-            <div class="card-footer">
-              <div class="wcf-left"><span class="price">觀賞次數：4,768</span></div>
-              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=zt6Qp7TjoGg" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-<div class="col-md-3">
-        <div class="wsk-cp-product">
-          <div class="wsk-cp-img">
-            <a href="https://www.youtube.com/watch?v=D0IWjSoe8LY">
-            <img src="https://i.ytimg.com/vi/D0IWjSoe8LY/default.jpg" alt="Product" class="img-responsive" />
-            </a>
-          </div>
-          <div class="wsk-cp-text">
-            <div class="category">
-              <span>全球</span>
-            </div>
-            <div class="title-product">
-              <h3>جمال قدو</h3>
-            </div>
-            <div class="description-prod">
-              <p>發行日：20231229，歌手：Khatereh Group，上週名次：0</p>
-            </div>
-            <div class="card-footer">
-              <div class="wcf-left"><span class="price">觀賞次數：546,353</span></div>
-              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=D0IWjSoe8LY" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-<div class="col-md-3">
-        <div class="wsk-cp-product">
-          <div class="wsk-cp-img">
-            <a href="https://www.youtube.com/watch?v=HTxwOxFt5d4">
-            <img src="https://lh3.googleusercontent.com/ETPhqVjlpLLikiynXmWM1MOXvsnzl-EwvzxBqKiG7jeibmpwaQ0TqayEPH-Qje9RDH-PpFQXu1eLwbkl=w180-h180-l90-rj" alt="Product" class="img-responsive" />
-            </a>
-          </div>
-          <div class="wsk-cp-text">
-            <div class="category">
-              <span>日本</span>
-            </div>
-            <div class="title-product">
-              <h3>人マニア</h3>
-            </div>
-            <div class="description-prod">
-              <p>發行日：20230812，歌手：Sasuke Haraguchi，上週名次：1</p>
-            </div>
-            <div class="card-footer">
-              <div class="wcf-left"><span class="price">觀賞次數：4,949</span></div>
-              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=HTxwOxFt5d4" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-<div class="col-md-3">
-        <div class="wsk-cp-product">
-          <div class="wsk-cp-img">
-            <a href="https://www.youtube.com/watch?v=b3rFbkFjRrA">
-            <img src="https://i.ytimg.com/vi/b3rFbkFjRrA/default.jpg" alt="Product" class="img-responsive" />
-            </a>
-          </div>
-          <div class="wsk-cp-text">
-            <div class="category">
-              <span>南韓</span>
-            </div>
-            <div class="title-product">
-              <h3>一笑江湖</h3>
-            </div>
-            <div class="description-prod">
-              <p>發行日：20230625，歌手：聞人聽書_，上週名次：1</p>
-            </div>
-            <div class="card-footer">
-              <div class="wcf-left"><span class="price">觀賞次數：18,081</span></div>
-              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=b3rFbkFjRrA" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-<div class="col-md-3">
-        <div class="wsk-cp-product">
-          <div class="wsk-cp-img">
-            <a href="https://www.youtube.com/watch?v=D0IWjSoe8LY">
-            <img src="https://i.ytimg.com/vi/D0IWjSoe8LY/default.jpg" alt="Product" class="img-responsive" />
-            </a>
-          </div>
-          <div class="wsk-cp-text">
-            <div class="category">
-              <span>印度</span>
-            </div>
-            <div class="title-product">
-              <h3>جمال قدو</h3>
-            </div>
-            <div class="description-prod">
-              <p>發行日：20231229，歌手：Khatereh Group，上週名次：0</p>
-            </div>
-            <div class="card-footer">
-              <div class="wcf-left"><span class="price">觀賞次數：470,450</span></div>
-              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=D0IWjSoe8LY" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
             </div>
           </div>
         </div>

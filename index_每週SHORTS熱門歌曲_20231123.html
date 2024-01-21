@@ -14,7 +14,7 @@
   <meta property="og:locale" content="zh_TW" />
 <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css'><link rel="stylesheet" href="./style_type2.css">
-
+<script src="dropdownlist_每週SHORTS熱門歌曲.js"></script>
 </head>
 <body>
 <!-- partial:index.partial.html -->
@@ -24,12 +24,7 @@
 </div>
 <div class="container text-center dropdown-menu-spacing">
     <!-- 下拉選單 -->
-    <select class="form-control" id="week-selector" onchange="goToWeek(this.value)">
-        <option value="">選擇一週</option>
-        <option value="index_每週SHORTS熱門歌曲_20240118.html">20240118</option><option value="index_每週SHORTS熱門歌曲_20240111.html">20240111</option><option value="index_每週SHORTS熱門歌曲_20240104.html">20240104</option><option value="index_每週SHORTS熱門歌曲_20231228.html">20231228</option><option value="index_每週SHORTS熱門歌曲_20231221.html">20231221</option><option value="index_每週SHORTS熱門歌曲_20231214.html">20231214</option><option value="index_每週SHORTS熱門歌曲_20231207.html">20231207</option><option value="index_每週SHORTS熱門歌曲_20231130.html">20231130</option><option value="index_每週SHORTS熱門歌曲_20231123.html">20231123</option><option value="index_每週SHORTS熱門歌曲_20231116.html">20231116</option><option value="index_每週SHORTS熱門歌曲_20231109.html">20231109</option><option value="index_每週SHORTS熱門歌曲_20231102.html">20231102</option>
-        
-        
-    </select>
+    <div id="dropdown-container"></div>    
 </div>
 <script>
     function goToWeek(weekFileName) {
@@ -68,11 +63,37 @@
               <h3>ALL MY FELLAS</h3>
             </div>
             <div class="description-prod">
-              <p>發行日：20230919，歌手：Frizk，上週名次：5</p>
+              <p>發行日：20230919，歌手：Frizk，上週名次：1</p>
             </div>
             <div class="card-footer">
-              <div class="wcf-left"><span class="price">觀賞次數：1,363</span></div>
+              <div class="wcf-left"><span class="price">觀賞次數：7,955</span></div>
               <div class="wcf-right"><a href="https://www.youtube.com/watch?v=-ol3PSROlwg" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=pgXpM4l_MwI">
+            <img src="https://lh3.googleusercontent.com/5evy3cAEtV0wnFBD4y7Wx6zaIpSxWg8g07aBNgrFgF7Odb4wm1shBPVJfbeJEdV17A7Br3E3VUO7Wdu0=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>日本</span>
+            </div>
+            <div class="title-product">
+              <h3>唱</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20230829，歌手：Ado，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：6,254</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=pgXpM4l_MwI" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
             </div>
           </div>
         </div>
@@ -134,32 +155,6 @@
 <div class="col-md-3">
         <div class="wsk-cp-product">
           <div class="wsk-cp-img">
-            <a href="https://www.youtube.com/watch?v=pgXpM4l_MwI">
-            <img src="https://lh3.googleusercontent.com/5evy3cAEtV0wnFBD4y7Wx6zaIpSxWg8g07aBNgrFgF7Odb4wm1shBPVJfbeJEdV17A7Br3E3VUO7Wdu0=w180-h180-l90-rj" alt="Product" class="img-responsive" />
-            </a>
-          </div>
-          <div class="wsk-cp-text">
-            <div class="category">
-              <span>日本</span>
-            </div>
-            <div class="title-product">
-              <h3>唱</h3>
-            </div>
-            <div class="description-prod">
-              <p>發行日：20230829，歌手：Ado，上週名次：1</p>
-            </div>
-            <div class="card-footer">
-              <div class="wcf-left"><span class="price">觀賞次數：6,254</span></div>
-              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=pgXpM4l_MwI" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-<div class="col-md-3">
-        <div class="wsk-cp-product">
-          <div class="wsk-cp-img">
             <a href="https://www.youtube.com/watch?v=-ol3PSROlwg">
             <img src="https://lh3.googleusercontent.com/q7VvOK9qo0JdUGVTj-bZqrw_QCd-uTcG88N3cuNvOoDGaqivEhIKhmuOkyGhHcJm9QoaFsFBObRv4A=w180-h180-l90-rj" alt="Product" class="img-responsive" />
             </a>
@@ -203,32 +198,6 @@
             <div class="card-footer">
               <div class="wcf-left"><span class="price">觀賞次數：1,619</span></div>
               <div class="wcf-right"><a href="https://www.youtube.com/watch?v=IKRJAIcdock" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-<div class="col-md-3">
-        <div class="wsk-cp-product">
-          <div class="wsk-cp-img">
-            <a href="https://www.youtube.com/watch?v=-ol3PSROlwg">
-            <img src="https://lh3.googleusercontent.com/q7VvOK9qo0JdUGVTj-bZqrw_QCd-uTcG88N3cuNvOoDGaqivEhIKhmuOkyGhHcJm9QoaFsFBObRv4A=w180-h180-l90-rj" alt="Product" class="img-responsive" />
-            </a>
-          </div>
-          <div class="wsk-cp-text">
-            <div class="category">
-              <span>英國</span>
-            </div>
-            <div class="title-product">
-              <h3>ALL MY FELLAS</h3>
-            </div>
-            <div class="description-prod">
-              <p>發行日：20230919，歌手：Frizk，上週名次：1</p>
-            </div>
-            <div class="card-footer">
-              <div class="wcf-left"><span class="price">觀賞次數：7,955</span></div>
-              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=-ol3PSROlwg" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
             </div>
           </div>
         </div>
@@ -368,23 +337,23 @@
 <div class="col-md-3">
         <div class="wsk-cp-product">
           <div class="wsk-cp-img">
-            <a href="https://www.youtube.com/watch?v=b_rpj_nMWBI">
-            <img src="https://lh3.googleusercontent.com/ImktpblTInJd0PnzJHY4hrVY5DGN2LGyUPZV8oSEpIOOSUMZXx7edA_voByK1oMLm-EXFu32-DjrRFPY=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            <a href="https://www.youtube.com/watch?v=-ol3PSROlwg">
+            <img src="https://lh3.googleusercontent.com/q7VvOK9qo0JdUGVTj-bZqrw_QCd-uTcG88N3cuNvOoDGaqivEhIKhmuOkyGhHcJm9QoaFsFBObRv4A=w180-h180-l90-rj" alt="Product" class="img-responsive" />
             </a>
           </div>
           <div class="wsk-cp-text">
             <div class="category">
-              <span>美國</span>
+              <span>英國</span>
             </div>
             <div class="title-product">
-              <h3>MR. TAKE YA B*TCH (feat. chriseanrock)</h3>
+              <h3>ALL MY FELLAS</h3>
             </div>
             <div class="description-prod">
-              <p>發行日：20231016，歌手：Lil Mabu，上週名次：1</p>
+              <p>發行日：20230919，歌手：Frizk，上週名次：1</p>
             </div>
             <div class="card-footer">
-              <div class="wcf-left"><span class="price">觀賞次數：68,606</span></div>
-              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=b_rpj_nMWBI" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+              <div class="wcf-left"><span class="price">觀賞次數：7,955</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=-ol3PSROlwg" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
             </div>
           </div>
         </div>
@@ -411,6 +380,32 @@
             <div class="card-footer">
               <div class="wcf-left"><span class="price">觀賞次數：247,652</span></div>
               <div class="wcf-right"><a href="https://www.youtube.com/watch?v=t7wSjy9Lv-o" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=b_rpj_nMWBI">
+            <img src="https://lh3.googleusercontent.com/ImktpblTInJd0PnzJHY4hrVY5DGN2LGyUPZV8oSEpIOOSUMZXx7edA_voByK1oMLm-EXFu32-DjrRFPY=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>美國</span>
+            </div>
+            <div class="title-product">
+              <h3>MR. TAKE YA B*TCH (feat. chriseanrock)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20231016，歌手：Lil Mabu，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：68,606</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=b_rpj_nMWBI" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
             </div>
           </div>
         </div>
