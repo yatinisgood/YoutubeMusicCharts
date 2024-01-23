@@ -1,0 +1,1390 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW" >
+<head>
+  <meta charset="UTF-8">
+  <title>烏拉圭_熱播歌曲排行(依據國家)</title>
+  <meta property="og:image" content="https://raw.githubusercontent.com/yatinisgood/YoutubeMusicCharts/main/A_creative_and_eye-catching_image_featuring_a_musi_converted.png" />
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://yatinisgood.github.io/YoutubeMusicCharts/index_全球入榜播放次數最多.html"/>
+  <meta name="og:description" content="發現 YouTube Music的最新熱門歌曲與影片。每週更新的全球點播排行、熱門歌手和音樂影片，以及 SHORTS 上的流行曲目，我們為您提供最深入的音樂趨勢分析。跟踪 YouTube 的音樂脈動：從發燒影片到每週熱播歌曲，再到全球點播進榜最多的曲目，我們提供全面的數據和洞察，讓您始終走在音樂潮流的最前沿。您的音樂趨勢導航：每週為您帶來 YouTube 上最受歡迎的歌曲、藝人和音樂影片。從主流到小眾，從長視頻到 Shorts，一站式探索音樂世界的每個角落。"/>
+<meta name="og:keywords" content="YouTube Music每週熱門,發燒影片分析,音樂流行趨勢,熱門歌手與歌曲,YouTuber愛用的 Shorts 音樂">
+<meta property="og:title" itemprop="name" content="音樂潮流前線：追踪 YouTube 上的每週熱門歌曲與影片" />
+  
+
+  <meta property="og:locale" content="zh_TW" />
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css'><link rel="stylesheet" href="./style_type2.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container text-center">
+<h1>烏拉圭_熱播歌曲排行(依據國家) (更新於20240123)</h1>
+  <span>Create With <i class="zmdi zmdi-favorite red"></i>  By: <strong>Sherlock Tsai</strong> </span>
+</div>
+<div class="container text-center dropdown-menu-spacing">
+    <!-- 下拉選單 -->
+    <select class="form-control" id="week-selector" onchange="goToWeek(this.value)">
+        <option value="">選擇國家</option>
+        <option value="index__熱播歌曲排行(依據國家)_全球.html">全球</option><option value="index__熱播歌曲排行(依據國家)_土耳其.html">土耳其</option><option value="index__熱播歌曲排行(依據國家)_丹麥.html">丹麥</option><option value="index__熱播歌曲排行(依據國家)_厄瓜多.html">厄瓜多</option><option value="index__熱播歌曲排行(依據國家)_巴西.html">巴西</option><option value="index__熱播歌曲排行(依據國家)_巴拉圭.html">巴拉圭</option><option value="index__熱播歌曲排行(依據國家)_巴拿馬.html">巴拿馬</option><option value="index__熱播歌曲排行(依據國家)_日本.html">日本</option><option value="index__熱播歌曲排行(依據國家)_比利時.html">比利時</option><option value="index__熱播歌曲排行(依據國家)_以色列.html">以色列</option><option value="index__熱播歌曲排行(依據國家)_加拿大.html">加拿大</option><option value="index__熱播歌曲排行(依據國家)_尼加拉瓜.html">尼加拉瓜</option><option value="index__熱播歌曲排行(依據國家)_瓜地馬拉.html">瓜地馬拉</option><option value="index__熱播歌曲排行(依據國家)_冰島.html">冰島</option><option value="index__熱播歌曲排行(依據國家)_匈牙利.html">匈牙利</option><option value="index__熱播歌曲排行(依據國家)_印尼.html">印尼</option><option value="index__熱播歌曲排行(依據國家)_印度.html">印度</option><option value="index__熱播歌曲排行(依據國家)_多明尼加共和國.html">多明尼加共和國</option><option value="index__熱播歌曲排行(依據國家)_西班牙.html">西班牙</option><option value="index__熱播歌曲排行(依據國家)_宏都拉斯.html">宏都拉斯</option><option value="index__熱播歌曲排行(依據國家)_沙烏地阿拉伯.html">沙烏地阿拉伯</option><option value="index__熱播歌曲排行(依據國家)_辛巴威.html">辛巴威</option><option value="index__熱播歌曲排行(依據國家)_坦尚尼亞.html">坦尚尼亞</option><option value="index__熱播歌曲排行(依據國家)_奈及利亞.html">奈及利亞</option><option value="index__熱播歌曲排行(依據國家)_法國.html">法國</option><option value="index__熱播歌曲排行(依據國家)_波蘭.html">波蘭</option><option value="index__熱播歌曲排行(依據國家)_肯亞.html">肯亞</option><option value="index__熱播歌曲排行(依據國家)_芬蘭.html">芬蘭</option><option value="index__熱播歌曲排行(依據國家)_阿拉伯聯合大公國.html">阿拉伯聯合大公國</option><option value="index__熱播歌曲排行(依據國家)_阿根廷.html">阿根廷</option><option value="index__熱播歌曲排行(依據國家)_俄羅斯.html">俄羅斯</option><option value="index__熱播歌曲排行(依據國家)_南非.html">南非</option><option value="index__熱播歌曲排行(依據國家)_南韓.html">南韓</option><option value="index__熱播歌曲排行(依據國家)_玻利維亞.html">玻利維亞</option><option value="index__熱播歌曲排行(依據國家)_美國.html">美國</option><option value="index__熱播歌曲排行(依據國家)_英國.html">英國</option><option value="index__熱播歌曲排行(依據國家)_哥倫比亞.html">哥倫比亞</option><option value="index__熱播歌曲排行(依據國家)_哥斯大黎加.html">哥斯大黎加</option><option value="index__熱播歌曲排行(依據國家)_埃及.html">埃及</option><option value="index__熱播歌曲排行(依據國家)_挪威.html">挪威</option><option value="index__熱播歌曲排行(依據國家)_烏干達.html">烏干達</option><option value="index__熱播歌曲排行(依據國家)_烏克蘭.html">烏克蘭</option><option value="index__熱播歌曲排行(依據國家)_烏拉圭.html">烏拉圭</option><option value="index__熱播歌曲排行(依據國家)_祕魯.html">祕魯</option><option value="index__熱播歌曲排行(依據國家)_紐西蘭.html">紐西蘭</option><option value="index__熱播歌曲排行(依據國家)_捷克.html">捷克</option><option value="index__熱播歌曲排行(依據國家)_荷蘭.html">荷蘭</option><option value="index__熱播歌曲排行(依據國家)_智利.html">智利</option><option value="index__熱播歌曲排行(依據國家)_塞爾維亞.html">塞爾維亞</option><option value="index__熱播歌曲排行(依據國家)_奧地利.html">奧地利</option><option value="index__熱播歌曲排行(依據國家)_愛沙尼亞.html">愛沙尼亞</option><option value="index__熱播歌曲排行(依據國家)_愛爾蘭.html">愛爾蘭</option><option value="index__熱播歌曲排行(依據國家)_瑞士.html">瑞士</option><option value="index__熱播歌曲排行(依據國家)_瑞典.html">瑞典</option><option value="index__熱播歌曲排行(依據國家)_義大利.html">義大利</option><option value="index__熱播歌曲排行(依據國家)_葡萄牙.html">葡萄牙</option><option value="index__熱播歌曲排行(依據國家)_德國.html">德國</option><option value="index__熱播歌曲排行(依據國家)_墨西哥.html">墨西哥</option><option value="index__熱播歌曲排行(依據國家)_澳洲.html">澳洲</option><option value="index__熱播歌曲排行(依據國家)_盧森堡.html">盧森堡</option><option value="index__熱播歌曲排行(依據國家)_薩爾瓦多.html">薩爾瓦多</option><option value="index__熱播歌曲排行(依據國家)_羅馬尼亞.html">羅馬尼亞</option>
+        
+        
+    </select>
+</div>
+<script>
+    function goToWeek(weekFileName) {
+        if(weekFileName) {
+            window.location.href = weekFileName+ "?week=" + encodeURIComponent(weekFileName);
+        }
+    }
+</script>
+<script>
+  window.onload = function() {
+      // 解析 URL 中的 GET 參數
+      var params = new URLSearchParams(window.location.search);
+      var week = params.get('week'); // 獲取 'week' 參數
+
+      if (week) {var weekSelector = document.getElementById('week-selector');
+      weekSelector.value = week;
+  }};
+</script>
+<div class="shell">
+  <div class="container">
+    <div class="row">
+      
+      
+<div class="col-md-6">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=PTfntSlhnwY">
+            <img src="https://lh3.googleusercontent.com/6r1vu88-mf_xU3uUpyI7Q2oJr-pBZN7OKNEvs3c_pBsoe4Mmg_shHHUL2J53kkoLVG4QlbIRZuBvzkE6=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>進榜累計最多</span>
+            </div>
+            <div class="title-product">
+              <h3>M.A (Remix) (feat. 洛拉・恩狄高)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20230405，歌手：La Joaqui, Callejero Fino, BM，最後上榜日20231005</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：24,460,032</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=PTfntSlhnwY" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=PTfntSlhnwY">
+            <img src="https://lh3.googleusercontent.com/6r1vu88-mf_xU3uUpyI7Q2oJr-pBZN7OKNEvs3c_pBsoe4Mmg_shHHUL2J53kkoLVG4QlbIRZuBvzkE6=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>千萬級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>M.A (Remix) (feat. 洛拉・恩狄高)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20230405，歌手：La Joaqui, Callejero Fino, BM，最後上榜日20231005</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：24,460,032</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=PTfntSlhnwY" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=YgrwMV6DT5Y">
+            <img src="https://lh3.googleusercontent.com/vlWWNLYEbX8RVRku7DJJf0H-THHPMHZmcnRSC_pDEFadKp068kBMwGoJPPxZ63hGtvTwMfLB5O-YMIk=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>千萬級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>En La Intimidad | CROSSOVER #1</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20230118，歌手：Big One, 艾蜜莉亞·邁恩斯, Callejero Fino，最後上榜日20240118</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：21,977,116</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=YgrwMV6DT5Y" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=A_g3lMcWVy0">
+            <img src="https://lh3.googleusercontent.com/_xtNRdAigNR0XtdJuEUCtsHyRYd2WladgU-k3YgR3x-B_CtGGl_828i9Vsu-blCKlYlVJ0b1ie8Jyp1Q=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>千萬級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>Quevedo: Bzrp Music Sessions, Vol. 52</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20220706，歌手：Quevedo, Bizarrap，最後上榜日20230629</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：18,723,359</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=A_g3lMcWVy0" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=d2HmiKVoTNA">
+            <img src="https://lh3.googleusercontent.com/orNIRTwYBkBgZ-S6fsiivicg9Admg433wYeg03DZXg68Lbjme1_ik57Tjc8-nqXPjNfBb_wEPpiYnXc=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>千萬級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>Un Finde | CROSSOVER #2</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20230404，歌手：Big One, FMK, Ke Personajes，最後上榜日20240118</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：17,674,216</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=d2HmiKVoTNA" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=0VR3dfZf9Yg">
+            <img src="https://lh3.googleusercontent.com/YMZykrPBM5idYg5PW8bUlKJS6usZzbVmJYHqEufzJN88195TeoPvwxiD1eL19sIHQH3BlLVmhEjsCEUp=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>千萬級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>China</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20171223，歌手：洋基老爹, J·巴爾文, Ozuna, Anuel AA, KAROL G，最後上榜日20230706</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：17,525,695</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=0VR3dfZf9Yg" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=AtalMwsn7fs">
+            <img src="https://lh3.googleusercontent.com/rbnnM8TR12NVmbHcWpHL68_N_eIzRY7e-30mPWoFv9ShfV6KNRtHapr82kQhwxDtbmxh5yc8pBNgjRNZ=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>千萬級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>Tu Turrito</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20220504，歌手：Callejero Fino, Rei，最後上榜日20240104</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：15,888,871</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=AtalMwsn7fs" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=pK060iUFWXg">
+            <img src="https://lh3.googleusercontent.com/ts3k1mXvDKaMXh1EqPyKP7fAsBE3Xr2pgHSW8PRpcTw4954Z4pUyMudcMUAwLOuVlGQGwXUBwp3mB7cz=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>千萬級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>Hawái</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20200601，歌手：Maluma, 馬盧瑪，最後上榜日20210401</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：15,639,730</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=pK060iUFWXg" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=Dcow-Jp3Ak4">
+            <img src="https://lh3.googleusercontent.com/QsNq2VcBM-a2qqbic0Bv9om32TDQen40b1omHGtoM_MdxCZArU4dvGvUuST64MzaxnyldDRayvAtrQWa=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>千萬級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>Pobre Corazón (En Vivo) (feat. Onda Sabanera)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20230301，歌手：Ke Personajes，最後上榜日20240118</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：15,375,417</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=Dcow-Jp3Ak4" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=mo7MpQZRd5Q">
+            <img src="https://lh3.googleusercontent.com/kTj_tmCJZc9UIyxjAmxmHFOYDXHOxR6VhpAMuo0HlAbB0H8HAfYgZeb-yPXmFHOtxD5WZZQQMuywCZek=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>千萬級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>La Morocha</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20230707，歌手：Luck Ra, BM，最後上榜日20240118</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：14,881,212</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=mo7MpQZRd5Q" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=wJT-YKmlWJc">
+            <img src="https://lh3.googleusercontent.com/fuaDCEFUqyBAQ7qyXgLP8WtWXzyKDzyEHjdXvLUZRkxSyyB7e7rOxhJpXK0tqJliFdYG9wzKtr1WPzM=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>千萬級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>Tattoo (Remix)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20200213，歌手：Camilo, Rauw Alejandro, Camilo, Rauw Alejandro，最後上榜日20210211</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：14,762,944</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=wJT-YKmlWJc" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=p7bfOZek9t4">
+            <img src="https://lh3.googleusercontent.com/zsFSom7D1NTBceYpRc6wmXO4E25s9KygdxDri-meYt-4G240l_TgzhuumcM9gmRnrlVL9NElmCaE4L8=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>千萬級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>Con Altura (feat. El Guincho)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20190328，歌手：J·巴爾文, 羅莎莉亞，最後上榜日20200326</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：14,620,267</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=p7bfOZek9t4" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=BVQatzChOqo">
+            <img src="https://lh3.googleusercontent.com/zEDQru8SNAb0JVhp1XVLQgvz29yutpnM04Mka6m72yjcClxKclGcPLn7P6nUIGaMNzgz4FzCo38Yu1hTzw=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>千萬級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>Marisola (Remix)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20220818，歌手：Duki, Nicki Nicole, Standly, Cris Mj, Stars Music Chile，最後上榜日20230713</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：14,574,785</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=BVQatzChOqo" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=W6fme7tcweQ">
+            <img src="https://lh3.googleusercontent.com/RnSYP3EAi7iTW-QQsyijQIUgJCj0Pec8E4y8utZsgYc1H42kacDbUNhDjwDmoMhklDOM_lf4D1PEZJFl=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>千萬級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>Bandido</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20200601，歌手：邁克·托斯，最後上榜日20210930</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：14,377,937</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=W6fme7tcweQ" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=tbneQDc2H3I">
+            <img src="https://lh3.googleusercontent.com/me7_JCi3IQsI74Ju4ZsXZ6qHjK0JNzvL0mlP6wvt3fW0tfSiSiv_bMGXoEBkMSkxl96KH899PLgf9dHWjQ=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>千萬級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>Tusa</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20191107，歌手：妮琪‧米娜, KAROL G，最後上榜日20200820</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：14,122,923</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=tbneQDc2H3I" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=mmRBXjVENDQ">
+            <img src="https://lh3.googleusercontent.com/jgA1w84mohY43H1STWjq9z4fzb0-YXw5gPEOEESZxYxAmhYB3bxYTlq2O0eSZjCt3hH91Y9SyQt2JSfwGA=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>千萬級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>Miénteme</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20210429，歌手：TINI, Maria Becerra，最後上榜日20220421</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：14,027,048</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=mmRBXjVENDQ" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=TiM_TFpT_DE">
+            <img src="https://lh3.googleusercontent.com/8o3GMnTk_kFkZGnIp6tJEiRy2o6tdHhNPy5k-y0jrh6G-VPmgjODwElWQVMkzj8H9fAnpfYeVIaN2gpD=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>千萬級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>La Bachata</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20220526，歌手：曼努埃爾·T，最後上榜日20230608</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：14,015,631</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=TiM_TFpT_DE" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=w2C6RhQBYlg">
+            <img src="https://lh3.googleusercontent.com/1BMC-XhvHwh0K9mUTlHmCAacLkOtp08D3kXaO9JoFzeAiN0EqRu4cZX9c_RlVilt8MINkgQeICMRwCQ=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>千萬級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>No Me Conoce (Remix)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20190517，歌手：Jhay Cortez, J·巴爾文, 壞痞兔，最後上榜日20230601</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：13,674,124</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=w2C6RhQBYlg" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=4T0C-UuwQaQ">
+            <img src="https://lh3.googleusercontent.com/zudSMfANOQNWaaTjrVFofXeSoEiXG8lIvrQrzcbIzQQSMHxss7B7sw6vFhkUKaYG5K5BbapZx0GeJ24=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>千萬級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>NO ME CONOCEN (Remix)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20210616，歌手：BANDIDO, Duki, Tiago PZK, Rei，最後上榜日20230601</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：13,607,513</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=4T0C-UuwQaQ" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=3mchJ-EW9rM">
+            <img src="https://lh3.googleusercontent.com/i-0UE7zfljTdsNo816mLX2v528i20y34ry_3rNqHZY7O6ZnowZGDXhEgecmL_sp6isLE2aOVskiDLTta=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>千萬級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>La Bebe (Remix)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20210504，歌手：Peso Pluma, Yng Lvcas，最後上榜日20231228</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：13,261,680</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=3mchJ-EW9rM" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=t_qn-f7XfJo">
+            <img src="https://lh3.googleusercontent.com/WkhkB14WOYDe538_pawcZDh975HD9Xed5TWjuULM_BtT0r8bjEtkWgCynGOTEH7Tni0vQdIGDtTcEgJBaw=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>千萬級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>Otro Trago (feat. Darell)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20190418，歌手：Sech，最後上榜日20191010</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：13,257,173</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=t_qn-f7XfJo" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=0f3ZHuC-l0c">
+            <img src="https://lh3.googleusercontent.com/jgA1w84mohY43H1STWjq9z4fzb0-YXw5gPEOEESZxYxAmhYB3bxYTlq2O0eSZjCt3hH91Y9SyQt2JSfwGA=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>千萬級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>Bar</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20211111，歌手：TINI, L-Gante，最後上榜日20221020</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：13,215,518</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=0f3ZHuC-l0c" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=XseIJg8Vyj0">
+            <img src="https://lh3.googleusercontent.com/pxzSWfdEKuLbM0IGHa4-raKOdgnC2PyGKIl5o0Uio0nqWAiYDNesmNvm8YifY8ffSQdpOhb_ZOcooj9N=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>千萬級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>Relación (Remix)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20190726，歌手：洋基老爹, J·巴爾文, 卡洛斯・埃夫恩・雷耶斯・羅薩多, 羅莎莉亞, Sech，最後上榜日20210128</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：13,177,632</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=XseIJg8Vyj0" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=eBSQug_xtwc">
+            <img src="https://lh3.googleusercontent.com/qi1ModvYd8EGLchobw0ID9rfaeQWmZvpIMK_IUjF8SZ_2MA5Q3KOW7z8Yv_UVyr0fSurjpj_u-uPLHcf=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>千萬級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>Los del Espacio</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20220507，歌手：Lit Killah, Tiago PZK, Maria Becerra, Duki, 艾米麗雅, Rusherking, Big One, FMK，最後上榜日20240111</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：13,036,394</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=eBSQug_xtwc" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=BVdngsy95mY">
+            <img src="https://lh3.googleusercontent.com/Pru6PQveEgvjtmh2S4NFNVS8WW3TtAkavxKDJnMYLAN60RY9tppkKTvJAGQbkAeuZGkg54vmpecbK4k2=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>千萬級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>LALA</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20230322，歌手：邁克·托斯，最後上榜日20240118</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：12,819,157</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=BVdngsy95mY" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=5AkDqm-cEgg">
+            <img src="https://lh3.googleusercontent.com/v7BPAW3_LF3BE5umfbvTqe-kez2LSmFY222PJgqqJFaB6cT8iOX8rNvW6ucA9EIR1XeW2cEHzzJiiKg=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>千萬級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>Tutu</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20190808，歌手：Pedro Capó, Camilo，最後上榜日20200730</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：12,795,940</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=5AkDqm-cEgg" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=xZyNJvq7Qg4">
+            <img src="https://lh3.googleusercontent.com/qv95APvibcaJZyGXV9Z40qilwm76dSGTDef6zkadMx8Eg-lx_540ZZ4zfGamrW23-758dSqZ1HjbD9o=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>千萬級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>Si me tomo una cerveza (REMIX)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20201109，歌手：ALICO, AGAPORNIS, Rombai, Migrantes, Oscu，最後上榜日20231221</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：12,635,047</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=xZyNJvq7Qg4" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=Q_gIYp078so">
+            <img src="https://lh3.googleusercontent.com/4Wc5UsdUy2Tjeh52quo8cNcjliZaJbCePnhqyDxyFd7Ethmd2pImLfM0KCrA9SMmsATcChyDco5qhrrJ=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>千萬級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>La Curiosidad</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20200612，歌手：DJ Nelson, Jay Wheeler, Myke Towers, 迪·尼爾森, 邁克·托斯, Jay Wheeler，最後上榜日20210610</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：12,289,611</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=Q_gIYp078so" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=8jwbnGrX7-c">
+            <img src="https://lh3.googleusercontent.com/aasZYQ9WztuptiGAPvdESRjj6CSTIwem-wGxey2dcLsJ0n8AswnY0Mj1JOaa22621LpiBlItBC01Neus=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>千萬級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>Fantasías</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20190829，歌手：卡洛斯・埃夫恩・雷耶斯・羅薩多, Rauw Alejandro，最後上榜日20200813</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：12,208,069</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=8jwbnGrX7-c" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=qKp1f7Vn9dM">
+            <img src="https://lh3.googleusercontent.com/7NEp_92ahtCUPkdh__Del8sT9BcyJAoZMk9cdnkfs9xyVPAGOhTwr-5MbPbvituvtHacu8YgIBAMKpvK=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>千萬級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>Vida de Rico</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20200921，歌手：Camilo, Camilo，最後上榜日20210701</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：11,799,729</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=qKp1f7Vn9dM" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=ygKutNMguHI">
+            <img src="https://lh3.googleusercontent.com/ivTol3N2dgElEnte7fL7Lv1HS9hbRXuAjhelvheX6NA3amUju7nN584lpMWH87C2tv_S8118iGqnleIT=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>千萬級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>Bellaquita (feat. 蘭尼)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20190905，歌手：Dalex，最後上榜日20200827</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：11,659,208</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=ygKutNMguHI" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=QaXhVryxVBk">
+            <img src="https://lh3.googleusercontent.com/me7_JCi3IQsI74Ju4ZsXZ6qHjK0JNzvL0mlP6wvt3fW0tfSiSiv_bMGXoEBkMSkxl96KH899PLgf9dHWjQ=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>千萬級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>BICHOTA</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20201023，歌手：KAROL G, KAROL G，最後上榜日20210506</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：11,537,253</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=QaXhVryxVBk" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=KilybZma5vY">
+            <img src="https://lh3.googleusercontent.com/miJNoN2df_fvOLKAHt-vzpdD6u0WvXF5KigiaEHKUMYLyWQcLxlN8TIekOzLt3xcRxBQvZ71q-Rj_hbA=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>千萬級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>Caramelo (Remix)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20200611，歌手：Ozuna, KAROL G, Myke Towers, Ozuna, KAROL G, 邁克·托斯，最後上榜日20210211</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：11,335,083</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=KilybZma5vY" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=SacHyFb_j1o">
+            <img src="https://lh3.googleusercontent.com/lI-ZIvvZyhVWLSUjF1TOpae8WdZhoQVaRp3MPjNIJthAJEnRg-azhKqlGr-9TZDuzIRi6PiyhMjmFOtc=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>千萬級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>L-Gante Rkt</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20180410，歌手：L-Gante, Papu DJ，最後上榜日20211104</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：11,269,108</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=SacHyFb_j1o" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=rrrSGplAgOs">
+            <img src="https://lh3.googleusercontent.com/2Jm2nuLr9BRbnO0eL9NxTDYg8uqHVjootBZLGhz5gsxKGK-O6_yNvag0Dmp0j_Rl8dBkrJCTjoPSeI2U=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>千萬級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>Universo Paralelo (En Vivo) (feat. Nahuel Pennisi)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20210922，歌手：La K'onga，最後上榜日20240104</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：11,234,024</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=rrrSGplAgOs" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=2FmPEOTCxIE">
+            <img src="https://lh3.googleusercontent.com/ZoKW-_FGzGuonVfdy8XTdE1JS1nbbVItZ6OeAIkXkei4PP3u9ZoMVmzOmdMgeXM2bqhSBNn0D6NN4gSU=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>千萬級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>Ni Una Ni Dos</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20230628，歌手：BM，最後上榜日20240118</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：11,126,998</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=2FmPEOTCxIE" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=yErttA9tEro">
+            <img src="https://lh3.googleusercontent.com/x0oVV1xa7imATWNXTvpXRFNFY2SSJ-jPpSQMSTB1GSz49Os6XExjankQlShLLjS_62rq-J33qYqhwyM=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>千萬級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>La Jeepeta (Remix)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20200424，歌手：Brray, Juanka, Anuel AA, Nio Garcia, Myke Towers, Anuel AA, Nio Garcia, Brray, 邁克·托斯，最後上榜日20201203</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：11,114,379</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=yErttA9tEro" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=YZxmoOvqWek">
+            <img src="https://lh3.googleusercontent.com/UNR9GEhdQ67HDLUpP13rmvVP-zEfdHrDyjPbtJwSJjJAvhzTeNjBVD2xy3oUnFsfeyAJ8bhtmEc7ums=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>千萬級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>SOLTERA (feat. 克里斯·傑代 & Gaby Music)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20190222，歌手：Lunay，最後上榜日20200130</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：11,011,620</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=YZxmoOvqWek" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=jZGpkLElSu8">
+            <img src="https://lh3.googleusercontent.com/Ao6HZJhSwmVZJ2TzgOtqLQ1j1iEKshnw5SA9G8aMwCpy-rNqE5UYFwVrSEEFt5nNOtPayoNJA4e20S9LmA=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>千萬級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>TQG</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20230224，歌手：KAROL G, Shakira，最後上榜日20240104</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：10,852,548</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=jZGpkLElSu8" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=LXjRV-oSD1U">
+            <img src="https://lh3.googleusercontent.com/KsiUchIbD5iX1rXiZevwRlLSa2P95_yb6hqwLhdcAkT5gUFDm527mUuBCUVAGS0RuvJWRynnBqOy9Pb5=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>千萬級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>Si Se Da</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20190225，歌手：卡洛斯・埃夫恩・雷耶斯・羅薩多, 邁克·托斯，最後上榜日20230601</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：10,744,356</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=LXjRV-oSD1U" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=nlXqp3FVrq8">
+            <img src="https://lh3.googleusercontent.com/JXtsxmBsxzvT6c1Up6w5tjQ_BtHIQGCkftwurUaQgdmIBo8uZtMeDpJ41uvk1-neOhhNvBVuu1OHUHDM=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>千萬級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>Hola (Remix) (feat. Juhn & DJ Flow)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20191012，歌手：Chencho Corleone, Dalex, 蘭尼，最後上榜日20220707</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：10,533,068</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=nlXqp3FVrq8" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=19akIOgUSpU">
+            <img src="https://lh3.googleusercontent.com/sLcXwSzTJki72UpSaJ89IQOyDKYpkKbJz1u0C-lev9B4wvHSS8VBiOZrXTGWtp4xZ8RXmW5p7CSfyYMy=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>千萬級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>DISCOTEKA (feat. Locura Mix)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20230216，歌手：The La Planta, BM, Alejo Isakk，最後上榜日20240104</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：10,500,677</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=19akIOgUSpU" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=VVWH9jJLGkE">
+            <img src="https://lh3.googleusercontent.com/h61y5u3EFX9cZFiqkjU_WWSWoJ1ixOfjtYdm3oXSCp9zA7qFPY8w0Xr_koIYsO7-ZL1sU_fhZtv4A97i6w=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>千萬級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>MERCHO (feat. Nico Valdi)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20221216，歌手：Migrantes, LiL CaKe，最後上榜日20240104</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：10,374,945</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=VVWH9jJLGkE" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=2qfUMZC55so">
+            <img src="https://lh3.googleusercontent.com/yy-UGJJvm5VawT3LlE4jTqpeH08qM9QrloYt8USyHjeZN2TKYF_WQyB_nPRK_vXv7SkoIkjHOd3ZOjUV=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>千萬級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>ADIÓS (Live)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20230317，歌手：Ráfaga, Maria Becerra，最後上榜日20240111</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：10,162,758</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=2qfUMZC55so" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=5g2hT4GmAGU">
+            <img src="https://lh3.googleusercontent.com/NcPO6bbPE3euQSRNRwFC0FvRJ-TEzKRql9-FeyO6c0CP1Ow0YdPZhfDFgnEpro7N1rhZ3LxOxKUjqNo=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>千萬級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>DESPECHÁ</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20220728，歌手：羅莎莉亞，最後上榜日20230803</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：10,107,451</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=5g2hT4GmAGU" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=NPpELzyP4rw">
+            <img src="https://lh3.googleusercontent.com/Yk0l-WXLhQ0GWWlG71EpHtM0aSAP8B5o_b-gShKdgod5imN3sIg3IxRWq6qJcWeByNdQbHpnBxSK_-yU1w=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>千萬級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>Tal Vez</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20190403，歌手：Paulo Londra，最後上榜日20220324</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：10,061,345</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=NPpELzyP4rw" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=WHejvUhX6rk">
+            <img src="https://lh3.googleusercontent.com/9fakE8c0rHbrt80Py_WT_dJrvhfjvbiNIMk_60XRudxln20P7ud_fSWQ4-pI-L7oldHlf05KRyda1LTq=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>百萬級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>Yandel 150</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20221216，歌手：Feid, 蘭德爾·維蓋利亞·馬拉夫, Feid，最後上榜日20230928</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：9,821,825</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=WHejvUhX6rk" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=lGRdhPlhbwc">
+            <img src="https://i.ytimg.com/vi/lGRdhPlhbwc/default.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>百萬級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>Te Mentiría (En Vivo)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20210221，歌手：La K'onga, Luck Ra，最後上榜日20240104</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：9,717,914</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=lGRdhPlhbwc" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=z7rI82hyels">
+            <img src="https://lh3.googleusercontent.com/2ZzG9EtbIP7xqeEzENT9TNXEExInFI0fK7ZP6MzDLY_8o10DqoVZkyef8oaHW0ayEizYMoFR64bCk-hMLw=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>百萬級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>Bzrp Music Sessions, Vol.38</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20210310，歌手：L-Gante, Bizarrap，最後上榜日20220113</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：9,601,461</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=z7rI82hyels" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=dQlihE2-HLM">
+            <img src="https://lh3.googleusercontent.com/8T58ZmLVKcvvG9V5qu1A3e0-P6f9uSGeK9jebXfn2izQ9I2upS5d1o_4tbwww6QOLGXFP6zYTXHjjUs=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>百萬級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>Además de Mí (Remix)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20201125，歌手：Duki, Tiago PZK, Rusherking, KHEA, Lit Killah, Maria Becerra，最後上榜日20230601</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：9,556,550</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=dQlihE2-HLM" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=58u-zkDLNPg">
+            <img src="https://lh3.googleusercontent.com/hWUNXLhYIQAB9N1wv1SCDjWROgHhZjfgGGcLPBMXyMxypWvPLK3nViUYt7hZP2e2JZA_t1FUYkmEMFI=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>百萬級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>Adicto</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20171223，歌手：塔尼, Ozuna, Anuel AA，最後上榜日20211118</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：9,516,322</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=58u-zkDLNPg" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+    </div>
+  </div>
+</div>
+<!-- partial -->
+  
+</body>
+</html>

@@ -1,0 +1,1390 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW" >
+<head>
+  <meta charset="UTF-8">
+  <title>沙烏地阿拉伯_熱播歌曲排行(依據國家)</title>
+  <meta property="og:image" content="https://raw.githubusercontent.com/yatinisgood/YoutubeMusicCharts/main/A_creative_and_eye-catching_image_featuring_a_musi_converted.png" />
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://yatinisgood.github.io/YoutubeMusicCharts/index_全球入榜播放次數最多.html"/>
+  <meta name="og:description" content="發現 YouTube Music的最新熱門歌曲與影片。每週更新的全球點播排行、熱門歌手和音樂影片，以及 SHORTS 上的流行曲目，我們為您提供最深入的音樂趨勢分析。跟踪 YouTube 的音樂脈動：從發燒影片到每週熱播歌曲，再到全球點播進榜最多的曲目，我們提供全面的數據和洞察，讓您始終走在音樂潮流的最前沿。您的音樂趨勢導航：每週為您帶來 YouTube 上最受歡迎的歌曲、藝人和音樂影片。從主流到小眾，從長視頻到 Shorts，一站式探索音樂世界的每個角落。"/>
+<meta name="og:keywords" content="YouTube Music每週熱門,發燒影片分析,音樂流行趨勢,熱門歌手與歌曲,YouTuber愛用的 Shorts 音樂">
+<meta property="og:title" itemprop="name" content="音樂潮流前線：追踪 YouTube 上的每週熱門歌曲與影片" />
+  
+
+  <meta property="og:locale" content="zh_TW" />
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css'><link rel="stylesheet" href="./style_type2.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container text-center">
+<h1>沙烏地阿拉伯_熱播歌曲排行(依據國家) (更新於20240123)</h1>
+  <span>Create With <i class="zmdi zmdi-favorite red"></i>  By: <strong>Sherlock Tsai</strong> </span>
+</div>
+<div class="container text-center dropdown-menu-spacing">
+    <!-- 下拉選單 -->
+    <select class="form-control" id="week-selector" onchange="goToWeek(this.value)">
+        <option value="">選擇國家</option>
+        <option value="index__熱播歌曲排行(依據國家)_全球.html">全球</option><option value="index__熱播歌曲排行(依據國家)_土耳其.html">土耳其</option><option value="index__熱播歌曲排行(依據國家)_丹麥.html">丹麥</option><option value="index__熱播歌曲排行(依據國家)_厄瓜多.html">厄瓜多</option><option value="index__熱播歌曲排行(依據國家)_巴西.html">巴西</option><option value="index__熱播歌曲排行(依據國家)_巴拉圭.html">巴拉圭</option><option value="index__熱播歌曲排行(依據國家)_巴拿馬.html">巴拿馬</option><option value="index__熱播歌曲排行(依據國家)_日本.html">日本</option><option value="index__熱播歌曲排行(依據國家)_比利時.html">比利時</option><option value="index__熱播歌曲排行(依據國家)_以色列.html">以色列</option><option value="index__熱播歌曲排行(依據國家)_加拿大.html">加拿大</option><option value="index__熱播歌曲排行(依據國家)_尼加拉瓜.html">尼加拉瓜</option><option value="index__熱播歌曲排行(依據國家)_瓜地馬拉.html">瓜地馬拉</option><option value="index__熱播歌曲排行(依據國家)_冰島.html">冰島</option><option value="index__熱播歌曲排行(依據國家)_匈牙利.html">匈牙利</option><option value="index__熱播歌曲排行(依據國家)_印尼.html">印尼</option><option value="index__熱播歌曲排行(依據國家)_印度.html">印度</option><option value="index__熱播歌曲排行(依據國家)_多明尼加共和國.html">多明尼加共和國</option><option value="index__熱播歌曲排行(依據國家)_西班牙.html">西班牙</option><option value="index__熱播歌曲排行(依據國家)_宏都拉斯.html">宏都拉斯</option><option value="index__熱播歌曲排行(依據國家)_沙烏地阿拉伯.html">沙烏地阿拉伯</option><option value="index__熱播歌曲排行(依據國家)_辛巴威.html">辛巴威</option><option value="index__熱播歌曲排行(依據國家)_坦尚尼亞.html">坦尚尼亞</option><option value="index__熱播歌曲排行(依據國家)_奈及利亞.html">奈及利亞</option><option value="index__熱播歌曲排行(依據國家)_法國.html">法國</option><option value="index__熱播歌曲排行(依據國家)_波蘭.html">波蘭</option><option value="index__熱播歌曲排行(依據國家)_肯亞.html">肯亞</option><option value="index__熱播歌曲排行(依據國家)_芬蘭.html">芬蘭</option><option value="index__熱播歌曲排行(依據國家)_阿拉伯聯合大公國.html">阿拉伯聯合大公國</option><option value="index__熱播歌曲排行(依據國家)_阿根廷.html">阿根廷</option><option value="index__熱播歌曲排行(依據國家)_俄羅斯.html">俄羅斯</option><option value="index__熱播歌曲排行(依據國家)_南非.html">南非</option><option value="index__熱播歌曲排行(依據國家)_南韓.html">南韓</option><option value="index__熱播歌曲排行(依據國家)_玻利維亞.html">玻利維亞</option><option value="index__熱播歌曲排行(依據國家)_美國.html">美國</option><option value="index__熱播歌曲排行(依據國家)_英國.html">英國</option><option value="index__熱播歌曲排行(依據國家)_哥倫比亞.html">哥倫比亞</option><option value="index__熱播歌曲排行(依據國家)_哥斯大黎加.html">哥斯大黎加</option><option value="index__熱播歌曲排行(依據國家)_埃及.html">埃及</option><option value="index__熱播歌曲排行(依據國家)_挪威.html">挪威</option><option value="index__熱播歌曲排行(依據國家)_烏干達.html">烏干達</option><option value="index__熱播歌曲排行(依據國家)_烏克蘭.html">烏克蘭</option><option value="index__熱播歌曲排行(依據國家)_烏拉圭.html">烏拉圭</option><option value="index__熱播歌曲排行(依據國家)_祕魯.html">祕魯</option><option value="index__熱播歌曲排行(依據國家)_紐西蘭.html">紐西蘭</option><option value="index__熱播歌曲排行(依據國家)_捷克.html">捷克</option><option value="index__熱播歌曲排行(依據國家)_荷蘭.html">荷蘭</option><option value="index__熱播歌曲排行(依據國家)_智利.html">智利</option><option value="index__熱播歌曲排行(依據國家)_塞爾維亞.html">塞爾維亞</option><option value="index__熱播歌曲排行(依據國家)_奧地利.html">奧地利</option><option value="index__熱播歌曲排行(依據國家)_愛沙尼亞.html">愛沙尼亞</option><option value="index__熱播歌曲排行(依據國家)_愛爾蘭.html">愛爾蘭</option><option value="index__熱播歌曲排行(依據國家)_瑞士.html">瑞士</option><option value="index__熱播歌曲排行(依據國家)_瑞典.html">瑞典</option><option value="index__熱播歌曲排行(依據國家)_義大利.html">義大利</option><option value="index__熱播歌曲排行(依據國家)_葡萄牙.html">葡萄牙</option><option value="index__熱播歌曲排行(依據國家)_德國.html">德國</option><option value="index__熱播歌曲排行(依據國家)_墨西哥.html">墨西哥</option><option value="index__熱播歌曲排行(依據國家)_澳洲.html">澳洲</option><option value="index__熱播歌曲排行(依據國家)_盧森堡.html">盧森堡</option><option value="index__熱播歌曲排行(依據國家)_薩爾瓦多.html">薩爾瓦多</option><option value="index__熱播歌曲排行(依據國家)_羅馬尼亞.html">羅馬尼亞</option>
+        
+        
+    </select>
+</div>
+<script>
+    function goToWeek(weekFileName) {
+        if(weekFileName) {
+            window.location.href = weekFileName+ "?week=" + encodeURIComponent(weekFileName);
+        }
+    }
+</script>
+<script>
+  window.onload = function() {
+      // 解析 URL 中的 GET 參數
+      var params = new URLSearchParams(window.location.search);
+      var week = params.get('week'); // 獲取 'week' 參數
+
+      if (week) {var weekSelector = document.getElementById('week-selector');
+      weekSelector.value = week;
+  }};
+</script>
+<div class="shell">
+  <div class="container">
+    <div class="row">
+      
+      
+<div class="col-md-6">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=BJR3_GHxkEY">
+            <img src="https://lh3.googleusercontent.com/qeoUy9Q-w0EgOrWpjFdAfrB07oi3hTV3LV8WEb00Erc9M0HPSDq73AonLbhzhy0KTPH-TZf9ggpsxrTQGg=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>進榜累計最多</span>
+            </div>
+            <div class="title-product">
+              <h3>كلمني</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20211110，歌手：Badr Alezzi，最後上榜日20230413</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：127,523,388</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=BJR3_GHxkEY" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=BJR3_GHxkEY">
+            <img src="https://lh3.googleusercontent.com/qeoUy9Q-w0EgOrWpjFdAfrB07oi3hTV3LV8WEb00Erc9M0HPSDq73AonLbhzhy0KTPH-TZf9ggpsxrTQGg=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>億級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>كلمني</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20211110，歌手：Badr Alezzi，最後上榜日20230413</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：127,523,388</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=BJR3_GHxkEY" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=eKKvQX3AV7w">
+            <img src="https://lh3.googleusercontent.com/6JWSqp0HUYjaFV742r0U17p69N3BppblgU_Y9tRH2n3xeW0bx_YN1KzlZyNK13opb8TD2jzIvtbxGHg=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>千萬級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>أدعج عيون</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20211103，歌手：ماجد الرسلاني，最後上榜日20240111</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：77,625,480</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=eKKvQX3AV7w" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=oRrCRTgg8eM">
+            <img src="https://lh3.googleusercontent.com/eJpDgkfMWcov6xWqAKZabU-j0jIF4EvGhQfbzPyDhxV8wqviYlTb0cwKldBlzATRLNWk6vqLNgVMaAhDOg=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>千萬級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>صوت العيد</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20220429，歌手：zain Group，最後上榜日20230202</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：70,612,500</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=oRrCRTgg8eM" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=BGkL2Pq-g3A">
+            <img src="https://lh3.googleusercontent.com/VxLosX-hzWrvL3u2Ec7IPgXaxpBU_OEAjX5eJVsWqEHCK4WVO8ntlTuhaOe-s4jl_0mggcFNrjCW-N5N=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>千萬級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>اتنسيت</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20211020，歌手：MUSliM，最後上榜日20230427</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：64,605,576</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=BGkL2Pq-g3A" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=4AG2kwxTjmg">
+            <img src="https://lh3.googleusercontent.com/CKMQ2gbPwraRBKXT2FitPVS8PpqHdxCV8qf2skr7thcoitvJhyiZV6Mz_1nnDbKiPw34KRWxs_-Um20=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>千萬級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>تتنفسك دنياي</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20220502，歌手：Abdul Majeed Abdullah，最後上榜日20231123</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：56,822,184</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=4AG2kwxTjmg" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=9A4_GnALZd4">
+            <img src="https://lh3.googleusercontent.com/MLZ1d-61EotXdlIjqFmFDKlc1VQUpnvFbXvELmsG3lmaRKESJWT7728GXA9S-mtnrI222nChz4Koo9vs=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>千萬級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>مسيطره</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20210727，歌手：Lamis Kan，最後上榜日20240111</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：49,742,629</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=9A4_GnALZd4" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=wvcifsobiu8">
+            <img src="https://lh3.googleusercontent.com/WZ4VcY06DCcvfMQeBxYOJW36GtIXs-2hu-qK8hzMc4gur7AcWMWllp3UPzusUzvMSakzL1_CpQ20G7o=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>千萬級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>أحتريك</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20210729，歌手：Abdullah Al Mokhles，最後上榜日20240118</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：49,080,738</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=wvcifsobiu8" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=obEQCKiHFho">
+            <img src="https://lh3.googleusercontent.com/6M_8OTOXBe5znwfmlPcbk0KqZG1t5TZnAcYSE72d_9R53EL1sfB5-nhbRT1j2-M329zeVBWi5bQ2Xy0=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>千萬級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>غزال ما ينصادي</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20211215，歌手：Abdul Majeed Abdullah，最後上榜日20230427</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：48,232,392</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=obEQCKiHFho" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=-kC9ZRTR6D4">
+            <img src="https://lh3.googleusercontent.com/x99Uy-iAXvJ_vFFoCb3jj7R73DeTya5DHfGOb8439d3CJxAYbDNb2r9lUoL_p6tXP6puRs5_oIxu_fw=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>千萬級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>الغزالة رايقة (feat. Mohamed Osama)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20211223，歌手：Karim Mahmoud Abdelaziz，最後上榜日20240111</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：46,885,548</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=-kC9ZRTR6D4" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=O--o-O-ABBw">
+            <img src="https://lh3.googleusercontent.com/wJRE7SFQo_PTEkhScit3J6J16FE-1neqFjsYQipbPEyimHmfWirRhXSF-uMAb5cprtyh7eayQaaRbsF6-A=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>千萬級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>من أول دقيقة</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20220504，歌手：艾麗莎, Saad Lamjarred，最後上榜日20240111</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：44,135,407</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=O--o-O-ABBw" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=1iKbUWPYPew">
+            <img src="https://lh3.googleusercontent.com/96tcQVeS7CJlLslH-Mh5cVGSbRzdvOyKGUhRYSg2kwvfMzXBHGblfSE9nWX-qviekJYeD3eOxyacT8NL=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>千萬級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>ذكريات</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20210929，歌手：Badr Alezzi，最後上榜日20230413</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：42,579,609</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=1iKbUWPYPew" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=WcIcVapfqXw">
+            <img src="https://lh3.googleusercontent.com/kTxtxmzJ-4CKH_7InmwvuAMpJncOg2-HcZjSL2V-21OQo87TBSGqmHdKajnEhTyKQdELwV_FfIfyvJ4=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>千萬級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>Calm Down</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20220210，歌手：席琳娜·戈梅茲, Rema，最後上榜日20230810</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：42,387,131</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=WcIcVapfqXw" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=eeQWKNhFfPQ">
+            <img src="https://lh3.googleusercontent.com/40OOoAOinx5MtngalXN6m496BylfmYRH6OVFbxnaWE8iRdIiMbb9Wc806XyQdgk9SLEdtlhGYO2Mt26E=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>千萬級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>La Malama</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20211006，歌手：穆罕默德·哈馬基，最後上榜日20230427</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：41,632,906</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=eeQWKNhFfPQ" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=DH98snokfLI">
+            <img src="https://lh3.googleusercontent.com/7XoQ5jLOLIDWNIEN1JznYWSDhuttKTStud1mFL36dDf49bIapl47mLQHSSU9GjtsZWQHGp78QBLJ8Op1=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>千萬級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>دا اللي حصل</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20230213，歌手：Balqees，最後上榜日20240118</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：40,994,506</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=DH98snokfLI" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=cTXLxXj88kw">
+            <img src="https://lh3.googleusercontent.com/SoYhN2Lk4Y44XUzKK2xOJYMdZvqfbtjy4uUxWXyjswdlt-T9f8XqgCier2dTtUR4Xh10n2_rC4ODpSk=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>千萬級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>عليكي عيون</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20220213，歌手：艾哈邁德沙·薩阿德，最後上榜日20230427</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：39,841,130</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=cTXLxXj88kw" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=R2RvfF8jErc">
+            <img src="https://lh3.googleusercontent.com/LeB4ys_ETSZca2dd4LJx4_92iajI1OFR8UAYeEbIoskLiLa0whusiw1pLx0sSXmaSal7VLeuAVPVpdmw=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>千萬級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>الفين باب</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20220613，歌手：Oumeima，最後上榜日20240111</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：37,713,791</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=R2RvfF8jErc" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=vr2YhZoaHqg">
+            <img src="https://lh3.googleusercontent.com/NkGr28BFUnz55mWfnyGIvcC_rypyq5BbIP7x44SZqI5kagQbACEk2OCDJwfbBebxKhpTog7CIHrmIFzrPg=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>千萬級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>مليون مره</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20211211，歌手：Rashed Al-Majed, Fouad Abdulwahed，最後上榜日20230427</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：37,053,514</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=vr2YhZoaHqg" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=MxjrsDV8Aeo">
+            <img src="https://lh3.googleusercontent.com/FStDxWp11_b2zShiiP8HHW-xkj6gVAvqg_TehPjgLfcGEiLJwMBtyhH6e20nUt0kORuUdiUJWYGiMQT5=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>千萬級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>love nwantiti (ah ah ah) (feat. Kuami Eugene)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20200213，歌手：CKay，最後上榜日20220922</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：36,995,199</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=MxjrsDV8Aeo" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=Kb4fRYjtuF0">
+            <img src="https://lh3.googleusercontent.com/DnrnM2TyYt4zmeLhY4_RfzfmbgJLAeO7GOgTxYgFqdaWKqnwzUDyGllJNL4z82pSfP8mr1hqR2byaeNS1w=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>千萬級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>اليوم الحلو ده</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20220707，歌手：艾哈邁德沙·薩阿德，最後上榜日20230720</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：33,135,037</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=Kb4fRYjtuF0" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=fQp3r8rKS8s">
+            <img src="https://lh3.googleusercontent.com/m0QzCUrqRVLgE6PfYTsM4pv7xzeBPRBrsVtH42irYiiE1Hhs4Si4htjiCWpJHgPr-42OlO7mnU3UmTbDLQ=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>千萬級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>Akhatht Alqalb</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20211127，歌手：Abdul Majeed Abdullah，最後上榜日20230706</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：32,186,701</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=fQp3r8rKS8s" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=_RHIECWv728">
+            <img src="https://lh3.googleusercontent.com/nZt2y7CdnniHs862SQkxakW36m7raUqf58hyb9vJvP032geUex3PeHCOxCzBxhD5yoeelVf9sAvSrrk=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>千萬級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>البخت</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20220226，歌手：Wegz，最後上榜日20240111</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：31,221,854</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=_RHIECWv728" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=aKCL3I5iQ18">
+            <img src="https://lh3.googleusercontent.com/eGKVQeeGcY_YmU38NBLGLiyA7LWntAWXr6mrPUMNbHtjMyAI_Q7DMLLZDT4fBOh4zG-TTw1UMzNhnT7w=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>千萬級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>وسع وسع</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20220706，歌手：艾哈邁德沙·薩阿德，最後上榜日20230727</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：30,794,211</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=aKCL3I5iQ18" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=7Qlm24ekm9Y">
+            <img src="https://lh3.googleusercontent.com/ntnXek0pnJn64YxMK8K0hoVOo6i5StDD9NwhN9F_RBJUazG1V3HXxFTwJjuXaMvoGQ28R_8Xtq9EjaU=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>千萬級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>بامارة مين (لو جاى فى رجوع انسانى)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20220623，歌手：Farid - فريد，最後上榜日20240118</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：30,325,690</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=7Qlm24ekm9Y" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=NakdDjYFGrQ">
+            <img src="https://lh3.googleusercontent.com/fZjUtpgn6T8FYtdQE_7c0MwPJANBsjhk38RyLMkKxK6OI0TfI7zqHdO6NYrzek8XYSNhOCJ_atmnPGTB=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>千萬級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>جابك الطاري</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20210317，歌手：Abdullah Al Farwan，最後上榜日20231026</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：30,229,620</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=NakdDjYFGrQ" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=4sUh2nxnXv0">
+            <img src="https://lh3.googleusercontent.com/cuL7kttufSCFGDLip7q_ER4fBlXA-lF0LW6L5JtOgP0LJicfzDazZJ4BO5lNrI-PbxhziTL2XhASySYW=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>千萬級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>مها فتوني</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20230220，歌手：Maha Ftouni，最後上榜日20240118</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：30,070,524</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=4sUh2nxnXv0" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=BN-kQZ7pT3g">
+            <img src="https://lh3.googleusercontent.com/pGkzIRNnr6INN9blmJ8rd6kcrHXMqsIo06M1n2YsE-dGaPHx7KFXZwy07oQvv2FNpeKtg8jTASGqV-AH=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>千萬級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>قالوا عليكي</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20221116，歌手：Mohammed Saeed，最後上榜日20231130</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：29,118,363</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=BN-kQZ7pT3g" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=0DRxVDWF9r8">
+            <img src="https://lh3.googleusercontent.com/czW1FBlS1ACdfhYcfixabKhhlcxw5mMsKGUTQUuiCez36R_8qcUMVfivIOdAlLkCXL8Jac9DmanCpp8j=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>千萬級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>اشكر جمالك</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20210127，歌手：Abdullah Al Mokhles，最後上榜日20220505</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：29,105,563</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=0DRxVDWF9r8" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=Wtbn-rd-V94">
+            <img src="https://lh3.googleusercontent.com/Z-g39nLt38vn86aLhYSU4w_NY1zqkzOhGw1hz7X7t_gqRbuVzflg9WyMvCJ533X6Lke1nXIuM22eAwZA=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>千萬級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>ولا غلطة</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20220521，歌手：Sultan Al Murshed，最後上榜日20230427</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：28,971,783</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=Wtbn-rd-V94" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=u-k9DSCRsww">
+            <img src="https://lh3.googleusercontent.com/V7nA5GatIeVzor_RKYLTMRoKFGJxc5T2FTL0ByiZ0VcerD35A7nI2CifKKYJ-99tve64_rW7s1vCzQ7D=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>千萬級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>حلوة حياتي معاه</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20210304，歌手：عبدالله ناصر，最後上榜日20220714</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：26,989,227</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=u-k9DSCRsww" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=SbDclY7wliY">
+            <img src="https://lh3.googleusercontent.com/OFmeKz59y4nZm5mRgWnW9tJ3EZNTFspljdrv7wSaG1ckoz8R2q5mw_NpJkfbJpFTlpnH9JH9w-YzCCa5=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>千萬級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>وش عذرك؟</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20210511，歌手：Abdullah Al Farwan，最後上榜日20230406</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：26,864,753</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=SbDclY7wliY" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=D9JxlYg1XVI">
+            <img src="https://i.ytimg.com/vi/D9JxlYg1XVI/default.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>千萬級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>إختياراتي</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20230622，歌手：艾哈邁德沙·薩阿德，最後上榜日20240118</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：26,810,271</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=D9JxlYg1XVI" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=tCMxCPU9Nlw">
+            <img src="https://lh3.googleusercontent.com/VQZRcuWXdLCeU66qmMGeTAZQzNaAZWa0U7FuWpsj4F3r02ePVk-DxE-WqZn7icOqSQufqNfIWFmBUedlyw=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>千萬級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>العيون السود</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20230202，歌手：Fouad Abdulwahed，最後上榜日20240118</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：26,292,700</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=tCMxCPU9Nlw" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=pjMhcEuhf6k">
+            <img src="https://lh3.googleusercontent.com/H3AEOKV_4DFAtvY9QzbuaHvAMdj0XBa5aN2uQSNhE45aNvfKBwc5Ae8HfFxDqOmlVV2PKvQ6_oLaNH98=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>千萬級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>يا أبن الاواد</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20210802，歌手：Abdul Majeed Abdullah，最後上榜日20240111</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：26,214,771</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=pjMhcEuhf6k" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=BRTbHX3cdfU">
+            <img src="https://lh3.googleusercontent.com/ZrsyHbe6x5ecpl1WduYf2WT3nK80PzEmEqtg2XN0jm8ClPsgSTUrpXiOJbM0yBA11jkiify_xIfF64n_=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>千萬級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>La La Ya Al Khayzranah</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20230208，歌手：Oumeima，最後上榜日20240118</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：25,991,157</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=BRTbHX3cdfU" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=_LTjhKM8tvs">
+            <img src="https://lh3.googleusercontent.com/bQao1kWiWGSGeZwmfB_XkDlA3t4-lz-d7RkJRIAw8divc4LZUyfEvglTtMUp4iYzbB0h_r6g66J9i50=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>千萬級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>بس وينه</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20220315，歌手：Zayed Bin Saber，最後上榜日20230427</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：25,911,205</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=_LTjhKM8tvs" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=xX-bprr9rFo">
+            <img src="https://lh3.googleusercontent.com/T6CAq69Ff1SxjzkoHg7BaM-3hRnjD49VP5DR1e9FKSR81k8W2iNYbLAIvV6iyJuVY3MKjXUD88MBq2Uj=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>千萬級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>كلها غيرانة</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20211130，歌手：Sherine，最後上榜日20221020</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：25,446,287</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=xX-bprr9rFo" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=JIXUfNg9wg4">
+            <img src="https://lh3.googleusercontent.com/henfdlhRFiDa7xDvwojrd5H8WqKrP7BOyWbk3YFwpD0Yf8v5oZvGOIWV-PIjfS2bERFvWgspvLh2aYdW=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>千萬級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>شكد حلو</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20210930，歌手：Aseel Hameem，最後上榜日20220512</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：25,347,962</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=JIXUfNg9wg4" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=Y_V4ExWIdQk">
+            <img src="https://lh3.googleusercontent.com/xSokl1o2F1QoZTZAd-FM2c5TxNT9RmK2SW_Rgdl7XIHzNmKOEmy6NFPo6wYs_PE8Qk4-ZJRKA6PnIqWl=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>千萬級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>سايرينا يا دنيا</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20210125，歌手：艾哈邁德沙·薩阿德，最後上榜日20230202</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：24,901,821</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=Y_V4ExWIdQk" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=xngZyouAivo">
+            <img src="https://lh3.googleusercontent.com/IOTLaQwsVddjk8YkAgCNrr1wuV-CqG4mNqVFVDP4h2sO55gEkBoSYwBd2q-A_Ti9omYu_0_5_570fVm6=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>千萬級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>ملك الفبركة</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20210801，歌手：阿布，最後上榜日20230601</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：24,706,231</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=xngZyouAivo" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=hyIeXl4Jthc">
+            <img src="https://lh3.googleusercontent.com/eB7DxS6CBXW8XzoQ5-AroRC9FVPgwfFoFx6hUIPVz6jbouaeT5sl2-wbaVSEguVVq-VkxfTgHiTdyV-wjw=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>千萬級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>Bdet Ateeb</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20230224，歌手：Majid Al Mohandis，最後上榜日20240118</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：24,588,593</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=hyIeXl4Jthc" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=fZc7PFVhje8">
+            <img src="https://lh3.googleusercontent.com/rqi6XVkAJXo-hFv2JLrmgN8SGk1jX5hzPWIYl_nha_37bghWjBzyFkW-niVTU_UN1xCEuw5PlzzmeWAJ=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>千萬級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>بعد غيابه</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20200312，歌手：Ahmed Batshan，最後上榜日20221110</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：24,399,489</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=fZc7PFVhje8" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=jY02t5qLoG0">
+            <img src="https://lh3.googleusercontent.com/2fox5v4GiS888Ta0wykYFpJrFs6eo5q31GqVukpNogw-3QRorRsa2YlVG2h8pHGSsVQ0I9nfi0or9pUO=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>千萬級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>لا تعذر بالظروف</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20210707，歌手：Ghareeb Al Mokhles  ，最後上榜日20221229</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：24,355,743</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=jY02t5qLoG0" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=YUOXqc367_U">
+            <img src="https://lh3.googleusercontent.com/kVZrtSFuswqkI8DNJtQKUDeSY9Wq-2DZmVvQJMIFHT_psBJMfwbmkTO3yqyEg5fvB7YYeJcOqyPOU5z1ig=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>千萬級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>زينك دمار</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20220211，歌手：ماجد الرسلاني，最後上榜日20221110</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：23,571,053</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=YUOXqc367_U" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=I1YubuDJwG4">
+            <img src="https://lh3.googleusercontent.com/0D-gHlAtzLSkfaTWpSRNCjcHpUzxCIWCEW7KKkhgzHLfenLrqQag6zC29P2WyDwJz3uAD2xR1XhLFW2Y9g=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>千萬級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>العباة الرهيفه</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20220501，歌手：Rabeh Sager，最後上榜日20230525</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：22,332,343</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=I1YubuDJwG4" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=">
+            <img src="" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>千萬級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>مخصماك (feat. Muslim)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：，歌手：Nawal Abdechaffi - نوال عبد الشافي，最後上榜日20240118</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：21,883,471</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=bG_z9S5MojM">
+            <img src="https://lh3.googleusercontent.com/7QAxcBCWsCOkTXiLE-86XdaRvW-yDVe6pfjrbPfW7KYnPJJ_2kp0yOOF7-WcY8CiTZ1ZSjU-NHXN1IXnqg=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>千萬級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>خيبه</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20210511，歌手：Ghareeb Al Mokhles  ，最後上榜日20221117</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：21,371,870</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=bG_z9S5MojM" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=9336Ff56DDo">
+            <img src="https://lh3.googleusercontent.com/W6ZEpzLkVrFamAURSwum9keFj9vHgpiqp-vy7y6U1bMngIDPrY1CBYiXPyN8C2xMSXCGrMDCSa3XbF6k7A=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>千萬級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>تجيني</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20220912，歌手：Ayed，最後上榜日20230831</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：21,345,769</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=9336Ff56DDo" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=CPLgqU65Dss">
+            <img src="https://lh3.googleusercontent.com/qhatzULrqNDLFzIMsY1_e-kqLb0tJfUreMf5ngfrtf4mw_pxdP-7iz1t_IQVFwYlALNhZFgwoakqGc83=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>千萬級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>بترجع</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20221117，歌手：Oumeima，最後上榜日20231116</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：21,262,309</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=CPLgqU65Dss" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=vxXcPnqWVDc">
+            <img src="https://i.ytimg.com/vi/vxXcPnqWVDc/default.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>千萬級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>الكوكب</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20210729，歌手：Rahma Riad，最後上榜日20220721</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：21,207,276</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=vxXcPnqWVDc" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=KZVyfrAcMbI">
+            <img src="https://lh3.googleusercontent.com/Dgm_UQpfDFgBVZyTA9UdRGc5t_BxVQWP_3gGfhcTzDbQLytwv3KbH67ArsCyPYjMyTelrRp6kg4XFskkqQ=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>千萬級↑</span>
+            </div>
+            <div class="title-product">
+              <h3>أديوس (feat. Daffy)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20210115，歌手：Rawan Bin Hussain，最後上榜日20221124</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：20,795,680</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=KZVyfrAcMbI" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+    </div>
+  </div>
+</div>
+<!-- partial -->
+  
+</body>
+</html>
