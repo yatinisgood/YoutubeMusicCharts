@@ -1,0 +1,1327 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW" >
+<head>
+  <meta charset="UTF-8">
+  <title>全球每週熱播歌曲</title>
+  <meta property="og:image" content="https://raw.githubusercontent.com/yatinisgood/YoutubeMusicCharts/main/A_creative_and_eye-catching_image_featuring_a_musi_converted.png" />
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://yatinisgood.github.io/YoutubeMusicCharts/index_全球入榜播放次數最多.html"/>
+  <meta name="og:description" content="發現 YouTube Music的最新熱門歌曲與影片。每週更新的全球點播排行、熱門歌手和音樂影片，以及 SHORTS 上的流行曲目，我們為您提供最深入的音樂趨勢分析。跟踪 YouTube 的音樂脈動：從發燒影片到每週熱播歌曲，再到全球點播進榜最多的曲目，我們提供全面的數據和洞察，讓您始終走在音樂潮流的最前沿。您的音樂趨勢導航：每週為您帶來 YouTube 上最受歡迎的歌曲、藝人和音樂影片。從主流到小眾，從長視頻到 Shorts，一站式探索音樂世界的每個角落。"/>
+<meta name="og:keywords" content="YouTube Music每週熱門,發燒影片分析,音樂流行趨勢,熱門歌手與歌曲,YouTuber愛用的 Shorts 音樂">
+<meta property="og:title" itemprop="name" content="音樂潮流前線：追踪 YouTube 上的每週熱門歌曲與影片" />
+  
+
+  <meta property="og:locale" content="zh_TW" />
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css'><link rel="stylesheet" href="./style_type2.css">
+<script src="dropdownlist_每週熱播歌曲.js"></script>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container text-center">
+<h1>全球每週熱播歌曲 (更新於20190214)</h1>
+  <span>Create With <i class="zmdi zmdi-favorite red"></i>  By: <strong>Sherlock Tsai</strong> </span>
+</div>
+<div class="container text-center dropdown-menu-spacing">
+    <!-- 下拉選單 -->
+    <div id="dropdown-container"></div>    
+</div>
+<script>
+    function goToWeek(weekFileName) {
+        if(weekFileName) {
+            window.location.href = weekFileName+ "?week=" + encodeURIComponent(weekFileName);
+        }
+    }
+</script>
+<script>
+  window.onload = function() {
+      // 解析 URL 中的 GET 參數
+      var params = new URLSearchParams(window.location.search);
+      var week = params.get('week'); // 獲取 'week' 參數
+
+      if (week) {var weekSelector = document.getElementById('week-selector');
+      weekSelector.value = week;
+  }};
+</script>
+<div class="shell">
+  <div class="container">
+    <div class="row">
+      
+      
+<div class="col-md-6">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=LH4Y1ZUUx2g"  target="_blank">
+            <img src="https://lh3.googleusercontent.com/3LV6GoLom0Vb_oNFTXI_e2NIua0D-WocCifEFnSQattWpLfswpayWPzZ2BeClAB5QxR2EnGZkgh7QI7j=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>最多國家第一</span>
+            </div>
+            <div class="title-product">
+              <h3>break up with your girlfriend, i'm bored</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20190207，歌手：雅瑞安娜·格蘭德，上週名次：0</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price"></span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=LH4Y1ZUUx2g"  target="_blank" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=pNfTK39k55U" target="_blank">
+            <img src="https://lh3.googleusercontent.com/z9CRcjqBFHC_GY3p9pAfuTd1BuG-02DsmpcHm5CoyV_WFVnK0rcuYHdPSW-zjo_WlKiZv_vByOT-X0yOqQ=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>南韓</span>
+            </div>
+            <div class="title-product">
+              <h3>달라달라(DALLA DALLA)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20190210，歌手：ITZY，上週名次：0</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">每週觀賞次數：3,670,036</span></div>
+              <div class="wcf-left"><span class="price">總觀賞次數：323,236,345</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=pNfTK39k55U" target="_blank" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=Eq5OWQi7q_Y" target="_blank">
+            <img src="https://lh3.googleusercontent.com/8REFEEAuvL1lrCrcqU0YwaQM7h25HSO04KoXFFS8m8fLRUV8pxYRok5Yg7vsAlc083vOaw8zh-iojij-=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>奧地利</span>
+            </div>
+            <div class="title-product">
+              <h3>Ferrari (feat. MERO)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20190207，歌手：ENO，上週名次：0</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">每週觀賞次數：865,623</span></div>
+              <div class="wcf-left"><span class="price">總觀賞次數：116,944,876</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=Eq5OWQi7q_Y" target="_blank" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=O65FBF9RamQ" target="_blank">
+            <img src="https://lh3.googleusercontent.com/KmMulyWBu54ss67wBEpYpk8JEMc9kw3WhhElVp71GXFHyWMRQg_gI6Yx6_MG3zYts5ZBx91WwllML3w=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>巴西</span>
+            </div>
+            <div class="title-product">
+              <h3>Terremoto</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20190131，歌手：凱文賀, 安妮塔，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">每週觀賞次數：14,165,129</span></div>
+              <div class="wcf-left"><span class="price">總觀賞次數：340,252,027</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=O65FBF9RamQ" target="_blank" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=n6pCgzHMJY8" target="_blank">
+            <img src="https://lh3.googleusercontent.com/MaG8UBvmF869VFuR7FImhNxkfOXBm7c65C6mfuIDVUusnMnfCzzAaCuORsE51nBaoHd6e2Otj3bMqeUw=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>肯亞</span>
+            </div>
+            <div class="title-product">
+              <h3>Tetema (feat. Diamond Platnumz)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20190130，歌手：Rayvanny，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">每週觀賞次數：1,224,839</span></div>
+              <div class="wcf-left"><span class="price">總觀賞次數：79,903,259</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=n6pCgzHMJY8" target="_blank" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=Yxsnx8xE74o" target="_blank">
+            <img src="https://lh3.googleusercontent.com/wU7ckZ5SfoEx4eTNV7P6cswYWrt02p_CIHL7FZuOtsWkoSUfOWK63g16ofZMB1-aMfFNtkfsyt-8TEEh=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>荷蘭</span>
+            </div>
+            <div class="title-product">
+              <h3>Ewa Ewa</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20190207，歌手：Chivv, Diquenza，上週名次：0</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">每週觀賞次數：1,276,640</span></div>
+              <div class="wcf-left"><span class="price">總觀賞次數：8,408,619</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=Yxsnx8xE74o" target="_blank" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=Ofy0aAXiVpg" target="_blank">
+            <img src="https://lh3.googleusercontent.com/s1_VbhdgySfnm2iHpkx74g7mjqoiZ244X6ZnMLh6ZQlACVAx8TwanLW_1VJK6UKmZ1ZKY6VIpAmlhQsqVA=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>土耳其</span>
+            </div>
+            <div class="title-product">
+              <h3>Derdim Olsun</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20190125，歌手：Reynmen，上週名次：0</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">每週觀賞次數：18,679,937</span></div>
+              <div class="wcf-left"><span class="price">總觀賞次數：344,398,936</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=Ofy0aAXiVpg" target="_blank" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=xu-uQqoO0K0" target="_blank">
+            <img src="https://lh3.googleusercontent.com/9efct_fY9b8btpiNMElJ2fa9kBkVZj3UROJv3lIX0oPLPMABkw5s3zfU34vV5CmSYkRY71oljOVwdUrO=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>愛沙尼亞</span>
+            </div>
+            <div class="title-product">
+              <h3>tsirkus (5MIINUST, NUBLU & PLUUTO)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20190201，歌手：5MIINUST，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">每週觀賞次數：184,928</span></div>
+              <div class="wcf-left"><span class="price">總觀賞次數：4,108,127</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=xu-uQqoO0K0" target="_blank" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=n6pCgzHMJY8" target="_blank">
+            <img src="https://lh3.googleusercontent.com/MaG8UBvmF869VFuR7FImhNxkfOXBm7c65C6mfuIDVUusnMnfCzzAaCuORsE51nBaoHd6e2Otj3bMqeUw=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>烏干達</span>
+            </div>
+            <div class="title-product">
+              <h3>Tetema (feat. Diamond Platnumz)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20190130，歌手：Rayvanny，上週名次：61</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">每週觀賞次數：39,642</span></div>
+              <div class="wcf-left"><span class="price">總觀賞次數：79,903,259</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=n6pCgzHMJY8" target="_blank" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=0g4iRMvsYKs" target="_blank">
+            <img src="https://lh3.googleusercontent.com/Dnd6pkzgsD4hMMZLsfIfelKrxs3Xj1Oslw8ukrZT8zmNyxJj1Hr6sjfKWeIl2FaRWOZJiH-0QlqjlGVR9w=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>奈及利亞</span>
+            </div>
+            <div class="title-product">
+              <h3>Madu</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20181130，歌手：基茲·丹尼爾，上週名次：22</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">每週觀賞次數：266,037</span></div>
+              <div class="wcf-left"><span class="price">總觀賞次數：42,180,856</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=0g4iRMvsYKs" target="_blank" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=Ngb04xUK8uU" target="_blank">
+            <img src="https://lh3.googleusercontent.com/8me5iBxKIyD4c9GCNeDEDdl3ol3mmSo-HAM7BmP2qrsVHLcr7GZ6i6Z3ih_zcQe08fzezhZljWaAmvIkDg=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>匈牙利</span>
+            </div>
+            <div class="title-product">
+              <h3>Anyám Mondta</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20181124，歌手：Follow The Flow，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">每週觀賞次數：531,024</span></div>
+              <div class="wcf-left"><span class="price">總觀賞次數：37,750,597</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=Ngb04xUK8uU" target="_blank" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=hUnd1E2-un8" target="_blank">
+            <img src="https://lh3.googleusercontent.com/JEqpUQxT7AWSlFNsusf0BDphB0ubWO-qLNt4TGGMernlqqx-AkCRlemZQvNF-jdvMZbnwS1cKwzhPUCq=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>芬蘭</span>
+            </div>
+            <div class="title-product">
+              <h3>Ikuinen vappu</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20190210，歌手：JVG，上週名次：0</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">每週觀賞次數：241,566</span></div>
+              <div class="wcf-left"><span class="price">總觀賞次數：10,643,881</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=hUnd1E2-un8" target="_blank" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=k_eEW2Ioe-o" target="_blank">
+            <img src="https://lh3.googleusercontent.com/VZbyeb-Jvhxj9DAjVQqYlqKk55ag8xn-iK_kbzZKq6VN7X0sNIB1P7VQU8NHjPlWQJ_Rb5WSjvsxLvIF=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>法國</span>
+            </div>
+            <div class="title-product">
+              <h3>On Fleek (feat. Lartiste)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20190110，歌手：Eva，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">每週觀賞次數：4,702,781</span></div>
+              <div class="wcf-left"><span class="price">總觀賞次數：112,951,233</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=k_eEW2Ioe-o" target="_blank" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=bo_efYhYU2A" target="_blank">
+            <img src="https://lh3.googleusercontent.com/Ov5M6KJCtTHJIshdVvQnYBNtSx9JznSPmMkgfk9qRHa9B4nLQip0HXE9eNns4FELJUMlHgdB8yqzWD6M=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>捷克</span>
+            </div>
+            <div class="title-product">
+              <h3>Shallow</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20180927，歌手：布萊德利·庫柏, Lady Gaga，上週名次：3</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">每週觀賞次數：421,816</span></div>
+              <div class="wcf-left"><span class="price">總觀賞次數：1,592,489,720</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=bo_efYhYU2A" target="_blank" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=n6pCgzHMJY8" target="_blank">
+            <img src="https://lh3.googleusercontent.com/MaG8UBvmF869VFuR7FImhNxkfOXBm7c65C6mfuIDVUusnMnfCzzAaCuORsE51nBaoHd6e2Otj3bMqeUw=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>坦尚尼亞</span>
+            </div>
+            <div class="title-product">
+              <h3>Tetema (feat. Diamond Platnumz)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20190130，歌手：Rayvanny，上週名次：2</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">每週觀賞次數：1,272,132</span></div>
+              <div class="wcf-left"><span class="price">總觀賞次數：79,903,259</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=n6pCgzHMJY8" target="_blank" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=O65FBF9RamQ" target="_blank">
+            <img src="https://lh3.googleusercontent.com/KmMulyWBu54ss67wBEpYpk8JEMc9kw3WhhElVp71GXFHyWMRQg_gI6Yx6_MG3zYts5ZBx91WwllML3w=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>葡萄牙</span>
+            </div>
+            <div class="title-product">
+              <h3>Terremoto</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20190131，歌手：凱文賀, 安妮塔，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">每週觀賞次數：1,106,066</span></div>
+              <div class="wcf-left"><span class="price">總觀賞次數：340,252,027</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=O65FBF9RamQ" target="_blank" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=Eq5OWQi7q_Y" target="_blank">
+            <img src="https://lh3.googleusercontent.com/8REFEEAuvL1lrCrcqU0YwaQM7h25HSO04KoXFFS8m8fLRUV8pxYRok5Yg7vsAlc083vOaw8zh-iojij-=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>瑞士</span>
+            </div>
+            <div class="title-product">
+              <h3>Ferrari (feat. MERO)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20190207，歌手：ENO，上週名次：0</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">每週觀賞次數：625,781</span></div>
+              <div class="wcf-left"><span class="price">總觀賞次數：116,944,876</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=Eq5OWQi7q_Y" target="_blank" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=YS2RmyES-GU" target="_blank">
+            <img src="https://lh3.googleusercontent.com/bjHd0XaFFHVLm6jJS0T3ceem6giZVTaUxSpgaNk2aKc0thavsOaA20_XFEPmgscixX-DF1-h8xlMSjtN=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>祕魯</span>
+            </div>
+            <div class="title-product">
+              <h3>Calma (Remix)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20190705，歌手：Pedro Capó, 卡洛斯・埃夫恩・雷耶斯・羅薩多, Alan Walker，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">每週觀賞次數：5,153,572</span></div>
+              <div class="wcf-left"><span class="price">總觀賞次數：10,867,220</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=YS2RmyES-GU" target="_blank" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=YS2RmyES-GU" target="_blank">
+            <img src="https://lh3.googleusercontent.com/bjHd0XaFFHVLm6jJS0T3ceem6giZVTaUxSpgaNk2aKc0thavsOaA20_XFEPmgscixX-DF1-h8xlMSjtN=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>哥倫比亞</span>
+            </div>
+            <div class="title-product">
+              <h3>Calma (Remix)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20190705，歌手：Pedro Capó, 卡洛斯・埃夫恩・雷耶斯・羅薩多, Alan Walker，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">每週觀賞次數：7,735,488</span></div>
+              <div class="wcf-left"><span class="price">總觀賞次數：10,867,220</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=YS2RmyES-GU" target="_blank" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=mDFBTdToRmw" target="_blank">
+            <img src="https://lh3.googleusercontent.com/wt7b03VAtJwVPiIkI5rdzxDtKHF7EdX3S7fO1jEHmy6ogIyJOXSl1zVa_3jEUXm0eitJzDt4d0TFUhY=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>俄羅斯</span>
+            </div>
+            <div class="title-product">
+              <h3>SKIBIDI</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20181004，歌手：有點大，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">每週觀賞次數：3,237,117</span></div>
+              <div class="wcf-left"><span class="price">總觀賞次數：720,113,728</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=mDFBTdToRmw" target="_blank" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=Eq5OWQi7q_Y" target="_blank">
+            <img src="https://lh3.googleusercontent.com/8REFEEAuvL1lrCrcqU0YwaQM7h25HSO04KoXFFS8m8fLRUV8pxYRok5Yg7vsAlc083vOaw8zh-iojij-=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>德國</span>
+            </div>
+            <div class="title-product">
+              <h3>Ferrari (feat. MERO)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20190207，歌手：ENO，上週名次：0</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">每週觀賞次數：7,881,937</span></div>
+              <div class="wcf-left"><span class="price">總觀賞次數：116,944,876</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=Eq5OWQi7q_Y" target="_blank" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=309F6EDyjW4" target="_blank">
+            <img src="https://lh3.googleusercontent.com/Y-Gm1_oId78kYXsrhGyimODGm-8zgvDwIgpbQ7_CDt6bXnDAKFRVNe2gANNiGDWFAy5MZV85eGrux9dz=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>塞爾維亞</span>
+            </div>
+            <div class="title-product">
+              <h3>KATAKLIZMA</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20190203，歌手：Alexandra, Gasttozz，上週名次：2</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">每週觀賞次數：680,097</span></div>
+              <div class="wcf-left"><span class="price">總觀賞次數：21,491,095</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=309F6EDyjW4" target="_blank" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=5Fv19KVVya8" target="_blank">
+            <img src="https://lh3.googleusercontent.com/jBbYK3Wt_icksMaCfCIKQgDImHMB0SjZXASACg75j3maMi62DaKxx9aFjCCaTIIKYT3RS11g3glbsMivkA=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>烏克蘭</span>
+            </div>
+            <div class="title-product">
+              <h3>ПЛАКАЛА</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20180427，歌手：KAZKA，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">每週觀賞次數：2,028,420</span></div>
+              <div class="wcf-left"><span class="price">總觀賞次數：445,127,204</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=5Fv19KVVya8" target="_blank" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=cm89uUm8dpk" target="_blank">
+            <img src="https://lh3.googleusercontent.com/BFEGttmtUm6Oe5WL4IQUa7woPjeBNUy-T1FaZxyH5_nYJAdnw0sXkbc81jQeSnkGTP7o8T3aYmfkbBOW=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>辛巴威</span>
+            </div>
+            <div class="title-product">
+              <h3>Kunerima</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20181102，歌手：Jah Prayzah，上週名次：0</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">每週觀賞次數：129,953</span></div>
+              <div class="wcf-left"><span class="price">總觀賞次數：2,782,328</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=cm89uUm8dpk" target="_blank" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=u9sz3_Avmlo" target="_blank">
+            <img src="https://lh3.googleusercontent.com/l8W58_naZ56rbURkOPD6AAv9XRLXCdpypxW3ER6M0klyufkEvf-VmMBDHWFn1W_mp2rtyaRHCxjLxBAYrg=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>波蘭</span>
+            </div>
+            <div class="title-product">
+              <h3>Robię Yeah (feat. K Koke)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20190124，歌手：馬利克·蒙坦拿，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">每週觀賞次數：3,408,687</span></div>
+              <div class="wcf-left"><span class="price">總觀賞次數：58,998,480</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=u9sz3_Avmlo" target="_blank" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=SX_ViT4Ra7k" target="_blank">
+            <img src="https://lh3.googleusercontent.com/Yiqnzq5SfMrNjf9XTAMCPadMclhC8ltAVaePndf64gdwvjaN6eEDFBw2aKRukpqxlb7rdkb27BdUFLIDfA=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>日本</span>
+            </div>
+            <div class="title-product">
+              <h3>Lemon</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20180226，歌手：米津玄師，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">每週觀賞次數：6,498,353</span></div>
+              <div class="wcf-left"><span class="price">總觀賞次數：846,714,513</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=SX_ViT4Ra7k" target="_blank" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=YS2RmyES-GU" target="_blank">
+            <img src="https://lh3.googleusercontent.com/bjHd0XaFFHVLm6jJS0T3ceem6giZVTaUxSpgaNk2aKc0thavsOaA20_XFEPmgscixX-DF1-h8xlMSjtN=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>阿根廷</span>
+            </div>
+            <div class="title-product">
+              <h3>Calma (Remix)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20190705，歌手：Pedro Capó, 卡洛斯・埃夫恩・雷耶斯・羅薩多, Alan Walker，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">每週觀賞次數：9,992,288</span></div>
+              <div class="wcf-left"><span class="price">總觀賞次數：10,867,220</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=YS2RmyES-GU" target="_blank" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=22lISUXgSUw" target="_blank">
+            <img src="https://lh3.googleusercontent.com/76M3Tu9bC3Z9B7R4-20-vmEpNC20XJRlTJiUW7oLgV4nCjuT08HY1w2jVKC-mN_IkgdIOOrI0GtE7xgB=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>義大利</span>
+            </div>
+            <div class="title-product">
+              <h3>Soldi</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20190206，歌手：馬哈茂德，上週名次：0</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">每週觀賞次數：12,210,096</span></div>
+              <div class="wcf-left"><span class="price">總觀賞次數：207,166,364</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=22lISUXgSUw" target="_blank" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=YS2RmyES-GU" target="_blank">
+            <img src="https://lh3.googleusercontent.com/bjHd0XaFFHVLm6jJS0T3ceem6giZVTaUxSpgaNk2aKc0thavsOaA20_XFEPmgscixX-DF1-h8xlMSjtN=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>墨西哥</span>
+            </div>
+            <div class="title-product">
+              <h3>Calma (Remix)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20190705，歌手：Pedro Capó, 卡洛斯・埃夫恩・雷耶斯・羅薩多, Alan Walker，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">每週觀賞次數：18,274,703</span></div>
+              <div class="wcf-left"><span class="price">總觀賞次數：10,867,220</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=YS2RmyES-GU" target="_blank" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=D0QT3ZULTaI" target="_blank">
+            <img src="https://lh3.googleusercontent.com/jH6Vru1Uw0lrEdohIoFvZAL_2Zi_Ci_s7uQ5aijh1P9oQnz16p2utwhbn3BTwk4H7ZyN3lov56SW1qz-=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>羅馬尼亞</span>
+            </div>
+            <div class="title-product">
+              <h3>Luna</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20181128，歌手：Carla's Dreams，上週名次：2</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">每週觀賞次數：1,226,547</span></div>
+              <div class="wcf-left"><span class="price">總觀賞次數：61,174,014</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=D0QT3ZULTaI" target="_blank" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=jV1sjm9Lz_Q" target="_blank">
+            <img src="https://lh3.googleusercontent.com/3xYkuJ8C4-M9WNBAVgJsoaeWslZlaxAPUase8ipW7JlGEw_djiyGnKcwbc0tng1uUE3hlHXkOvvnxWk=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>以色列</span>
+            </div>
+            <div class="title-product">
+              <h3>Bassa Sababa</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20190201，歌手：妮塔·巴茨萊，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">每週觀賞次數：1,923,846</span></div>
+              <div class="wcf-left"><span class="price">總觀賞次數：311,914,151</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=jV1sjm9Lz_Q" target="_blank" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=LH4Y1ZUUx2g" target="_blank">
+            <img src="https://lh3.googleusercontent.com/3LV6GoLom0Vb_oNFTXI_e2NIua0D-WocCifEFnSQattWpLfswpayWPzZ2BeClAB5QxR2EnGZkgh7QI7j=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>紐西蘭</span>
+            </div>
+            <div class="title-product">
+              <h3>break up with your girlfriend, i'm bored</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20190207，歌手：雅瑞安娜·格蘭德，上週名次：0</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">每週觀賞次數：337,643</span></div>
+              <div class="wcf-left"><span class="price">總觀賞次數：557,831,586</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=LH4Y1ZUUx2g" target="_blank" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=LH4Y1ZUUx2g" target="_blank">
+            <img src="https://lh3.googleusercontent.com/3LV6GoLom0Vb_oNFTXI_e2NIua0D-WocCifEFnSQattWpLfswpayWPzZ2BeClAB5QxR2EnGZkgh7QI7j=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>澳洲</span>
+            </div>
+            <div class="title-product">
+              <h3>break up with your girlfriend, i'm bored</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20190207，歌手：雅瑞安娜·格蘭德，上週名次：0</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">每週觀賞次數：1,579,846</span></div>
+              <div class="wcf-left"><span class="price">總觀賞次數：557,831,586</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=LH4Y1ZUUx2g" target="_blank" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=LH4Y1ZUUx2g" target="_blank">
+            <img src="https://lh3.googleusercontent.com/3LV6GoLom0Vb_oNFTXI_e2NIua0D-WocCifEFnSQattWpLfswpayWPzZ2BeClAB5QxR2EnGZkgh7QI7j=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>加拿大</span>
+            </div>
+            <div class="title-product">
+              <h3>break up with your girlfriend, i'm bored</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20190207，歌手：雅瑞安娜·格蘭德，上週名次：0</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">每週觀賞次數：2,307,139</span></div>
+              <div class="wcf-left"><span class="price">總觀賞次數：557,831,586</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=LH4Y1ZUUx2g" target="_blank" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=LH4Y1ZUUx2g" target="_blank">
+            <img src="https://lh3.googleusercontent.com/3LV6GoLom0Vb_oNFTXI_e2NIua0D-WocCifEFnSQattWpLfswpayWPzZ2BeClAB5QxR2EnGZkgh7QI7j=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>挪威</span>
+            </div>
+            <div class="title-product">
+              <h3>break up with your girlfriend, i'm bored</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20190207，歌手：雅瑞安娜·格蘭德，上週名次：0</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">每週觀賞次數：214,963</span></div>
+              <div class="wcf-left"><span class="price">總觀賞次數：557,831,586</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=LH4Y1ZUUx2g" target="_blank" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=LH4Y1ZUUx2g" target="_blank">
+            <img src="https://lh3.googleusercontent.com/3LV6GoLom0Vb_oNFTXI_e2NIua0D-WocCifEFnSQattWpLfswpayWPzZ2BeClAB5QxR2EnGZkgh7QI7j=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>瑞典</span>
+            </div>
+            <div class="title-product">
+              <h3>break up with your girlfriend, i'm bored</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20190207，歌手：雅瑞安娜·格蘭德，上週名次：0</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">每週觀賞次數：354,306</span></div>
+              <div class="wcf-left"><span class="price">總觀賞次數：557,831,586</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=LH4Y1ZUUx2g" target="_blank" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=LH4Y1ZUUx2g" target="_blank">
+            <img src="https://lh3.googleusercontent.com/3LV6GoLom0Vb_oNFTXI_e2NIua0D-WocCifEFnSQattWpLfswpayWPzZ2BeClAB5QxR2EnGZkgh7QI7j=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>盧森堡</span>
+            </div>
+            <div class="title-product">
+              <h3>break up with your girlfriend, i'm bored</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20190207，歌手：雅瑞安娜·格蘭德，上週名次：0</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">每週觀賞次數：30,740</span></div>
+              <div class="wcf-left"><span class="price">總觀賞次數：557,831,586</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=LH4Y1ZUUx2g" target="_blank" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=LH4Y1ZUUx2g" target="_blank">
+            <img src="https://lh3.googleusercontent.com/3LV6GoLom0Vb_oNFTXI_e2NIua0D-WocCifEFnSQattWpLfswpayWPzZ2BeClAB5QxR2EnGZkgh7QI7j=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>美國</span>
+            </div>
+            <div class="title-product">
+              <h3>break up with your girlfriend, i'm bored</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20190207，歌手：雅瑞安娜·格蘭德，上週名次：0</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">每週觀賞次數：18,561,908</span></div>
+              <div class="wcf-left"><span class="price">總觀賞次數：557,831,586</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=LH4Y1ZUUx2g" target="_blank" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=LH4Y1ZUUx2g" target="_blank">
+            <img src="https://lh3.googleusercontent.com/3LV6GoLom0Vb_oNFTXI_e2NIua0D-WocCifEFnSQattWpLfswpayWPzZ2BeClAB5QxR2EnGZkgh7QI7j=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>英國</span>
+            </div>
+            <div class="title-product">
+              <h3>break up with your girlfriend, i'm bored</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20190207，歌手：雅瑞安娜·格蘭德，上週名次：0</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">每週觀賞次數：4,235,032</span></div>
+              <div class="wcf-left"><span class="price">總觀賞次數：557,831,586</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=LH4Y1ZUUx2g" target="_blank" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=LH4Y1ZUUx2g" target="_blank">
+            <img src="https://lh3.googleusercontent.com/3LV6GoLom0Vb_oNFTXI_e2NIua0D-WocCifEFnSQattWpLfswpayWPzZ2BeClAB5QxR2EnGZkgh7QI7j=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>全球</span>
+            </div>
+            <div class="title-product">
+              <h3>break up with your girlfriend, i'm bored</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20190207，歌手：雅瑞安娜·格蘭德，上週名次：0</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">每週觀賞次數：72,455,205</span></div>
+              <div class="wcf-left"><span class="price">總觀賞次數：557,831,586</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=LH4Y1ZUUx2g" target="_blank" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=LH4Y1ZUUx2g" target="_blank">
+            <img src="https://lh3.googleusercontent.com/3LV6GoLom0Vb_oNFTXI_e2NIua0D-WocCifEFnSQattWpLfswpayWPzZ2BeClAB5QxR2EnGZkgh7QI7j=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>冰島</span>
+            </div>
+            <div class="title-product">
+              <h3>break up with your girlfriend, i'm bored</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20190207，歌手：雅瑞安娜·格蘭德，上週名次：0</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">每週觀賞次數：26,334</span></div>
+              <div class="wcf-left"><span class="price">總觀賞次數：557,831,586</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=LH4Y1ZUUx2g" target="_blank" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=LH4Y1ZUUx2g" target="_blank">
+            <img src="https://lh3.googleusercontent.com/3LV6GoLom0Vb_oNFTXI_e2NIua0D-WocCifEFnSQattWpLfswpayWPzZ2BeClAB5QxR2EnGZkgh7QI7j=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>南非</span>
+            </div>
+            <div class="title-product">
+              <h3>break up with your girlfriend, i'm bored</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20190207，歌手：雅瑞安娜·格蘭德，上週名次：0</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">每週觀賞次數：371,175</span></div>
+              <div class="wcf-left"><span class="price">總觀賞次數：557,831,586</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=LH4Y1ZUUx2g" target="_blank" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=LH4Y1ZUUx2g" target="_blank">
+            <img src="https://lh3.googleusercontent.com/3LV6GoLom0Vb_oNFTXI_e2NIua0D-WocCifEFnSQattWpLfswpayWPzZ2BeClAB5QxR2EnGZkgh7QI7j=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>愛爾蘭</span>
+            </div>
+            <div class="title-product">
+              <h3>break up with your girlfriend, i'm bored</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20190207，歌手：雅瑞安娜·格蘭德，上週名次：0</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">每週觀賞次數：476,509</span></div>
+              <div class="wcf-left"><span class="price">總觀賞次數：557,831,586</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=LH4Y1ZUUx2g" target="_blank" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=LH4Y1ZUUx2g" target="_blank">
+            <img src="https://lh3.googleusercontent.com/3LV6GoLom0Vb_oNFTXI_e2NIua0D-WocCifEFnSQattWpLfswpayWPzZ2BeClAB5QxR2EnGZkgh7QI7j=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>比利時</span>
+            </div>
+            <div class="title-product">
+              <h3>break up with your girlfriend, i'm bored</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20190207，歌手：雅瑞安娜·格蘭德，上週名次：0</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">每週觀賞次數：500,903</span></div>
+              <div class="wcf-left"><span class="price">總觀賞次數：557,831,586</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=LH4Y1ZUUx2g" target="_blank" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=LH4Y1ZUUx2g" target="_blank">
+            <img src="https://lh3.googleusercontent.com/3LV6GoLom0Vb_oNFTXI_e2NIua0D-WocCifEFnSQattWpLfswpayWPzZ2BeClAB5QxR2EnGZkgh7QI7j=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>丹麥</span>
+            </div>
+            <div class="title-product">
+              <h3>break up with your girlfriend, i'm bored</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20190207，歌手：雅瑞安娜·格蘭德，上週名次：0</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">每週觀賞次數：250,011</span></div>
+              <div class="wcf-left"><span class="price">總觀賞次數：557,831,586</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=LH4Y1ZUUx2g" target="_blank" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=DiItGE3eAyQ" target="_blank">
+            <img src="https://lh3.googleusercontent.com/qiW8LOnUWmVWzhwOOfAa-GsD2eHfIXAyDy7aUFwPhANsRLxom-zkk1JL4wNiMthxFw4QBTl6_K-e06VARw=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>智利</span>
+            </div>
+            <div class="title-product">
+              <h3>Con Calma</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20190123，歌手：Snow, 洋基老爹，上週名次：2</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">每週觀賞次數：3,717,607</span></div>
+              <div class="wcf-left"><span class="price">總觀賞次數：2,787,916,590</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=DiItGE3eAyQ" target="_blank" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=DiItGE3eAyQ" target="_blank">
+            <img src="https://lh3.googleusercontent.com/qiW8LOnUWmVWzhwOOfAa-GsD2eHfIXAyDy7aUFwPhANsRLxom-zkk1JL4wNiMthxFw4QBTl6_K-e06VARw=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>西班牙</span>
+            </div>
+            <div class="title-product">
+              <h3>Con Calma</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20190123，歌手：Snow, 洋基老爹，上週名次：2</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">每週觀賞次數：5,253,443</span></div>
+              <div class="wcf-left"><span class="price">總觀賞次數：2,787,916,590</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=DiItGE3eAyQ" target="_blank" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+    </div>
+  </div>
+</div>
+<!-- partial -->
+  
+</body>
+</html>
