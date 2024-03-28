@@ -1,0 +1,1273 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW" >
+<head>
+  <meta charset="UTF-8">
+  <title>全球每週熱播歌曲</title>
+  <meta property="og:image" content="https://raw.githubusercontent.com/yatinisgood/YoutubeMusicCharts/main/A_creative_and_eye-catching_image_featuring_a_musi_converted.png" />
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://yatinisgood.github.io/YoutubeMusicCharts/index_全球入榜播放次數最多.html"/>
+  <meta name="og:description" content="發現 YouTube Music的最新熱門歌曲與影片。每週更新的全球點播排行、熱門歌手和音樂影片，以及 SHORTS 上的流行曲目，我們為您提供最深入的音樂趨勢分析。跟踪 YouTube 的音樂脈動：從發燒影片到每週熱播歌曲，再到全球點播進榜最多的曲目，我們提供全面的數據和洞察，讓您始終走在音樂潮流的最前沿。您的音樂趨勢導航：每週為您帶來 YouTube 上最受歡迎的歌曲、藝人和音樂影片。從主流到小眾，從長視頻到 Shorts，一站式探索音樂世界的每個角落。"/>
+<meta name="og:keywords" content="YouTube Music每週熱門,發燒影片分析,音樂流行趨勢,熱門歌手與歌曲,YouTuber愛用的 Shorts 音樂">
+<meta property="og:title" itemprop="name" content="音樂潮流前線：追踪 YouTube 上的每週熱門歌曲與影片" />
+  
+
+  <meta property="og:locale" content="zh_TW" />
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css'><link rel="stylesheet" href="./style_type2.css">
+<script src="dropdownlist_每週熱播歌曲.js"></script>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container text-center">
+<h1>全球每週熱播歌曲 (更新於20181129)</h1>
+  <span>Create With <i class="zmdi zmdi-favorite red"></i>  By: <strong>Sherlock Tsai</strong> </span>
+</div>
+<div class="container text-center dropdown-menu-spacing">
+    <!-- 下拉選單 -->
+    <div id="dropdown-container"></div>    
+</div>
+<script>
+    function goToWeek(weekFileName) {
+        if(weekFileName) {
+            window.location.href = weekFileName+ "?week=" + encodeURIComponent(weekFileName);
+        }
+    }
+</script>
+<script>
+  window.onload = function() {
+      // 解析 URL 中的 GET 參數
+      var params = new URLSearchParams(window.location.search);
+      var week = params.get('week'); // 獲取 'week' 參數
+
+      if (week) {var weekSelector = document.getElementById('week-selector');
+      weekSelector.value = week;
+  }};
+</script>
+<div class="shell">
+  <div class="container">
+    <div class="row">
+      
+      
+<div class="col-md-6">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=ixkoVwKQaJg"  target="_blank">
+            <img src="https://lh3.googleusercontent.com/9w0F83sPH1NxG7xhtSHX42edxqFKJM61hmYt4HPJ0PRXkFrrob0t-kMB7_cXb56MUN6b2_0SKAcN2DIhWA=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>最多國家第一</span>
+            </div>
+            <div class="title-product">
+              <h3>Taki Taki (feat. 卡蒂·B, Ozuna & 席琳娜·戈梅茲)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20181009，歌手：DJ Snake，上週名次：2</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price"></span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=ixkoVwKQaJg"  target="_blank" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=E8gmARGvPlI" target="_blank">
+            <img src="https://lh3.googleusercontent.com/Pz95hD_2FIXOs_PVPdgpO-KqcdOmpsNCFnrS5IBgNJan--EyjjLph4cdRr_9xVeybgbDobaTDdH30Qam=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>丹麥</span>
+            </div>
+            <div class="title-product">
+              <h3>Last Christmas</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：19841129，歌手：「轟!合唱團」，上週名次：8</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">每週觀賞次數：222,083</span></div>
+              <div class="wcf-left"><span class="price">總觀賞次數：886,117,554</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=E8gmARGvPlI" target="_blank" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=254EHfv9RvM" target="_blank">
+            <img src="https://lh3.googleusercontent.com/p8TABXyAfOX3B7iC6mECUWDjSkMSGOLUwBw6ORcLyYZgv3LEvMesBerLIaEOr9vzk_SSTsKkrQuCYnlf3g=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>法國</span>
+            </div>
+            <div class="title-product">
+              <h3>Jaloux</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20180925，歌手：Dadju，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">每週觀賞次數：4,353,760</span></div>
+              <div class="wcf-left"><span class="price">總觀賞次數：321,967,594</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=254EHfv9RvM" target="_blank" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=ScZFzmN-8XY" target="_blank">
+            <img src="https://lh3.googleusercontent.com/SlZFrlC_71ujQbDbQIovmkiosNkt7r3JibxMUxzEbIomXxnencAQyGB8d_ZtOuK1JVXOGJ3ZUWiI2-9K=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>土耳其</span>
+            </div>
+            <div class="title-product">
+              <h3>Unuturum Elbet (feat. Derya)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20181107，歌手：Rafet El Roman，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">每週觀賞次數：11,233,879</span></div>
+              <div class="wcf-left"><span class="price">總觀賞次數：307,650,004</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=ScZFzmN-8XY" target="_blank" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=aSjflT_J0Xo" target="_blank">
+            <img src="https://lh3.googleusercontent.com/Yk0l-WXLhQ0GWWlG71EpHtM0aSAP8B5o_b-gShKdgod5imN3sIg3IxRWq6qJcWeByNdQbHpnBxSK_-yU1w=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>西班牙</span>
+            </div>
+            <div class="title-product">
+              <h3>Adán y Eva</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20181105，歌手：Paulo Londra，上週名次：3</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">每週觀賞次數：3,872,199</span></div>
+              <div class="wcf-left"><span class="price">總觀賞次數：1,254,611,770</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=aSjflT_J0Xo" target="_blank" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=Ihz2yWuoEIY" target="_blank">
+            <img src="https://lh3.googleusercontent.com/bpbQfZYbb-ZMd2d9jQyLAO8AnK5SA3z1yozRS3_afHpBSipY4QuzJeg460MMpKpC3Xakrfqp9HhkfTFx=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>羅馬尼亞</span>
+            </div>
+            <div class="title-product">
+              <h3>Dansează amândoi</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20181023，歌手：妮可萊·雪莉，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">每週觀賞次數：1,984,508</span></div>
+              <div class="wcf-left"><span class="price">總觀賞次數：76,447,260</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=Ihz2yWuoEIY" target="_blank" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=gCXy8CJyeSg" target="_blank">
+            <img src="https://lh3.googleusercontent.com/3yT_c7DBop_C50irJdVskOBz8IoMQmcmcAQhtW8HlNYUCxj4W_xSsBqQz762L_VVB4DQcULWxHYwJxWK=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>辛巴威</span>
+            </div>
+            <div class="title-product">
+              <h3>Matsimba</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20180918，歌手：Enzo Ishall，上週名次：0</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">每週觀賞次數：36,536</span></div>
+              <div class="wcf-left"><span class="price">總觀賞次數：1,784,517</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=gCXy8CJyeSg" target="_blank" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=EDwwCYaxbkc" target="_blank">
+            <img src="https://lh3.googleusercontent.com/et1bEPiae-dwXrTWoUL6_i6XOqx2exbwIUIsjkC41tYFtVWrZFiWMMrX5yFGY0rKciIQ_dPr9uaS17Lc=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>波蘭</span>
+            </div>
+            <div class="title-product">
+              <h3>Janosik (feat. Golec uOrkiestra)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20181114，歌手：Bedoes, Kubi Producent，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">每週觀賞次數：1,881,595</span></div>
+              <div class="wcf-left"><span class="price">總觀賞次數：47,097,072</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=EDwwCYaxbkc" target="_blank" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=w8eUTOYrkDM" target="_blank">
+            <img src="https://lh3.googleusercontent.com/74W-kvvxpskBJfm5pR-eBXV4nN2ajni5YEMqA3dWITJTf-kHLxWuxe3D__Z9oP-CqOEtFcMhD4E-heon=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>肯亞</span>
+            </div>
+            <div class="title-product">
+              <h3>Mwanza (feat. Diamond Platnumz)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20181110，歌手：Rayvanny，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">每週觀賞次數：336,297</span></div>
+              <div class="wcf-left"><span class="price">總觀賞次數：66,126,458</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=w8eUTOYrkDM" target="_blank" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=9Ew461CAlmQ" target="_blank">
+            <img src="https://lh3.googleusercontent.com/VzgUZF6zUxzyB98OIoiBrObGyXqIdQERD6eX8dvQsUsvxGNoQ9r85C3tFxI7-5MZGwPpVx7C3QWtdwNO=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>奧地利</span>
+            </div>
+            <div class="title-product">
+              <h3>Baller los</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20181122，歌手：MERO，上週名次：0</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">每週觀賞次數：622,218</span></div>
+              <div class="wcf-left"><span class="price">總觀賞次數：218,749,905</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=9Ew461CAlmQ" target="_blank" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=-EYO2wbjeOU" target="_blank">
+            <img src="https://i.ytimg.com/vi/-EYO2wbjeOU/default.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>坦尚尼亞</span>
+            </div>
+            <div class="title-product">
+              <h3>Konki (Dudu Baya,Rayvanny)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20181213，歌手：Rayvanny，上週名次：0</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">每週觀賞次數：211,406</span></div>
+              <div class="wcf-left"><span class="price">總觀賞次數：1,159,512</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=-EYO2wbjeOU" target="_blank" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=ixkoVwKQaJg" target="_blank">
+            <img src="https://lh3.googleusercontent.com/9w0F83sPH1NxG7xhtSHX42edxqFKJM61hmYt4HPJ0PRXkFrrob0t-kMB7_cXb56MUN6b2_0SKAcN2DIhWA=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>比利時</span>
+            </div>
+            <div class="title-product">
+              <h3>Taki Taki (feat. 卡蒂·B, Ozuna & 席琳娜·戈梅茲)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20181009，歌手：DJ Snake，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">每週觀賞次數：473,094</span></div>
+              <div class="wcf-left"><span class="price">總觀賞次數：2,540,297,072</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=ixkoVwKQaJg" target="_blank" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=ixkoVwKQaJg" target="_blank">
+            <img src="https://lh3.googleusercontent.com/9w0F83sPH1NxG7xhtSHX42edxqFKJM61hmYt4HPJ0PRXkFrrob0t-kMB7_cXb56MUN6b2_0SKAcN2DIhWA=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>祕魯</span>
+            </div>
+            <div class="title-product">
+              <h3>Taki Taki (feat. 卡蒂·B, Ozuna & 席琳娜·戈梅茲)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20181009，歌手：DJ Snake，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">每週觀賞次數：3,656,089</span></div>
+              <div class="wcf-left"><span class="price">總觀賞次數：2,540,297,072</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=ixkoVwKQaJg" target="_blank" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=5Fv19KVVya8" target="_blank">
+            <img src="https://lh3.googleusercontent.com/jBbYK3Wt_icksMaCfCIKQgDImHMB0SjZXASACg75j3maMi62DaKxx9aFjCCaTIIKYT3RS11g3glbsMivkA=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>俄羅斯</span>
+            </div>
+            <div class="title-product">
+              <h3>ПЛАКАЛА</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20180427，歌手：KAZKA，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">每週觀賞次數：3,658,733</span></div>
+              <div class="wcf-left"><span class="price">總觀賞次數：445,127,204</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=5Fv19KVVya8" target="_blank" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=ixkoVwKQaJg" target="_blank">
+            <img src="https://lh3.googleusercontent.com/9w0F83sPH1NxG7xhtSHX42edxqFKJM61hmYt4HPJ0PRXkFrrob0t-kMB7_cXb56MUN6b2_0SKAcN2DIhWA=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>全球</span>
+            </div>
+            <div class="title-product">
+              <h3>Taki Taki (feat. 卡蒂·B, Ozuna & 席琳娜·戈梅茲)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20181009，歌手：DJ Snake，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">每週觀賞次數：86,857,157</span></div>
+              <div class="wcf-left"><span class="price">總觀賞次數：2,540,297,072</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=ixkoVwKQaJg" target="_blank" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=bo_efYhYU2A" target="_blank">
+            <img src="https://lh3.googleusercontent.com/Ov5M6KJCtTHJIshdVvQnYBNtSx9JznSPmMkgfk9qRHa9B4nLQip0HXE9eNns4FELJUMlHgdB8yqzWD6M=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>冰島</span>
+            </div>
+            <div class="title-product">
+              <h3>Shallow</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20180927，歌手：布萊德利·庫柏, Lady Gaga，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">每週觀賞次數：15,882</span></div>
+              <div class="wcf-left"><span class="price">總觀賞次數：1,592,489,720</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=bo_efYhYU2A" target="_blank" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=cEYLdntVBdM" target="_blank">
+            <img src="https://lh3.googleusercontent.com/2XiF8BLtPRA19L1J4dGG932YiuwwGYYzpK2iAcgBZkJi45K4jsHLFmli86g7N6SYPcHwGM3LAtFaH0c=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>捷克</span>
+            </div>
+            <div class="title-product">
+              <h3>Za 100 let (Marek Ztracený, Tomáš Klus, František Černý, Ewa Farna, Xindl X, Michal Hrůza, David Stypka, Petr Lexa, Václav Bláha, Deborah Kahl, Mirai Navratil, Jindřich Polák, Jana Infeldová)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20181015，歌手：Petr Lexa, František Černý, 愛娃·法納, Michal Hrůza, Tomáš Klus, Xindl X, Debbi, Václav Bláha, Marek Ztracený, David Stypka，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">每週觀賞次數：367,654</span></div>
+              <div class="wcf-left"><span class="price">總觀賞次數：32,039,785</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=cEYLdntVBdM" target="_blank" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=ixkoVwKQaJg" target="_blank">
+            <img src="https://lh3.googleusercontent.com/9w0F83sPH1NxG7xhtSHX42edxqFKJM61hmYt4HPJ0PRXkFrrob0t-kMB7_cXb56MUN6b2_0SKAcN2DIhWA=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>盧森堡</span>
+            </div>
+            <div class="title-product">
+              <h3>Taki Taki (feat. 卡蒂·B, Ozuna & 席琳娜·戈梅茲)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20181009，歌手：DJ Snake，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">每週觀賞次數：28,477</span></div>
+              <div class="wcf-left"><span class="price">總觀賞次數：2,540,297,072</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=ixkoVwKQaJg" target="_blank" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=mDFBTdToRmw" target="_blank">
+            <img src="https://lh3.googleusercontent.com/wt7b03VAtJwVPiIkI5rdzxDtKHF7EdX3S7fO1jEHmy6ogIyJOXSl1zVa_3jEUXm0eitJzDt4d0TFUhY=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>芬蘭</span>
+            </div>
+            <div class="title-product">
+              <h3>SKIBIDI</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20181004，歌手：有點大，上週名次：2</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">每週觀賞次數：177,625</span></div>
+              <div class="wcf-left"><span class="price">總觀賞次數：720,113,728</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=mDFBTdToRmw" target="_blank" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=KzPlB4qtyWI" target="_blank">
+            <img src="https://i.ytimg.com/vi/KzPlB4qtyWI/default.jpg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>南非</span>
+            </div>
+            <div class="title-product">
+              <h3>Malwedhe</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20181112，歌手：King Monada, King Modana, King Monada，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">每週觀賞次數：339,928</span></div>
+              <div class="wcf-left"><span class="price">總觀賞次數：677,358</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=KzPlB4qtyWI" target="_blank" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=bo_efYhYU2A" target="_blank">
+            <img src="https://lh3.googleusercontent.com/Ov5M6KJCtTHJIshdVvQnYBNtSx9JznSPmMkgfk9qRHa9B4nLQip0HXE9eNns4FELJUMlHgdB8yqzWD6M=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>愛沙尼亞</span>
+            </div>
+            <div class="title-product">
+              <h3>Shallow</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20180927，歌手：布萊德利·庫柏, Lady Gaga，上週名次：9</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">每週觀賞次數：60,160</span></div>
+              <div class="wcf-left"><span class="price">總觀賞次數：1,592,489,720</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=bo_efYhYU2A" target="_blank" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=ixkoVwKQaJg" target="_blank">
+            <img src="https://lh3.googleusercontent.com/9w0F83sPH1NxG7xhtSHX42edxqFKJM61hmYt4HPJ0PRXkFrrob0t-kMB7_cXb56MUN6b2_0SKAcN2DIhWA=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>墨西哥</span>
+            </div>
+            <div class="title-product">
+              <h3>Taki Taki (feat. 卡蒂·B, Ozuna & 席琳娜·戈梅茲)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20181009，歌手：DJ Snake，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">每週觀賞次數：9,928,721</span></div>
+              <div class="wcf-left"><span class="price">總觀賞次數：2,540,297,072</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=ixkoVwKQaJg" target="_blank" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=ixkoVwKQaJg" target="_blank">
+            <img src="https://lh3.googleusercontent.com/9w0F83sPH1NxG7xhtSHX42edxqFKJM61hmYt4HPJ0PRXkFrrob0t-kMB7_cXb56MUN6b2_0SKAcN2DIhWA=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>葡萄牙</span>
+            </div>
+            <div class="title-product">
+              <h3>Taki Taki (feat. 卡蒂·B, Ozuna & 席琳娜·戈梅茲)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20181009，歌手：DJ Snake，上週名次：2</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">每週觀賞次數：669,334</span></div>
+              <div class="wcf-left"><span class="price">總觀賞次數：2,540,297,072</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=ixkoVwKQaJg" target="_blank" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=F98rbCVXFJ0" target="_blank">
+            <img src="https://lh3.googleusercontent.com/cIT-wBfAO48BMOfeihFwrNGydf-unomtVRI5jSHREvpVCjAWyAEh1A3ogY6kvT23M9Dv-HNJnq8YfZo=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>荷蘭</span>
+            </div>
+            <div class="title-product">
+              <h3>Rolls Sessie</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20190111，歌手：Boef，上週名次：0</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">每週觀賞次數：1,023,588</span></div>
+              <div class="wcf-left"><span class="price">總觀賞次數：8,700,301</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=F98rbCVXFJ0" target="_blank" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=SX_ViT4Ra7k" target="_blank">
+            <img src="https://lh3.googleusercontent.com/Yiqnzq5SfMrNjf9XTAMCPadMclhC8ltAVaePndf64gdwvjaN6eEDFBw2aKRukpqxlb7rdkb27BdUFLIDfA=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>日本</span>
+            </div>
+            <div class="title-product">
+              <h3>Lemon</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20180226，歌手：米津玄師，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">每週觀賞次數：5,350,361</span></div>
+              <div class="wcf-left"><span class="price">總觀賞次數：846,714,513</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=SX_ViT4Ra7k" target="_blank" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=7nEULo3_oY0" target="_blank">
+            <img src="https://lh3.googleusercontent.com/6LJr9TTp9bj5sLlODOo1ShsNw38LoBm44L_AyYbXeawhPEScGNva6CJkxPzRBKo2ZTPeCjBO7mDWbjes=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>智利</span>
+            </div>
+            <div class="title-product">
+              <h3>Not Steady</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20180625，歌手：Paloma Mami，上週名次：5</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">每週觀賞次數：2,298,994</span></div>
+              <div class="wcf-left"><span class="price">總觀賞次數：94,878,132</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=7nEULo3_oY0" target="_blank" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=YS2RmyES-GU" target="_blank">
+            <img src="https://lh3.googleusercontent.com/bjHd0XaFFHVLm6jJS0T3ceem6giZVTaUxSpgaNk2aKc0thavsOaA20_XFEPmgscixX-DF1-h8xlMSjtN=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>哥倫比亞</span>
+            </div>
+            <div class="title-product">
+              <h3>Calma (Remix)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20180720，歌手：Pedro Capó, 卡洛斯・埃夫恩・雷耶斯・羅薩多, Alan Walker，上週名次：3</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">每週觀賞次數：4,972,752</span></div>
+              <div class="wcf-left"><span class="price">總觀賞次數：10,867,220</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=YS2RmyES-GU" target="_blank" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=5Fv19KVVya8" target="_blank">
+            <img src="https://lh3.googleusercontent.com/jBbYK3Wt_icksMaCfCIKQgDImHMB0SjZXASACg75j3maMi62DaKxx9aFjCCaTIIKYT3RS11g3glbsMivkA=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>烏克蘭</span>
+            </div>
+            <div class="title-product">
+              <h3>ПЛАКАЛА</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20180427，歌手：KAZKA，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">每週觀賞次數：2,905,660</span></div>
+              <div class="wcf-left"><span class="price">總觀賞次數：445,127,204</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=5Fv19KVVya8" target="_blank" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=9Ew461CAlmQ" target="_blank">
+            <img src="https://lh3.googleusercontent.com/VzgUZF6zUxzyB98OIoiBrObGyXqIdQERD6eX8dvQsUsvxGNoQ9r85C3tFxI7-5MZGwPpVx7C3QWtdwNO=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>德國</span>
+            </div>
+            <div class="title-product">
+              <h3>Baller los</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20181122，歌手：MERO，上週名次：0</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">每週觀賞次數：6,923,664</span></div>
+              <div class="wcf-left"><span class="price">總觀賞次數：218,749,905</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=9Ew461CAlmQ" target="_blank" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=b73BI9eUkjM" target="_blank">
+            <img src="https://lh3.googleusercontent.com/2kg2Ts1Q-p8P7ds0u4OzDbvcZ9-u9b3FtInas9kIoS2FMIalaxFg7KLaV0amCnnGHwR3H8MI53qVXIa-=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>南韓</span>
+            </div>
+            <div class="title-product">
+              <h3>SOLO</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20181111，歌手：Jennie，上週名次：2</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">每週觀賞次數：5,630,911</span></div>
+              <div class="wcf-left"><span class="price">總觀賞次數：996,494,153</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=b73BI9eUkjM" target="_blank" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=C2UIcaOs6qo" target="_blank">
+            <img src="https://lh3.googleusercontent.com/jpqnD8-ZKjfOuRIFWCb3VwV1sAOkiU3WBqGeLoT93NxAtG81Os_5IHJw72uIp0IIGLCdV1U9wpr_z50=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>烏干達</span>
+            </div>
+            <div class="title-product">
+              <h3>Matala</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20181026，歌手：Winnie Nwagi，上週名次：0</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">每週觀賞次數：18,073</span></div>
+              <div class="wcf-left"><span class="price">總觀賞次數：4,763,778</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=C2UIcaOs6qo" target="_blank" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=ZZjnfWx0cvw" target="_blank">
+            <img src="https://lh3.googleusercontent.com/PautsEKtXuqbI3ECgseJUVToxpzEuetT0jqppiBAO291_4iGcIdIiP7N3DTZnEe7QDhL1kVKcTu_bOc2=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>義大利</span>
+            </div>
+            <div class="title-product">
+              <h3>Torna a casa</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20180927，歌手：Måneskin，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">每週觀賞次數：4,845,194</span></div>
+              <div class="wcf-left"><span class="price">總觀賞次數：174,579,635</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=ZZjnfWx0cvw" target="_blank" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=P663vdap0LM" target="_blank">
+            <img src="https://lh3.googleusercontent.com/2ys9aTOjc-KKEC6XsMP-_21PklEbCfCnUqslS9AFz6xrKii5778RiGXSd49XgLmZbvDeBlfvAOOQ4sUD=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>塞爾維亞</span>
+            </div>
+            <div class="title-product">
+              <h3>Kocka</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20181126，歌手：Sloba Radanovic，上週名次：0</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">每週觀賞次數：880,050</span></div>
+              <div class="wcf-left"><span class="price">總觀賞次數：33,551,733</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=P663vdap0LM" target="_blank" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=M76qUQTt_Sw" target="_blank">
+            <img src="https://lh3.googleusercontent.com/2wEnjzOj0LKTSNuT27gPYXCpismEo3j-IJBA-V2QomEvBZ3aIqVW9CnvVFu8QFVlSfszW4YlPhKsdzE=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>巴西</span>
+            </div>
+            <div class="title-product">
+              <h3>Atrasadinha</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20180913，歌手：Ferrugem, Felipe Araújo，上週名次：2</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">每週觀賞次數：14,112,930</span></div>
+              <div class="wcf-left"><span class="price">總觀賞次數：485,787,242</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=M76qUQTt_Sw" target="_blank" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=lm4x-gspW2k" target="_blank">
+            <img src="https://lh3.googleusercontent.com/Dnd6pkzgsD4hMMZLsfIfelKrxs3Xj1Oslw8ukrZT8zmNyxJj1Hr6sjfKWeIl2FaRWOZJiH-0QlqjlGVR9w=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>奈及利亞</span>
+            </div>
+            <div class="title-product">
+              <h3>One Ticket</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20181102，歌手：達維多, 基茲·丹尼爾，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">每週觀賞次數：142,132</span></div>
+              <div class="wcf-left"><span class="price">總觀賞次數：55,462,000</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=lm4x-gspW2k" target="_blank" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=8tI-DPvX0tY" target="_blank">
+            <img src="https://lh3.googleusercontent.com/e35uUmEcpz7yA9HdHQLLoGL7diJUViBOTefd8XJFslVlrSaYpdPt7SkNH7UAtj-z1_Vl_4ABDIcmfJpF=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>瑞士</span>
+            </div>
+            <div class="title-product">
+              <h3>Skam Koh</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20181122，歌手：Zuna, Azet，上週名次：0</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">每週觀賞次數：493,755</span></div>
+              <div class="wcf-left"><span class="price">總觀賞次數：57,056,162</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=8tI-DPvX0tY" target="_blank" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=aSjflT_J0Xo" target="_blank">
+            <img src="https://lh3.googleusercontent.com/Yk0l-WXLhQ0GWWlG71EpHtM0aSAP8B5o_b-gShKdgod5imN3sIg3IxRWq6qJcWeByNdQbHpnBxSK_-yU1w=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>阿根廷</span>
+            </div>
+            <div class="title-product">
+              <h3>Adán y Eva</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20181105，歌手：Paulo Londra，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">每週觀賞次數：8,104,942</span></div>
+              <div class="wcf-left"><span class="price">總觀賞次數：1,254,611,770</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=aSjflT_J0Xo" target="_blank" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=aJOTlE1K90k" target="_blank">
+            <img src="https://lh3.googleusercontent.com/ukH2eUwVN4dgJR_xTGjFuPUp0NkLnUINgEBHDGglldxDEor4GAXiC_Ssln8x6-BBsnjsu-hH149u_ao=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>挪威</span>
+            </div>
+            <div class="title-product">
+              <h3>Girls Like You (feat. 卡蒂·B)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20171103，歌手：Maroon 5, 魔力紅樂團，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">每週觀賞次數：101,425</span></div>
+              <div class="wcf-left"><span class="price">總觀賞次數：3,558,861,409</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=aJOTlE1K90k" target="_blank" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=aJOTlE1K90k" target="_blank">
+            <img src="https://lh3.googleusercontent.com/ukH2eUwVN4dgJR_xTGjFuPUp0NkLnUINgEBHDGglldxDEor4GAXiC_Ssln8x6-BBsnjsu-hH149u_ao=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>瑞典</span>
+            </div>
+            <div class="title-product">
+              <h3>Girls Like You (feat. 卡蒂·B)</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20171103，歌手：Maroon 5, 魔力紅樂團，上週名次：2</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">每週觀賞次數：201,831</span></div>
+              <div class="wcf-left"><span class="price">總觀賞次數：3,558,861,409</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=aJOTlE1K90k" target="_blank" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=gl1aHhXnN1k" target="_blank">
+            <img src="https://lh3.googleusercontent.com/3LV6GoLom0Vb_oNFTXI_e2NIua0D-WocCifEFnSQattWpLfswpayWPzZ2BeClAB5QxR2EnGZkgh7QI7j=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>愛爾蘭</span>
+            </div>
+            <div class="title-product">
+              <h3>thank u, next</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20181113，歌手：雅瑞安娜·格蘭德，上週名次：2</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">每週觀賞次數：285,945</span></div>
+              <div class="wcf-left"><span class="price">總觀賞次數：799,201,403</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=gl1aHhXnN1k" target="_blank" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=gl1aHhXnN1k" target="_blank">
+            <img src="https://lh3.googleusercontent.com/3LV6GoLom0Vb_oNFTXI_e2NIua0D-WocCifEFnSQattWpLfswpayWPzZ2BeClAB5QxR2EnGZkgh7QI7j=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>紐西蘭</span>
+            </div>
+            <div class="title-product">
+              <h3>thank u, next</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20181113，歌手：雅瑞安娜·格蘭德，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">每週觀賞次數：236,276</span></div>
+              <div class="wcf-left"><span class="price">總觀賞次數：799,201,403</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=gl1aHhXnN1k" target="_blank" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=gl1aHhXnN1k" target="_blank">
+            <img src="https://lh3.googleusercontent.com/3LV6GoLom0Vb_oNFTXI_e2NIua0D-WocCifEFnSQattWpLfswpayWPzZ2BeClAB5QxR2EnGZkgh7QI7j=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>美國</span>
+            </div>
+            <div class="title-product">
+              <h3>thank u, next</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20181113，歌手：雅瑞安娜·格蘭德，上週名次：2</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">每週觀賞次數：15,105,215</span></div>
+              <div class="wcf-left"><span class="price">總觀賞次數：799,201,403</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=gl1aHhXnN1k" target="_blank" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=gl1aHhXnN1k" target="_blank">
+            <img src="https://lh3.googleusercontent.com/3LV6GoLom0Vb_oNFTXI_e2NIua0D-WocCifEFnSQattWpLfswpayWPzZ2BeClAB5QxR2EnGZkgh7QI7j=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>澳洲</span>
+            </div>
+            <div class="title-product">
+              <h3>thank u, next</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20181113，歌手：雅瑞安娜·格蘭德，上週名次：2</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">每週觀賞次數：932,198</span></div>
+              <div class="wcf-left"><span class="price">總觀賞次數：799,201,403</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=gl1aHhXnN1k" target="_blank" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=gl1aHhXnN1k" target="_blank">
+            <img src="https://lh3.googleusercontent.com/3LV6GoLom0Vb_oNFTXI_e2NIua0D-WocCifEFnSQattWpLfswpayWPzZ2BeClAB5QxR2EnGZkgh7QI7j=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>加拿大</span>
+            </div>
+            <div class="title-product">
+              <h3>thank u, next</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20181113，歌手：雅瑞安娜·格蘭德，上週名次：2</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">每週觀賞次數：1,166,319</span></div>
+              <div class="wcf-left"><span class="price">總觀賞次數：799,201,403</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=gl1aHhXnN1k" target="_blank" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="https://www.youtube.com/watch?v=gl1aHhXnN1k" target="_blank">
+            <img src="https://lh3.googleusercontent.com/3LV6GoLom0Vb_oNFTXI_e2NIua0D-WocCifEFnSQattWpLfswpayWPzZ2BeClAB5QxR2EnGZkgh7QI7j=w180-h180-l90-rj" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>英國</span>
+            </div>
+            <div class="title-product">
+              <h3>thank u, next</h3>
+            </div>
+            <div class="description-prod">
+              <p>發行日：20181113，歌手：雅瑞安娜·格蘭德，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">每週觀賞次數：3,052,678</span></div>
+              <div class="wcf-left"><span class="price">總觀賞次數：799,201,403</span></div>
+              <div class="wcf-right"><a href="https://www.youtube.com/watch?v=gl1aHhXnN1k" target="_blank" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+    </div>
+  </div>
+</div>
+<!-- partial -->
+  
+</body>
+</html>
