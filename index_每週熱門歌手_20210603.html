@@ -1,0 +1,1593 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW" >
+<head>
+  <meta charset="UTF-8">
+  <title>全球每週熱門歌手</title>
+  <meta property="og:image" content="https://raw.githubusercontent.com/yatinisgood/YoutubeMusicCharts/main/A_creative_and_eye-catching_image_featuring_a_musi_converted.png" />
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://yatinisgood.github.io/YoutubeMusicCharts/index_全球入榜播放次數最多.html"/>
+  <meta name="og:description" content="發現 YouTube Music的最新熱門歌曲與影片。每週更新的全球點播排行、熱門歌手和音樂影片，以及 SHORTS 上的流行曲目，我們為您提供最深入的音樂趨勢分析。跟踪 YouTube 的音樂脈動：從發燒影片到每週熱播歌曲，再到全球點播進榜最多的曲目，我們提供全面的數據和洞察，讓您始終走在音樂潮流的最前沿。您的音樂趨勢導航：每週為您帶來 YouTube 上最受歡迎的歌曲、藝人和音樂影片。從主流到小眾，從長視頻到 Shorts，一站式探索音樂世界的每個角落。"/>
+<meta name="og:keywords" content="YouTube Music每週熱門,發燒影片分析,音樂流行趨勢,熱門歌手與歌曲,YouTuber愛用的 Shorts 音樂">
+<meta property="og:title" itemprop="name" content="音樂潮流前線：追踪 YouTube 上的每週熱門歌曲與影片" />
+  
+
+  <meta property="og:locale" content="zh_TW" />
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css'><link rel="stylesheet" href="./style_type2.css">
+<script src="dropdownlist_每週熱門歌手.js"></script>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container text-center">
+<h1>全球每週熱門歌手 (更新於20210603)</h1>
+  <span>Create With <i class="zmdi zmdi-favorite red"></i>  By: <strong>Sherlock Tsai</strong> </span>
+</div>
+<div class="container text-center dropdown-menu-spacing">
+    <!-- 下拉選單 -->
+    <div id="dropdown-container"></div>    
+</div>
+<script>
+    function goToWeek(weekFileName) {
+        if(weekFileName) {
+            window.location.href = weekFileName+ "?week=" + encodeURIComponent(weekFileName);
+        }
+    }
+</script>
+<script>
+  window.onload = function() {
+      // 解析 URL 中的 GET 參數
+      var params = new URLSearchParams(window.location.search);
+      var week = params.get('week'); // 獲取 'week' 參數
+
+      if (week) {var weekSelector = document.getElementById('week-selector');
+      weekSelector.value = week;
+  }};
+</script>
+<div class="shell">
+  <div class="container">
+    <div class="row">
+      
+      
+<div class="col-md-6">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="">
+            <img src="https://lh3.googleusercontent.com/SqELOg_Z1j-BYJlK80CFeQxKWL9qpPTpoQqS6doB67a9vQgeYY4Iu1KY7GWV-zHSWslf3ic4RcN8Fl8" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>最多國家第一</span>
+            </div>
+            <div class="title-product">
+              <h3>Rauw Alejandro</h3>
+            </div>
+            <div class="description-prod">
+              <p>上榜週數：121，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price"></span></div>
+              <div class="wcf-right"><a href="" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjVogSYSFU6bEg1lvcRH3I5HLQ0tK1tueykh9z0mIYHeDJ4" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>冰島</span>
+            </div>
+            <div class="title-product">
+              <h3>多瑞·弗萊爾</h3>
+            </div>
+            <div class="description-prod">
+              <p>上榜週數：88，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：44,587</span></div>
+              <div class="wcf-right"><a href="" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="">
+            <img src="https://lh3.googleusercontent.com/XouB33j0TSegjTSyqqQPp1IkyFcDD58jCN2WkNqI8p8Psktap1v4Q_gGzch5XZKBU9US4KynEFkCtQc" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>盧森堡</span>
+            </div>
+            <div class="title-product">
+              <h3>GIMS</h3>
+            </div>
+            <div class="description-prod">
+              <p>上榜週數：246，上週名次：13</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：46,839</span></div>
+              <div class="wcf-right"><a href="" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="">
+            <img src="https://lh3.googleusercontent.com/akV8so3IiTTh73z9a0V3DyJN2DOkVE9ublE6rPKIS5n2bRI0Q-_6tyzXNO-hufGG3X9qezujndsq8iuq" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>德國</span>
+            </div>
+            <div class="title-product">
+              <h3>約翰·勞倫茲·慕沙</h3>
+            </div>
+            <div class="description-prod">
+              <p>上榜週數：244，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：4,929,330</span></div>
+              <div class="wcf-right"><a href="" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjXjeWF1gTbyVgVV47-9fozvTtAJ5vWrrCN7ZbFSCrNLHQ" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>義大利</span>
+            </div>
+            <div class="title-product">
+              <h3>Sangiovanni</h3>
+            </div>
+            <div class="description-prod">
+              <p>上榜週數：19，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：21,233,220</span></div>
+              <div class="wcf-right"><a href="" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="">
+            <img src="https://lh3.googleusercontent.com/SqELOg_Z1j-BYJlK80CFeQxKWL9qpPTpoQqS6doB67a9vQgeYY4Iu1KY7GWV-zHSWslf3ic4RcN8Fl8" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>墨西哥</span>
+            </div>
+            <div class="title-product">
+              <h3>Rauw Alejandro</h3>
+            </div>
+            <div class="description-prod">
+              <p>上榜週數：96，上週名次：3</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：56,181,631</span></div>
+              <div class="wcf-right"><a href="" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="">
+            <img src="https://lh3.googleusercontent.com/jYHVVEMmsDWhRUNbyvr7lnrQxFWCmAS8iQGBKJcN_4lgR7KXwztxiCDAdimFKc331CcmWKWkdOQMHw" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>土耳其</span>
+            </div>
+            <div class="title-product">
+              <h3>易卜拉辛・塔特利塞斯</h3>
+            </div>
+            <div class="description-prod">
+              <p>上榜週數：246，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：15,717,889</span></div>
+              <div class="wcf-right"><a href="" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="">
+            <img src="https://lh3.googleusercontent.com/Sa7K2qYxhHJIBQKyudhF6AUDetBpRqJXg-LhV0D3hfcxdoTbJCSA9mZuZA3TJpFUq4qvN2UlqhTKNh1G" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>南非</span>
+            </div>
+            <div class="title-product">
+              <h3>Joyous Celebration</h3>
+            </div>
+            <div class="description-prod">
+              <p>上榜週數：246，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：1,336,875</span></div>
+              <div class="wcf-right"><a href="" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="">
+            <img src="" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>葡萄牙</span>
+            </div>
+            <div class="title-product">
+              <h3>Nininho</h3>
+            </div>
+            <div class="description-prod">
+              <p>上榜週數：47，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：2,073,863</span></div>
+              <div class="wcf-right"><a href="" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="">
+            <img src="https://lh3.googleusercontent.com/SqELOg_Z1j-BYJlK80CFeQxKWL9qpPTpoQqS6doB67a9vQgeYY4Iu1KY7GWV-zHSWslf3ic4RcN8Fl8" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>西班牙</span>
+            </div>
+            <div class="title-product">
+              <h3>Rauw Alejandro</h3>
+            </div>
+            <div class="description-prod">
+              <p>上榜週數：125，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：21,952,520</span></div>
+              <div class="wcf-right"><a href="" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="">
+            <img src="" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>烏克蘭</span>
+            </div>
+            <div class="title-product">
+              <h3>Morgenshtern</h3>
+            </div>
+            <div class="description-prod">
+              <p>上榜週數：89，上週名次：2</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：6,566,103</span></div>
+              <div class="wcf-right"><a href="" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjVfWlbm-79uxDNW1t-iJ_6yeMp64rtkwcfM6a5dv1lNksM" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>瑞士</span>
+            </div>
+            <div class="title-product">
+              <h3>Mozzik</h3>
+            </div>
+            <div class="description-prod">
+              <p>上榜週數：144，上週名次：29</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：769,776</span></div>
+              <div class="wcf-right"><a href="" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="">
+            <img src="https://lh3.googleusercontent.com/LfgsvJvG6Q37TelJlZg1y3vYAfaQ6J6tcTeJ4O5auiz8WzvN4egSN1T-KxgXocVnImdnPXC2OA" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>捷克</span>
+            </div>
+            <div class="title-product">
+              <h3>Pokáč</h3>
+            </div>
+            <div class="description-prod">
+              <p>上榜週數：137，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：1,084,548</span></div>
+              <div class="wcf-right"><a href="" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="">
+            <img src="https://lh3.googleusercontent.com/SqELOg_Z1j-BYJlK80CFeQxKWL9qpPTpoQqS6doB67a9vQgeYY4Iu1KY7GWV-zHSWslf3ic4RcN8Fl8" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>烏拉圭</span>
+            </div>
+            <div class="title-product">
+              <h3>Rauw Alejandro</h3>
+            </div>
+            <div class="description-prod">
+              <p>上榜週數：127，上週名次：2</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：2,800,844</span></div>
+              <div class="wcf-right"><a href="" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="">
+            <img src="https://lh3.googleusercontent.com/Kt9eRuPagsccBhuBYoiXwJjuKx_yvIs7FmpsdoTuOgvT56pmPnk9Vhai0oXSXDZC_MnJ4mijjPQbHTo" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>法國</span>
+            </div>
+            <div class="title-product">
+              <h3>Naps</h3>
+            </div>
+            <div class="description-prod">
+              <p>上榜週數：246，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：16,513,220</span></div>
+              <div class="wcf-right"><a href="" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="">
+            <img src="https://lh3.googleusercontent.com/SqELOg_Z1j-BYJlK80CFeQxKWL9qpPTpoQqS6doB67a9vQgeYY4Iu1KY7GWV-zHSWslf3ic4RcN8Fl8" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>巴拿馬</span>
+            </div>
+            <div class="title-product">
+              <h3>Rauw Alejandro</h3>
+            </div>
+            <div class="description-prod">
+              <p>上榜週數：132，上週名次：2</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：2,306,880</span></div>
+              <div class="wcf-right"><a href="" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="">
+            <img src="" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>俄羅斯</span>
+            </div>
+            <div class="title-product">
+              <h3>Morgenshtern</h3>
+            </div>
+            <div class="description-prod">
+              <p>上榜週數：92，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：11,181,273</span></div>
+              <div class="wcf-right"><a href="" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="">
+            <img src="https://lh3.googleusercontent.com/XouB33j0TSegjTSyqqQPp1IkyFcDD58jCN2WkNqI8p8Psktap1v4Q_gGzch5XZKBU9US4KynEFkCtQc" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>比利時</span>
+            </div>
+            <div class="title-product">
+              <h3>GIMS</h3>
+            </div>
+            <div class="description-prod">
+              <p>上榜週數：246，上週名次：7</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：1,067,542</span></div>
+              <div class="wcf-right"><a href="" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="">
+            <img src="https://lh3.googleusercontent.com/SqELOg_Z1j-BYJlK80CFeQxKWL9qpPTpoQqS6doB67a9vQgeYY4Iu1KY7GWV-zHSWslf3ic4RcN8Fl8" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>瓜地馬拉</span>
+            </div>
+            <div class="title-product">
+              <h3>Rauw Alejandro</h3>
+            </div>
+            <div class="description-prod">
+              <p>上榜週數：111，上週名次：4</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：4,093,688</span></div>
+              <div class="wcf-right"><a href="" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="">
+            <img src="" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>瑞典</span>
+            </div>
+            <div class="title-product">
+              <h3>HAVAL</h3>
+            </div>
+            <div class="description-prod">
+              <p>上榜週數：55，上週名次：2</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：774,667</span></div>
+              <div class="wcf-right"><a href="" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="">
+            <img src="" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>匈牙利</span>
+            </div>
+            <div class="title-product">
+              <h3>G.w.M</h3>
+            </div>
+            <div class="description-prod">
+              <p>上榜週數：212，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：1,611,868</span></div>
+              <div class="wcf-right"><a href="" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjXvA1lyl5erJLm7ZaN4GDAR-i5uMwQvvVJm-esnbcoyPGo" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>愛爾蘭</span>
+            </div>
+            <div class="title-product">
+              <h3>奧莉維亞·羅德里戈</h3>
+            </div>
+            <div class="description-prod">
+              <p>上榜週數：21，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：808,867</span></div>
+              <div class="wcf-right"><a href="" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="">
+            <img src="https://lh3.googleusercontent.com/SqELOg_Z1j-BYJlK80CFeQxKWL9qpPTpoQqS6doB67a9vQgeYY4Iu1KY7GWV-zHSWslf3ic4RcN8Fl8" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>祕魯</span>
+            </div>
+            <div class="title-product">
+              <h3>Rauw Alejandro</h3>
+            </div>
+            <div class="description-prod">
+              <p>上榜週數：124，上週名次：2</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：22,579,821</span></div>
+              <div class="wcf-right"><a href="" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjWuzC5b4i4pER6RTyi52mneB0Ra01FTLG6P_sH-0PYtzss" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>巴西</span>
+            </div>
+            <div class="title-product">
+              <h3>M·C·凱文</h3>
+            </div>
+            <div class="description-prod">
+              <p>上榜週數：235，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：73,669,739</span></div>
+              <div class="wcf-right"><a href="" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="">
+            <img src="https://lh3.googleusercontent.com/fYb6Md3GwTDsNpb7Zn73pKSyNPvXUTUCKKXmTljxktLamh2bzkXzBlOyJhM0DUkD_ZvtoS5Jyuse0Cg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>荷蘭</span>
+            </div>
+            <div class="title-product">
+              <h3>Frenna</h3>
+            </div>
+            <div class="description-prod">
+              <p>上榜週數：241，上週名次：4</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：918,238</span></div>
+              <div class="wcf-right"><a href="" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="">
+            <img src="https://lh3.googleusercontent.com/jGmnPG_eFpAujAu38EcrRfJWyjkrSpcRjAlqhrRYoGd0klmKrEDpS_JfRTztEjDJ5R6-lmpXhuAaWdJd" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>坦尚尼亞</span>
+            </div>
+            <div class="title-product">
+              <h3>Barnaba</h3>
+            </div>
+            <div class="description-prod">
+              <p>上榜週數：209，上週名次：17</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：1,145,595</span></div>
+              <div class="wcf-right"><a href="" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="">
+            <img src="https://lh3.googleusercontent.com/O2QtYwdPDT2Gkne8PTPZ2Wi280ikm5TG9OMMk0b7hGLBOaElWqlZtyh3yMeEepecizUoPXNqguXooNM" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>挪威</span>
+            </div>
+            <div class="title-product">
+              <h3>TIX</h3>
+            </div>
+            <div class="description-prod">
+              <p>上榜週數：246，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：464,533</span></div>
+              <div class="wcf-right"><a href="" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="">
+            <img src="https://lh3.googleusercontent.com/SqELOg_Z1j-BYJlK80CFeQxKWL9qpPTpoQqS6doB67a9vQgeYY4Iu1KY7GWV-zHSWslf3ic4RcN8Fl8" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>巴拉圭</span>
+            </div>
+            <div class="title-product">
+              <h3>Rauw Alejandro</h3>
+            </div>
+            <div class="description-prod">
+              <p>上榜週數：120，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：2,928,031</span></div>
+              <div class="wcf-right"><a href="" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="">
+            <img src="https://lh3.googleusercontent.com/SqELOg_Z1j-BYJlK80CFeQxKWL9qpPTpoQqS6doB67a9vQgeYY4Iu1KY7GWV-zHSWslf3ic4RcN8Fl8" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>宏都拉斯</span>
+            </div>
+            <div class="title-product">
+              <h3>Rauw Alejandro</h3>
+            </div>
+            <div class="description-prod">
+              <p>上榜週數：113，上週名次：3</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：3,405,735</span></div>
+              <div class="wcf-right"><a href="" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="">
+            <img src="https://lh3.googleusercontent.com/SqELOg_Z1j-BYJlK80CFeQxKWL9qpPTpoQqS6doB67a9vQgeYY4Iu1KY7GWV-zHSWslf3ic4RcN8Fl8" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>薩爾瓦多</span>
+            </div>
+            <div class="title-product">
+              <h3>Rauw Alejandro</h3>
+            </div>
+            <div class="description-prod">
+              <p>上榜週數：108，上週名次：3</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：2,837,886</span></div>
+              <div class="wcf-right"><a href="" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="">
+            <img src="https://lh3.googleusercontent.com/SqELOg_Z1j-BYJlK80CFeQxKWL9qpPTpoQqS6doB67a9vQgeYY4Iu1KY7GWV-zHSWslf3ic4RcN8Fl8" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>哥斯大黎加</span>
+            </div>
+            <div class="title-product">
+              <h3>Rauw Alejandro</h3>
+            </div>
+            <div class="description-prod">
+              <p>上榜週數：114，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：3,165,071</span></div>
+              <div class="wcf-right"><a href="" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="">
+            <img src="https://lh3.googleusercontent.com/ETN9wBEBJKCKT6g7s9PY1ONQzPtCtbKecJ8gye7X5iFkQEtWwD0D9XnigP_kt_f3HSGUGJORAtgRZ4Q" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>奈及利亞</span>
+            </div>
+            <div class="title-product">
+              <h3>達維多</h3>
+            </div>
+            <div class="description-prod">
+              <p>上榜週數：246，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：616,694</span></div>
+              <div class="wcf-right"><a href="" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="">
+            <img src="https://lh3.googleusercontent.com/akV8so3IiTTh73z9a0V3DyJN2DOkVE9ublE6rPKIS5n2bRI0Q-_6tyzXNO-hufGG3X9qezujndsq8iuq" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>奧地利</span>
+            </div>
+            <div class="title-product">
+              <h3>約翰·勞倫茲·慕沙</h3>
+            </div>
+            <div class="description-prod">
+              <p>上榜週數：244，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：765,983</span></div>
+              <div class="wcf-right"><a href="" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjXvA1lyl5erJLm7ZaN4GDAR-i5uMwQvvVJm-esnbcoyPGo" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>英國</span>
+            </div>
+            <div class="title-product">
+              <h3>奧莉維亞·羅德里戈</h3>
+            </div>
+            <div class="description-prod">
+              <p>上榜週數：21，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：5,301,563</span></div>
+              <div class="wcf-right"><a href="" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="">
+            <img src="https://lh3.googleusercontent.com/SqELOg_Z1j-BYJlK80CFeQxKWL9qpPTpoQqS6doB67a9vQgeYY4Iu1KY7GWV-zHSWslf3ic4RcN8Fl8" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>玻利維亞</span>
+            </div>
+            <div class="title-product">
+              <h3>Rauw Alejandro</h3>
+            </div>
+            <div class="description-prod">
+              <p>上榜週數：114，上週名次：3</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：4,344,402</span></div>
+              <div class="wcf-right"><a href="" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="">
+            <img src="https://lh3.googleusercontent.com/SqELOg_Z1j-BYJlK80CFeQxKWL9qpPTpoQqS6doB67a9vQgeYY4Iu1KY7GWV-zHSWslf3ic4RcN8Fl8" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>智利</span>
+            </div>
+            <div class="title-product">
+              <h3>Rauw Alejandro</h3>
+            </div>
+            <div class="description-prod">
+              <p>上榜週數：126，上週名次：2</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：14,119,895</span></div>
+              <div class="wcf-right"><a href="" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="">
+            <img src="https://lh3.googleusercontent.com/SqELOg_Z1j-BYJlK80CFeQxKWL9qpPTpoQqS6doB67a9vQgeYY4Iu1KY7GWV-zHSWslf3ic4RcN8Fl8" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>厄瓜多</span>
+            </div>
+            <div class="title-product">
+              <h3>Rauw Alejandro</h3>
+            </div>
+            <div class="description-prod">
+              <p>上榜週數：122，上週名次：2</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：13,789,246</span></div>
+              <div class="wcf-right"><a href="" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="">
+            <img src="https://lh3.googleusercontent.com/CBqaAXDaaj-OPIUU-hPJesRFKBDy6-8jQKb1CmVOk2X74f8hjXnwHe0ez0MqxfUPQ_nTouOlVmz5MeM" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>愛沙尼亞</span>
+            </div>
+            <div class="title-product">
+              <h3>Måneskin</h3>
+            </div>
+            <div class="description-prod">
+              <p>上榜週數：2，上週名次：2</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：174,137</span></div>
+              <div class="wcf-right"><a href="" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="">
+            <img src="https://lh3.googleusercontent.com/mp9W0NfanTFog7Wza8yKQwelS2gxlOo-LPnz1eatFMPHrXrlRd9T2Veo-Am8HdGvRf5Ja_UsWyZLGA" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>烏干達</span>
+            </div>
+            <div class="title-product">
+              <h3>Eddy Kenzo</h3>
+            </div>
+            <div class="description-prod">
+              <p>上榜週數：246，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：171,774</span></div>
+              <div class="wcf-right"><a href="" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="">
+            <img src="https://lh3.googleusercontent.com/SqELOg_Z1j-BYJlK80CFeQxKWL9qpPTpoQqS6doB67a9vQgeYY4Iu1KY7GWV-zHSWslf3ic4RcN8Fl8" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>哥倫比亞</span>
+            </div>
+            <div class="title-product">
+              <h3>Rauw Alejandro</h3>
+            </div>
+            <div class="description-prod">
+              <p>上榜週數：121，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：29,665,397</span></div>
+              <div class="wcf-right"><a href="" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjXxetYAGOCoiY1O_duZtxqht8TNC81uALM3iaZXlqg9Qg" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>塞爾維亞</span>
+            </div>
+            <div class="title-product">
+              <h3>Nucci</h3>
+            </div>
+            <div class="description-prod">
+              <p>上榜週數：42，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：2,322,096</span></div>
+              <div class="wcf-right"><a href="" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="">
+            <img src="https://lh3.googleusercontent.com/CBqaAXDaaj-OPIUU-hPJesRFKBDy6-8jQKb1CmVOk2X74f8hjXnwHe0ez0MqxfUPQ_nTouOlVmz5MeM" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>芬蘭</span>
+            </div>
+            <div class="title-product">
+              <h3>Måneskin</h3>
+            </div>
+            <div class="description-prod">
+              <p>上榜週數：2，上週名次：4</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：458,938</span></div>
+              <div class="wcf-right"><a href="" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="">
+            <img src="https://lh3.googleusercontent.com/0CKx8i2cUyXtybGRVVYSpvG2HAADPZw0wv0b3MWGc2xQ-ShRJbG4lDza3nr9KuCkY0uKJFPTvX1_F87x" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>丹麥</span>
+            </div>
+            <div class="title-product">
+              <h3>Gilli</h3>
+            </div>
+            <div class="description-prod">
+              <p>上榜週數：246，上週名次：2</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：523,747</span></div>
+              <div class="wcf-right"><a href="" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjUwQNaWoE_xo4Y8XHFFshQupg46TG6yJElqh7fPS3BZeJ0" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>波蘭</span>
+            </div>
+            <div class="title-product">
+              <h3>sanah</h3>
+            </div>
+            <div class="description-prod">
+              <p>上榜週數：74，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：12,360,181</span></div>
+              <div class="wcf-right"><a href="" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="">
+            <img src="https://lh3.googleusercontent.com/P-rYd_7rYsYjsHg9LwlI-66FpHn3dCSSuoFof_cCf08LWFEfZe4h94-pKnEXvut926ouTf6QU6849Q" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>加拿大</span>
+            </div>
+            <div class="title-product">
+              <h3>阿姆</h3>
+            </div>
+            <div class="description-prod">
+              <p>上榜週數：246，上週名次：3</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：3,136,295</span></div>
+              <div class="wcf-right"><a href="" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="">
+            <img src="https://lh3.googleusercontent.com/4Mwr8NtsU-He1Yau7CVB5xkZ99nbPBe_MuxEiYjE_tKdRIpWmlN0e_P1G8CRINFhb5KlzthGOlffR4pO" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>多明尼加共和國</span>
+            </div>
+            <div class="title-product">
+              <h3>Rochy RD</h3>
+            </div>
+            <div class="description-prod">
+              <p>上榜週數：133，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：7,973,190</span></div>
+              <div class="wcf-right"><a href="" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="">
+            <img src="https://lh3.googleusercontent.com/XE2cp2mnVX1H1k8yX80VrnkYDJ4f53m2q9gflVkjdCeaOC75oAih0EEO5X4Xw_OGf1lRSg6rg1CfmA" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>尼加拉瓜</span>
+            </div>
+            <div class="title-product">
+              <h3>壞痞兔</h3>
+            </div>
+            <div class="description-prod">
+              <p>上榜週數：242，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：1,139,623</span></div>
+              <div class="wcf-right"><a href="" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="">
+            <img src="https://lh3.googleusercontent.com/qFTK3xAViX0sxAkCpTIZ_yAj9euwn3nnXzVx59ixtp59EWHdD7FDYADNNERYsTDaKw2snXKbHhUzNxoD" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>辛巴威</span>
+            </div>
+            <div class="title-product">
+              <h3>Jah Prayzah</h3>
+            </div>
+            <div class="description-prod">
+              <p>上榜週數：246，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：182,961</span></div>
+              <div class="wcf-right"><a href="" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="">
+            <img src="https://lh3.googleusercontent.com/99jPT_lVWMHmvvjDrXr_LEa6zZbi2TO026AsiPUKcHEynMDiiblxTtFKxwD6ITdUGtPFRKr3BEFLIvU" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>阿根廷</span>
+            </div>
+            <div class="title-product">
+              <h3>Maria Becerra</h3>
+            </div>
+            <div class="description-prod">
+              <p>上榜週數：88，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：35,156,272</span></div>
+              <div class="wcf-right"><a href="" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="">
+            <img src="https://lh3.googleusercontent.com/H1wZAvsyonFPUEMt_cbkHMzre2zIg4lkzBPG9UGAwslJhEvVeqKURSIkkTgukHF2EFzRmzGAWuzgvCA" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>羅馬尼亞</span>
+            </div>
+            <div class="title-product">
+              <h3>Tzanca Uraganu</h3>
+            </div>
+            <div class="description-prod">
+              <p>上榜週數：89，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：12,975,039</span></div>
+              <div class="wcf-right"><a href="" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="">
+            <img src="https://lh3.googleusercontent.com/KAhhnrQQ78MtBWThKhF-3jBjBzAApasY2527JOSSGaCyDQlaJp6FbTCN6enMhnJny97o09kdef9weA" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>以色列</span>
+            </div>
+            <div class="title-product">
+              <h3>艾歐·高蘭</h3>
+            </div>
+            <div class="description-prod">
+              <p>上榜週數：246，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：5,093,236</span></div>
+              <div class="wcf-right"><a href="" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="">
+            <img src="https://lh3.googleusercontent.com/_1IhAFH2jqQe---I32QgKBkZWr_9YVitqtWF49aDQzk2uPBXNfAV-bn-PRAz7qnMlDtdB5_M7BSkxdDn" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>澳洲</span>
+            </div>
+            <div class="title-product">
+              <h3>防彈少年團</h3>
+            </div>
+            <div class="description-prod">
+              <p>上榜週數：246，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：1,958,214</span></div>
+              <div class="wcf-right"><a href="" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="">
+            <img src="https://lh3.googleusercontent.com/_1IhAFH2jqQe---I32QgKBkZWr_9YVitqtWF49aDQzk2uPBXNfAV-bn-PRAz7qnMlDtdB5_M7BSkxdDn" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>南韓</span>
+            </div>
+            <div class="title-product">
+              <h3>防彈少年團</h3>
+            </div>
+            <div class="description-prod">
+              <p>上榜週數：246，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：22,844,110</span></div>
+              <div class="wcf-right"><a href="" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="">
+            <img src="https://lh3.googleusercontent.com/_1IhAFH2jqQe---I32QgKBkZWr_9YVitqtWF49aDQzk2uPBXNfAV-bn-PRAz7qnMlDtdB5_M7BSkxdDn" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>紐西蘭</span>
+            </div>
+            <div class="title-product">
+              <h3>防彈少年團</h3>
+            </div>
+            <div class="description-prod">
+              <p>上榜週數：246，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：427,684</span></div>
+              <div class="wcf-right"><a href="" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="">
+            <img src="https://lh3.googleusercontent.com/_1IhAFH2jqQe---I32QgKBkZWr_9YVitqtWF49aDQzk2uPBXNfAV-bn-PRAz7qnMlDtdB5_M7BSkxdDn" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>日本</span>
+            </div>
+            <div class="title-product">
+              <h3>防彈少年團</h3>
+            </div>
+            <div class="description-prod">
+              <p>上榜週數：246，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：51,646,457</span></div>
+              <div class="wcf-right"><a href="" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="">
+            <img src="https://lh3.googleusercontent.com/_1IhAFH2jqQe---I32QgKBkZWr_9YVitqtWF49aDQzk2uPBXNfAV-bn-PRAz7qnMlDtdB5_M7BSkxdDn" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>全球</span>
+            </div>
+            <div class="title-product">
+              <h3>防彈少年團</h3>
+            </div>
+            <div class="description-prod">
+              <p>上榜週數：276，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：359,056,267</span></div>
+              <div class="wcf-right"><a href="" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="">
+            <img src="https://lh3.googleusercontent.com/7Tx7LmiQNxlfNg9SaoW8uAV8hnibQbCUOUTUjKXLeTEd7oLPRhIws11r-95oILKKyKeYjidH4UDixbo" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>肯亞</span>
+            </div>
+            <div class="title-product">
+              <h3>Diamond Platnumz</h3>
+            </div>
+            <div class="description-prod">
+              <p>上榜週數：246，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：2,338,520</span></div>
+              <div class="wcf-right"><a href="" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="">
+            <img src="https://lh3.googleusercontent.com/_wPXKRCH5rAX8AK1kJZ1bNhSpNyyEgBRNmREdPmLbvTy3sX_ldiKMRYFc5uChygV_KRx_SDrH1KgUifk" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>印度</span>
+            </div>
+            <div class="title-product">
+              <h3>阿爾卡·雅格尼克</h3>
+            </div>
+            <div class="description-prod">
+              <p>上榜週數：246，上週名次：1</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：224,031,657</span></div>
+              <div class="wcf-right"><a href="" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <a href="">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjX4QrAHTEMp29NDpqhT7KFRKYaedra6n1PDr8dR5-ENiQ" alt="Product" class="img-responsive" />
+            </a>
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>美國</span>
+            </div>
+            <div class="title-product">
+              <h3>YoungBoy Never Broke Again</h3>
+            </div>
+            <div class="description-prod">
+              <p>上榜週數：225，上週名次：3</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">觀賞次數：37,137,931</span></div>
+              <div class="wcf-right"><a href="" class="buy-btn"><i class="zmdi zmdi-youtube-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+    </div>
+  </div>
+</div>
+<!-- partial -->
+  
+</body>
+</html>
